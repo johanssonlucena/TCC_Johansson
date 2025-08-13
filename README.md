@@ -22,7 +22,9 @@
 
 ## :pencil: Descrição do projeto
 
-A ideia geral deste projeto é desenvolver um ambiente web para mostrar informações sobre os registros de ocorrências policiais na cidade de Campina Grande - PB.
+Este Projeto foi desenvolvido como parte do Trabalho de Conclusão de Curso, referente ao Curso: Ciência da Computação da Universidade Federal de Campina Grande-PB.
+O Trabalho visa disponibilizar uma ferramenta de Visualizações Interativas sobre dados referentes a Segurança Pública, mais específicamente da Polícia Militar da Paraíba e Registros de Ocorrências da cidade de Campina Grande-PB e região, através das informações do Centro Integrado de Comando e Controle.
+O objetivo é destacar a importância da Análise de Dados no setor Público, a necessidade de coletar, limpar, transformar e modelar dados, com intuito de identificar padrões, tendências e insights relevantes, para que possam auxiliar nas tomadas de decisões e uma melhor gestão dos recursos. E como parte fundamental da Análise de Dados, temos a Visualização de Dados que transforma dados brutos em representações visuais de fácil compreensão, facilitando o entendimento dos dados, bem como tornando-os em informações dinâmicas, através de recursos interativos presentes nas visualizações, que proporciona formas diferente de analisar cenários de interesse.
 
 
 ## :computer: Tecnologias e ferramentas utilizadas
@@ -35,10 +37,17 @@ A ideia geral deste projeto é desenvolver um ambiente web para mostrar informa�
 
 -  [VSCode](https://code.visualstudio.com/)
 
+-  [Bootstrap](https://getbootstrap.com/)
+
+-  [Leaflet](https://leafletjs.com/)
+
+
   
 ## 👷‍♀️ Como rodar o código
 
 ```bash
+# Execute o script python no seu arquivo .csv, e adicione o arquivo .json na pasta json do projeto, ...
+
 # Clone o repositório
 $ git clone https://github.com/johanssonlucena/TCC_Johansson.git
 
@@ -47,12 +56,11 @@ $ git clone https://github.com/johanssonlucena/TCC_Johansson.git
 
 ## :link: Links úteis
 
--  [Dashboards](https://www.google.com.br/)
+-  [UFCG](https://portal.ufcg.edu.br//)
 
--  [Sites](https://www.google.com.br/)
+-  [Computação UFCG](https://www.computacao.ufcg.edu.br/)
   
 
 ## :man_teacher: Mentor
 
 Maxwel Guiamarães, é professor da Unidade Acadêmica de Sistemas e Computação desde 2019, Membro do Laboratório de Computação Inteligente Aplicada (LACINA), é pesquisador em Ciência de Dados, com interesse em Dados Geográficos, Modelos de Classificação, Recuperação da Informação, Processamento de Linguagem Natural, Mineração de Mídias Sociais e Cidades Inteligentes.
-
