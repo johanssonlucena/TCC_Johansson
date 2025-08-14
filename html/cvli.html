@@ -92,7 +92,8 @@
     </div>
 
     <div class="container py-1">
-        <div class="row mb-4 align-items-start">
+        container py-1 border shadow p-3 mb-3 bg-white rounded
+        <div class="row mb-4 align-items-start border shadow p-3">
             <div class="col-md-4">
                 <label class="form-label">Tipos de CVLI:</label>
                 <div class="form-check legend-item">
@@ -120,8 +121,7 @@
         <div class="col-md-4">
             <label for="bairroSelect" class="form-label">Filtrar por Bairro</label>
             <select id="bairroSelect" class="form-select">
-                <option value="nenhum" selected>Nenhum</option>
-                <option value="todos">Todos os Bairros</option>
+                <option value="todos" selected>Todos os Bairros</option>
                 <!-- Opções geradas dinamicamente via JS -->
             </select>
         </div>
@@ -148,6 +148,18 @@
                     selectHora.appendChild(opt);
                 }
             </script>
+            </select>
+
+            <label for="daySelect" class="form-label">Filtrar por Dia da Semana</label>
+            <select id="daySelect" class="form-select">
+                <option value="todos" selected>Todos os Dias</option>
+                <option value="Segunda">Segunda</option>
+                <option value="Terça">Terça</option>
+                <option value="Quarta">Quarta</option>
+                <option value="Quinta">Quinta</option>
+                <option value="Sexta">Sexta</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
             </select>
         </div>
 

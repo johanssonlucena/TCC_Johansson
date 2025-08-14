@@ -18,6 +18,7 @@ function updateMap() {
     const selectedTypes = Array.from(document.querySelectorAll('.crime-filter:checked')).map(cb => cb.value);
     const bairroSelecionado = document.getElementById('bairroSelect').value;
     const hora = document.getElementById('hourSelect').value;
+    const dia = document.getElementById('daySelect').value;
 
     let filtered;
 
@@ -36,6 +37,10 @@ function updateMap() {
         const horaSelecionada = selectHora.value;
         const horaNum = Number(horaSelecionada);
         filtered = filtered.filter(d => d.hora_exata === horaNum);
+    }
+
+    if (dia !== 'todos') {
+        filtered = filtered.filter(d => d.dia_da_semana === dia);
     }
 
     markerClusterGroup.clearLayers();
@@ -83,3 +88,4 @@ document.getElementById('periodSelect').addEventListener('change', updateMap);
 document.querySelectorAll('.crime-filter').forEach(cb => cb.addEventListener('change', updateMap));
 document.getElementById('bairroSelect').addEventListener('change', updateMap);
 document.getElementById('hourSelect').addEventListener('change', updateMap);
+document.getElementById('daySelect').addEventListener('change', updateMap);
