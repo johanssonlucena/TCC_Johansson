@@ -11,27 +11,6 @@
   <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
   <link rel="stylesheet" href="../css/style_index.css">
   <link rel="stylesheet" href="../css/style.css">
-  <style>
-
-    .iframe-container {
-      position: relative;
-      width: 100%;
-      padding-bottom: 75%; 
-      height: 0;
-      overflow: hidden;
-      margin-bottom: 20px;
-    }
-
-    .iframe-container iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-    }
-  </style>
 </head>
 
 <body>
@@ -75,9 +54,6 @@
     </div>
     </nav>
 
-
-
-
     <div class="container py-1">
         <div class="text-center mb-4">
             <h2 class="section-title">CRIMES VIOLENTOS LETAIS E INTENCIONAIS – CVLI</h2>
@@ -92,7 +68,6 @@
     </div>
 
     <div class="container py-1">
-        container py-1 border shadow p-3 mb-3 bg-white rounded
         <div class="row mb-4 align-items-start border shadow p-3">
             <div class="col-md-4">
                 <label class="form-label">Tipos de CVLI:</label>
@@ -163,8 +138,6 @@
             </select>
         </div>
 
-
-
     </div>
 
   <!-- Mapa de Marcadores -->
@@ -179,7 +152,34 @@
   <!-- Lógica para o Mapa -->
   <script src="../js/indicador_cvli.js"></script>
 
-    
+
+
+  <div class="container py-4">
+  <div class="row g-4">
+    <div class="col-12">
+      <div class="iframe-container">
+        <iframe src="tipos.html" title="Página 1"></iframe>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="iframe-container">
+        <iframe src="horas.html" title="Página 2"></iframe>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="iframe-container">
+        <iframe src="diaSemana.html" title="Página 3"></iframe>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="iframe-container">
+        <iframe src="bairros.html" title="Página 4"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+
 
 
 
