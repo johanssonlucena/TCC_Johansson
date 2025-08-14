@@ -4,7 +4,7 @@ let bairrosUnicos = new Set();
 // Inicializa mapa de marcadores
 const markerMap = L.map('markerMap').setView([-7.23, -35.88], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(markerMap);
-let markerClusterGroup = L.markerClusterGroup({maxClusterRadius: 10}).addTo(markerMap);
+let markerClusterGroup = L.markerClusterGroup({maxClusterRadius: 25}).addTo(markerMap);
 
 const icons = {
     'a Transeunte': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png', iconSize:[25,25]}),
@@ -46,11 +46,11 @@ function updateMap() {
 
     markerClusterGroup.clearLayers();
     filtered
-    .filter(d => selectedTypes.includes(d.tipo))
+    .filter(d => selectedTypes.includes(d.subtipo))
     .forEach(d => {
-        const marker = L.marker([d.latitude, d.longitude], { icon: icons[d.tipo] })
+        const marker = L.marker([d.latitude, d.longitude], { icon: icons[d.subtipo] })
             .bindPopup(
-                `<strong>Tipo:</strong> Roubo ${d.tipo}<br>` +
+                `<strong>Tipo:</strong> Roubo ${d.subtipo}<br>` +
                 `<strong>Bairro:</strong> ${d.bairro}<br>` +
                 `<strong>Data:</strong> ${new Date(d.despachado).toLocaleString()}`
             );
@@ -70,7 +70,7 @@ function preencherSelectBairros() {
   });
 }
 
-fetch('../json/cvli.json')
+fetch('../json/cvp.json')
     .then(res => res.json())
     .then(data => {
     rawData = data;
