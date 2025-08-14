@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Top 15 Bairros por Ocorrência</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    #chart {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="chart"></div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script>
+    const chartDom = document.getElementById('chart');
+    const myChart = echarts.init(chartDom);
+
+    function processData(dataJson) {
+      const counts = {};
+      dataJson.forEach(item => {
+        counts[item.bairro] = (counts[item.bairro] || 0) + 1;
+      });
+
+      let countsArray = Object.entries(counts)
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, 15)
+        .reverse();
+
+      const sourceData = [['quantidade', 'bairro']];
+      countsArray.forEach(([bairro, quantidade]) => sourceData.push([quantidade, bairro]));
+
+      const maxValue = Math.max(...countsArray.map(([_, q]) => q));
+
+      const option = {
+        title: {
+          text: 'Top 15 Bairros com mais registros',
+          left: 'center',
+          top: 'top',
+          textStyle: {
+            fontSize: 22,
+            fontWeight: 'bold',
+            color: '#333'
+          }
+        },
+        tooltip: {
+          trigger: 'axis',
+          axisPointer: { type: 'shadow' },
+          formatter: function(params) {
+            const item = params[0];
+            return `${item.name}: <b>${item.value[0]}</b> ocorrências`;
+          }
+        },
+        dataset: { source: sourceData },
+        grid: {
+          left: '10%',
+          right: '10%',
+          bottom: '10%',
+          containLabel: true
+        },
+        xAxis: {
+          name: 'Quantidade',
+          type: 'value',
+          axisLabel: { fontSize: 12 }
+        },
+        yAxis: {
+          name: 'Bairro',
+          type: 'category',
+          axisLabel: { fontSize: 12 }
+        },
+        visualMap: {
+          show: true,
+          orient: 'horizontal',
+          left: 'center',
+          min: 0,
+          max: maxValue,
+          text: ['Mais Ocorrências', 'Menos Ocorrências'],
+          dimension: 0,
+          inRange: {
+            color: ['#ADD8E6', '#0074D9', '#001F3F']
+          }
+        },
+        series: [{
+          type: 'bar',
+          encode: { x: 'quantidade', y: 'bairro' },
+          itemStyle: {
+            borderRadius: [0, 8, 8, 0]
+          },
+          barMaxWidth: 40
+        }]
+      };
+
+      myChart.setOption(option);
+      window.addEventListener('resize', () => myChart.resize());
+    }
+
+    fetch('../../json/siva.json')
+      .then(response => {
+        if (!response.ok) throw new Error('Erro ao carregar o arquivo JSON');
+        return response.json();
+      })
+      .then(processData)
+      .catch(error => {
+        console.error('Erro:', error);
+        chartDom.innerHTML = '<p style="color:red; text-align:center;">Erro ao carregar os dados.</p>';
+      });
+  </script>
+</body>
+</html>
