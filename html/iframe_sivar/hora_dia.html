@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    #container {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  
+  <script src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+  <script>
+    const dom = document.getElementById('container');
+    const myChart = echarts.init(dom);
+
+    const hours = Array.from({length: 24}, (_, i) => i.toString());
+    const days = ['Segunda','Terça','Quarta','Quinta','Sexta','Sábado','Domingo'];
+
+    function processData(jsonData) {
+      const contagem = Array.from({length: 24}, () => Array(7).fill(0));
+
+      jsonData.forEach(item => {
+        const h = parseInt(item.hora_exata, 10);
+        const d = days.indexOf(item.dia_da_semana);
+        if (h >= 0 && h <= 23 && d >= 0) {
+          contagem[h][d]++;
+        }
+      });
+
+      const dataMap = [];
+      for (let h = 0; h < 24; h++) {
+        for (let d = 0; d < 7; d++) {
+          dataMap.push([h, d, contagem[h][d]]);
+        }
+      }
+
+      const option = {
+        title: {
+          text: 'Mapa de calor: Ocorrências por Hora e Dia da Semana',
+          left: 'center'
+        },
+        tooltip: { position: 'top', formatter: params => `${hours[params.value[0]]}h - ${days[params.value[1]]}: ${params.value[2]} ocorrências` },
+        grid: { height: '50%', top: '10%' },
+        xAxis: {
+          type: 'category',
+          data: hours,
+          splitArea: { show: true }
+        },
+        yAxis: {
+          type: 'category',
+          data: days,
+          splitArea: { show: true }
+        },
+        visualMap: {
+          min: 0,
+          max: Math.max(...dataMap.map(d => d[2])),
+          calculable: true,
+          orient: 'horizontal',
+          left: 'center',
+          bottom: '20%',
+          inRange: {
+            color: ['#ffffcc', '#c2e699', '#78c679', '#31a354', '#006837']
+          }
+        },
+        series: [{
+          name: 'Ocorrências',
+          type: 'heatmap',
+          data: dataMap,
+          label: { show: true },
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowColor: 'rgba(0,0,0,0.5)'
+            }
+          }
+        }]
+      };
+
+      myChart.setOption(option);
+      window.addEventListener('resize', myChart.resize);
+    }
+
+    fetch('../../json/sivar.json')
+      .then(res => res.json())
+      .then(data => processData(data))
+      .catch(err => {
+        console.error('Erro ao carregar JSON:', err);
+        dom.innerHTML = '<p style="color:red; text-align:center;">Erro ao carregar os dados.</p>';
+      });
+  </script>
+</body>
+</html>
