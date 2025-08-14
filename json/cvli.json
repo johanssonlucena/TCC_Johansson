@@ -1,1 +1,1001 @@
-[{"bairro":"Santa Rosa","latitude":-7.23524,"longitude":-35.9074677,"tipo":"Homicídio doloso","despachado":"2023-05-20T00:28:06.000","dia_da_semana":"Sábado","hora_exata":0},{"bairro":"Liberdade","latitude":-7.2334289,"longitude":-35.8922382,"tipo":"Homicídio doloso","despachado":"2023-06-06T10:41:54.000","dia_da_semana":"Terça","hora_exata":10},{"bairro":"Centro","latitude":-7.2220339,"longitude":-35.8757027,"tipo":"Homicídio doloso","despachado":"2023-06-06T22:14:19.000","dia_da_semana":"Terça","hora_exata":22},{"bairro":"Monte Santo","latitude":-7.211171,"longitude":-35.900968,"tipo":"Feminicídio","despachado":"2023-07-05T23:06:59.000","dia_da_semana":"Quarta","hora_exata":23},{"bairro":"Santa Cruz","latitude":-7.2459472,"longitude":-35.9087503,"tipo":"Homicídio doloso","despachado":"2023-07-16T20:04:01.000","dia_da_semana":"Domingo","hora_exata":20},{"bairro":"José Pinheiro","latitude":-7.2236971,"longitude":-35.8704549,"tipo":"Homicídio doloso","despachado":"2023-07-17T21:31:29.000","dia_da_semana":"Segunda","hora_exata":21},{"bairro":"Santa Cruz","latitude":-7.2440587,"longitude":-35.9084572,"tipo":"Homicídio doloso","despachado":"2023-07-18T21:04:45.000","dia_da_semana":"Terça","hora_exata":21},{"bairro":"Cidades","latitude":-7.2737584,"longitude":-35.9318387,"tipo":"Homicídio doloso","despachado":"2023-07-22T13:29:40.000","dia_da_semana":"Sábado","hora_exata":13},{"bairro":"Serrotão","latitude":-7.2295347,"longitude":-35.9492599,"tipo":"Homicídio doloso","despachado":"2023-07-24T01:00:35.000","dia_da_semana":"Segunda","hora_exata":1},{"bairro":"Pedregal","latitude":-7.2236021,"longitude":-35.9115286,"tipo":"Homicídio doloso","despachado":"2023-07-25T18:47:33.000","dia_da_semana":"Terça","hora_exata":18},{"bairro":"Presidente Médici","latitude":-7.2547594,"longitude":-35.9099617,"tipo":"Morte decorrente de Confronto Policial","despachado":"2023-08-04T19:31:50.000","dia_da_semana":"Sexta","hora_exata":19},{"bairro":"Malvinas","latitude":-7.2399105,"longitude":-35.9313963,"tipo":"Homicídio doloso","despachado":"2023-08-11T12:44:17.000","dia_da_semana":"Sexta","hora_exata":12},{"bairro":"Alto Branco","latitude":-7.2077089,"longitude":-35.8802096,"tipo":"Homicídio doloso","despachado":"2023-08-12T21:18:25.000","dia_da_semana":"Sábado","hora_exata":21},{"bairro":"Centro","latitude":-7.2180695,"longitude":-35.887722,"tipo":"Latrocínio","despachado":"2023-08-21T16:05:13.000","dia_da_semana":"Segunda","hora_exata":16},{"bairro":"Jardim Quarenta","latitude":-7.2367958,"longitude":-35.897573,"tipo":"Homicídio doloso","despachado":"2023-08-22T12:13:16.000","dia_da_semana":"Terça","hora_exata":12},{"bairro":"José Pinheiro","latitude":-7.2261811,"longitude":-35.8746809,"tipo":"Homicídio doloso","despachado":"2023-08-22T22:31:59.000","dia_da_semana":"Terça","hora_exata":22},{"bairro":"Presidente Médici","latitude":-7.2496543,"longitude":-35.911931,"tipo":"Homicídio doloso","despachado":"2023-08-24T16:30:19.000","dia_da_semana":"Quinta","hora_exata":16},{"bairro":"Nova Brasília","latitude":-7.218463,"longitude":-35.8593008,"tipo":"Feminicídio","despachado":"2023-08-25T02:20:33.000","dia_da_semana":"Sexta","hora_exata":2},{"bairro":"Ligeiro","latitude":-7.2763988,"longitude":-35.8889249,"tipo":"Homicídio doloso","despachado":"2023-08-29T12:18:59.000","dia_da_semana":"Terça","hora_exata":12},{"bairro":"José Pinheiro","latitude":-7.2243659,"longitude":-35.8687019,"tipo":"Homicídio doloso","despachado":"2023-08-29T16:49:55.000","dia_da_semana":"Terça","hora_exata":16},{"bairro":"Centro","latitude":-7.2193398,"longitude":-35.8816382,"tipo":"Latrocínio","despachado":"2023-09-01T21:23:31.000","dia_da_semana":"Sexta","hora_exata":21},{"bairro":"Pedregal","latitude":-7.2217383,"longitude":-35.906168,"tipo":"Morte decorrente de Confronto Policial","despachado":"2023-09-17T00:50:14.000","dia_da_semana":"Domingo","hora_exata":0},{"bairro":"Liberdade","latitude":-7.2314565,"longitude":-35.8932472,"tipo":"Homicídio doloso","despachado":"2023-09-19T20:57:43.000","dia_da_semana":"Terça","hora_exata":20},{"bairro":"Prata","latitude":-7.2173285,"longitude":-35.8933188,"tipo":"Homicídio doloso","despachado":"2023-09-29T03:36:51.000","dia_da_semana":"Sexta","hora_exata":3},{"bairro":"Malvinas","latitude":-7.2399105,"longitude":-35.9313963,"tipo":"Homicídio doloso","despachado":"2023-10-06T04:08:33.000","dia_da_semana":"Sexta","hora_exata":4},{"bairro":"Novo Bodocongó","latitude":-7.1999283,"longitude":-35.9233786,"tipo":"Homicídio doloso","despachado":"2023-10-06T20:07:28.000","dia_da_semana":"Sexta","hora_exata":20},{"bairro":"Prata","latitude":-7.2173285,"longitude":-35.8933188,"tipo":"Homicídio doloso","despachado":"2023-10-29T20:29:57.000","dia_da_semana":"Domingo","hora_exata":20},{"bairro":"Mirante","latitude":-7.233373,"longitude":-35.8648,"tipo":"Homicídio doloso","despachado":"2023-11-03T23:31:01.000","dia_da_semana":"Sexta","hora_exata":23},{"bairro":"Alto Branco","latitude":-7.2114993,"longitude":-35.878977,"tipo":"Homicídio doloso","despachado":"2023-11-19T09:03:32.000","dia_da_semana":"Domingo","hora_exata":9},{"bairro":"Aluízio Campos","latitude":-7.2950438,"longitude":-35.8821483,"tipo":"Homicídio doloso","despachado":"2023-12-16T00:45:41.000","dia_da_semana":"Sábado","hora_exata":0},{"bairro":"Universitário","latitude":-7.2107823,"longitude":-35.9188396,"tipo":"Homicídio doloso","despachado":"2023-12-19T21:34:41.000","dia_da_semana":"Terça","hora_exata":21},{"bairro":"Três Irmãs","latitude":-7.2553747,"longitude":-35.9253999,"tipo":"Homicídio doloso","despachado":"2023-12-29T05:29:03.000","dia_da_semana":"Sexta","hora_exata":5},{"bairro":"Cruzeiro","latitude":-7.2457174,"longitude":-35.8990943,"tipo":"Homicídio doloso","despachado":"2024-01-07T19:26:39.000","dia_da_semana":"Domingo","hora_exata":19},{"bairro":"Três Irmãs","latitude":-7.2600104,"longitude":-35.9315489,"tipo":"Homicídio doloso","despachado":"2024-01-11T16:36:13.000","dia_da_semana":"Quinta","hora_exata":16},{"bairro":"José Pinheiro","latitude":-7.2254439,"longitude":-35.8682139,"tipo":"Homicídio doloso","despachado":"2024-01-16T20:35:52.000","dia_da_semana":"Terça","hora_exata":20},{"bairro":"Liberdade","latitude":-7.2338455,"longitude":-35.8895653,"tipo":"Homicídio doloso","despachado":"2024-01-22T17:58:53.000","dia_da_semana":"Segunda","hora_exata":17},{"bairro":"Pedregal","latitude":-7.2232999,"longitude":-35.9077165,"tipo":"Homicídio doloso","despachado":"2024-01-25T15:22:01.000","dia_da_semana":"Quinta","hora_exata":15},{"bairro":"Ramadinha","latitude":-7.2229975,"longitude":-35.9241903,"tipo":"Homicídio doloso","despachado":"2024-02-14T20:43:15.000","dia_da_semana":"Quarta","hora_exata":20},{"bairro":"Malvinas","latitude":-7.2399105,"longitude":-35.9313963,"tipo":"Homicídio doloso","despachado":"2024-03-08T22:07:28.000","dia_da_semana":"Sexta","hora_exata":22},{"bairro":"Centro","latitude":-7.2219406,"longitude":-35.8775776,"tipo":"Homicídio doloso","despachado":"2024-03-14T17:29:31.000","dia_da_semana":"Quinta","hora_exata":17},{"bairro":"Centro","latitude":-7.2235770901,"longitude":-35.8873075247,"tipo":"Homicídio doloso","despachado":"2024-03-14T20:34:52.000","dia_da_semana":"Quinta","hora_exata":20},{"bairro":"Monte Santo","latitude":-7.2155111,"longitude":-35.9009887,"tipo":"Homicídio doloso","despachado":"2024-03-23T15:32:49.000","dia_da_semana":"Sábado","hora_exata":15},{"bairro":"Palmeira","latitude":-7.2081063,"longitude":-35.8967054,"tipo":"Homicídio doloso","despachado":"2024-03-30T20:16:55.000","dia_da_semana":"Sábado","hora_exata":20},{"bairro":"Sandra Cavalcante","latitude":-7.2405954,"longitude":-35.8768333,"tipo":"Latrocínio","despachado":"2024-03-31T15:52:14.000","dia_da_semana":"Domingo","hora_exata":15},{"bairro":"Aluízio Campos","latitude":-7.2960669,"longitude":-35.8795872,"tipo":"Feminicídio","despachado":"2024-04-04T13:19:08.000","dia_da_semana":"Quinta","hora_exata":13},{"bairro":"Monte Santo","latitude":-7.2148976,"longitude":-35.9020446,"tipo":"Homicídio doloso","despachado":"2024-04-06T13:38:18.000","dia_da_semana":"Sábado","hora_exata":13},{"bairro":"Serrotão","latitude":-7.2260417,"longitude":-35.9366942,"tipo":"Homicídio doloso","despachado":"2024-04-07T00:36:21.000","dia_da_semana":"Domingo","hora_exata":0},{"bairro":"Bela Vista","latitude":-7.2153483,"longitude":-35.8987445,"tipo":"Homicídio doloso","despachado":"2024-04-12T23:11:53.000","dia_da_semana":"Sexta","hora_exata":23},{"bairro":"Três Irmãs","latitude":-7.24482,"longitude":-35.9216107,"tipo":"Homicídio doloso","despachado":"2024-04-16T19:51:08.000","dia_da_semana":"Terça","hora_exata":19},{"bairro":"Vila Cabral","latitude":-7.2206167,"longitude":-35.8888328,"tipo":"Homicídio doloso","despachado":"2024-04-19T01:48:07.000","dia_da_semana":"Sexta","hora_exata":1},{"bairro":"Centro","latitude":-7.215121,"longitude":-35.8873523,"tipo":"Homicídio doloso","despachado":"2024-05-01T23:40:38.000","dia_da_semana":"Quarta","hora_exata":23},{"bairro":"Três Irmãs","latitude":-7.2644352,"longitude":-35.9358304,"tipo":"Homicídio doloso","despachado":"2024-05-07T22:00:36.000","dia_da_semana":"Terça","hora_exata":22},{"bairro":"Malvinas","latitude":-7.2257842,"longitude":-35.9232682,"tipo":"Homicídio doloso","despachado":"2024-05-26T05:52:26.000","dia_da_semana":"Domingo","hora_exata":5},{"bairro":"Malvinas","latitude":-7.2412245,"longitude":-35.9332142,"tipo":"Homicídio doloso","despachado":"2024-06-10T07:28:06.000","dia_da_semana":"Segunda","hora_exata":7},{"bairro":"Malvinas","latitude":-7.2399105,"longitude":-35.9313963,"tipo":"Homicídio doloso","despachado":"2024-06-29T20:17:40.000","dia_da_semana":"Sábado","hora_exata":20},{"bairro":"Alto Branco","latitude":-7.2072372,"longitude":-35.8753835,"tipo":"Latrocínio","despachado":"2024-07-01T18:47:34.000","dia_da_semana":"Segunda","hora_exata":18},{"bairro":"Centro","latitude":-7.2199041,"longitude":-35.8770149,"tipo":"Homicídio doloso","despachado":"2024-07-19T12:42:19.000","dia_da_semana":"Sexta","hora_exata":12},{"bairro":"Centro","latitude":-7.2206167,"longitude":-35.8888328,"tipo":"Homicídio doloso","despachado":"2024-07-26T09:01:56.000","dia_da_semana":"Sexta","hora_exata":9},{"bairro":"Centro","latitude":-7.215121,"longitude":-35.8873523,"tipo":"Homicídio doloso","despachado":"2024-07-26T20:24:12.000","dia_da_semana":"Sexta","hora_exata":20},{"bairro":"Nações","latitude":-7.1925806,"longitude":-35.8792307,"tipo":"Homicídio doloso","despachado":"2024-07-30T18:45:24.000","dia_da_semana":"Terça","hora_exata":18},{"bairro":"Jardim Tavares","latitude":-7.2072372,"longitude":-35.8753835,"tipo":"Homicídio doloso","despachado":"2024-08-04T06:30:37.000","dia_da_semana":"Domingo","hora_exata":6},{"bairro":"Estação Velha","latitude":-7.2314038,"longitude":-35.8866017,"tipo":"Homicídio doloso","despachado":"2024-08-19T03:16:14.000","dia_da_semana":"Segunda","hora_exata":3},{"bairro":"Nações","latitude":-7.1889144,"longitude":-35.8797618,"tipo":"Homicídio doloso","despachado":"2024-08-19T16:46:54.000","dia_da_semana":"Segunda","hora_exata":16},{"bairro":"Tambor","latitude":-7.2557719,"longitude":-35.8903805,"tipo":"Homicídio doloso","despachado":"2024-08-23T20:36:40.000","dia_da_semana":"Sexta","hora_exata":20},{"bairro":"Centro","latitude":-7.2177357,"longitude":-35.8768231,"tipo":"Latrocínio","despachado":"2024-08-30T16:44:44.000","dia_da_semana":"Sexta","hora_exata":16},{"bairro":"Malvinas","latitude":-7.240466,"longitude":-35.931123,"tipo":"Homicídio doloso","despachado":"2024-09-06T22:09:26.000","dia_da_semana":"Sexta","hora_exata":22},{"bairro":"Alto Branco","latitude":-7.2009924,"longitude":-35.8852046,"tipo":"Feminicídio","despachado":"2024-09-12T19:57:33.000","dia_da_semana":"Quinta","hora_exata":19},{"bairro":"Aluízio Campos","latitude":-7.2921535,"longitude":-35.8828568,"tipo":"Homicídio doloso","despachado":"2024-09-15T20:28:21.000","dia_da_semana":"Domingo","hora_exata":20},{"bairro":"Centenário","latitude":-7.2274001,"longitude":-35.9012848,"tipo":"Homicídio doloso","despachado":"2024-09-18T12:29:42.000","dia_da_semana":"Quarta","hora_exata":12},{"bairro":"Velame","latitude":-7.2934480052,"longitude":-35.9103798866,"tipo":"Homicídio doloso","despachado":"2024-09-21T19:12:53.000","dia_da_semana":"Sábado","hora_exata":19},{"bairro":"Prata","latitude":-7.2201948,"longitude":-35.8955671,"tipo":"Homicídio doloso","despachado":"2024-09-22T10:01:23.000","dia_da_semana":"Domingo","hora_exata":10},{"bairro":"Monte Castelo","latitude":-7.2218569,"longitude":-35.866219,"tipo":"Homicídio doloso","despachado":"2024-09-26T01:28:39.000","dia_da_semana":"Quinta","hora_exata":1},{"bairro":"Centro","latitude":-7.214402,"longitude":-35.8882096,"tipo":"Homicídio doloso","despachado":"2024-09-29T04:15:38.000","dia_da_semana":"Domingo","hora_exata":4},{"bairro":"Serrotão","latitude":-7.2465234,"longitude":-35.9124523,"tipo":"Homicídio doloso","despachado":"2024-10-11T11:27:48.000","dia_da_semana":"Sexta","hora_exata":11},{"bairro":"Alto Branco","latitude":-7.209084,"longitude":-35.8817736,"tipo":"Homicídio doloso","despachado":"2024-10-12T16:57:24.000","dia_da_semana":"Sábado","hora_exata":16},{"bairro":"Centenário","latitude":-7.2278101,"longitude":-35.9016896,"tipo":"Homicídio doloso","despachado":"2024-10-13T06:45:11.000","dia_da_semana":"Domingo","hora_exata":6},{"bairro":"Centenário","latitude":-7.224824,"longitude":-35.9067232,"tipo":"Homicídio doloso","despachado":"2024-10-13T12:37:42.000","dia_da_semana":"Domingo","hora_exata":12},{"bairro":"Centenário","latitude":-7.2278101,"longitude":-35.9016896,"tipo":"Homicídio doloso","despachado":"2024-10-14T06:12:49.000","dia_da_semana":"Segunda","hora_exata":6},{"bairro":"Catolé","latitude":-7.2308728,"longitude":-35.8783648,"tipo":"Feminicídio","despachado":"2024-10-26T16:37:30.000","dia_da_semana":"Sábado","hora_exata":16},{"bairro":"Conceição","latitude":-7.2079854,"longitude":-35.8877695,"tipo":"Homicídio doloso","despachado":"2024-10-27T14:09:25.000","dia_da_semana":"Domingo","hora_exata":14},{"bairro":"Ramadinha","latitude":-7.2188426,"longitude":-35.9269262,"tipo":"Homicídio doloso","despachado":"2024-10-28T11:01:49.000","dia_da_semana":"Segunda","hora_exata":11},{"bairro":"Liberdade","latitude":-7.2414408,"longitude":-35.8905636,"tipo":"Homicídio doloso","despachado":"2024-10-29T00:42:21.000","dia_da_semana":"Terça","hora_exata":0},{"bairro":"Catolé","latitude":-7.2296782,"longitude":-35.8766597,"tipo":"Homicídio doloso","despachado":"2024-11-09T01:56:10.000","dia_da_semana":"Sábado","hora_exata":1},{"bairro":"Centenário","latitude":-7.2398472,"longitude":-35.9311054,"tipo":"Homicídio doloso","despachado":"2024-11-16T17:19:33.000","dia_da_semana":"Sábado","hora_exata":17},{"bairro":"Centenário","latitude":-7.2398472,"longitude":-35.9311054,"tipo":"Homicídio doloso","despachado":"2024-11-16T17:23:15.000","dia_da_semana":"Sábado","hora_exata":17},{"bairro":"Ramadinha","latitude":-7.2189307,"longitude":-35.9274191,"tipo":"Homicídio doloso","despachado":"2024-11-17T13:17:42.000","dia_da_semana":"Domingo","hora_exata":13},{"bairro":"Ramadinha","latitude":-7.2189307,"longitude":-35.9274191,"tipo":"Homicídio doloso","despachado":"2024-11-17T17:53:05.000","dia_da_semana":"Domingo","hora_exata":17},{"bairro":"Centro","latitude":-7.2210835,"longitude":-35.878726,"tipo":"Homicídio doloso","despachado":"2024-11-19T00:31:56.000","dia_da_semana":"Terça","hora_exata":0},{"bairro":"Palmeira","latitude":-7.2100268,"longitude":-35.8945235,"tipo":"Feminicídio","despachado":"2024-11-19T21:15:29.000","dia_da_semana":"Terça","hora_exata":21},{"bairro":"Palmeira","latitude":-7.2100268,"longitude":-35.8945235,"tipo":"Feminicídio","despachado":"2024-11-20T06:42:06.000","dia_da_semana":"Quarta","hora_exata":6},{"bairro":"Monte Castelo","latitude":-7.2209329255,"longitude":-35.8683764935,"tipo":"Homicídio doloso","despachado":"2024-12-15T03:44:32.000","dia_da_semana":"Domingo","hora_exata":3},{"bairro":"Estação Velha","latitude":-7.2305699,"longitude":-35.8853842,"tipo":"Homicídio doloso","despachado":"2024-12-21T05:54:34.000","dia_da_semana":"Sábado","hora_exata":5},{"bairro":"Distrito de Galante","latitude":-7.3057286,"longitude":-35.7801993,"tipo":"Homicídio doloso","despachado":"2024-12-25T18:42:01.000","dia_da_semana":"Quarta","hora_exata":18},{"bairro":"Bodocongó","latitude":-7.2145552,"longitude":-35.9172503,"tipo":"Homicídio doloso","despachado":"2025-01-03T21:01:00.000","dia_da_semana":"Sexta","hora_exata":21},{"bairro":"Bodocongó","latitude":-7.2222907,"longitude":-35.9118873,"tipo":"Homicídio doloso","despachado":"2025-01-06T07:26:20.000","dia_da_semana":"Segunda","hora_exata":7},{"bairro":"Prata","latitude":-7.2213344,"longitude":-35.8999936,"tipo":"Homicídio doloso","despachado":"2025-01-26T04:13:27.000","dia_da_semana":"Domingo","hora_exata":4},{"bairro":"Santa Rosa","latitude":-7.2332337,"longitude":-35.9088675,"tipo":"Homicídio doloso","despachado":"2025-01-28T23:18:41.000","dia_da_semana":"Terça","hora_exata":23},{"bairro":"Prata","latitude":-7.2221972,"longitude":-35.8960461,"tipo":"Latrocínio","despachado":"2025-01-29T17:50:50.000","dia_da_semana":"Quarta","hora_exata":17},{"bairro":"Liberdade","latitude":-7.2399718,"longitude":-35.9001773,"tipo":"Homicídio doloso","despachado":"2025-02-01T07:03:01.000","dia_da_semana":"Sábado","hora_exata":7},{"bairro":"Distrito de Galante","latitude":-7.2948509,"longitude":-35.8725615,"tipo":"Feminicídio","despachado":"2025-02-07T11:26:15.000","dia_da_semana":"Sexta","hora_exata":11},{"bairro":"Pedregal","latitude":-7.2224846,"longitude":-35.9047918,"tipo":"Homicídio doloso","despachado":"2025-02-09T23:20:30.000","dia_da_semana":"Domingo","hora_exata":23},{"bairro":"Liberdade","latitude":-7.2359669,"longitude":-35.8912575,"tipo":"Homicídio doloso","despachado":"2025-02-10T23:05:56.000","dia_da_semana":"Segunda","hora_exata":23},{"bairro":"Três Irmãs","latitude":-7.2551124,"longitude":-35.9254949,"tipo":"Homicídio doloso","despachado":"2025-02-17T15:15:00.000","dia_da_semana":"Segunda","hora_exata":15},{"bairro":"Zona Rural Leste (entre Galante e Zona Urbana)","latitude":-7.2206167,"longitude":-35.8888328,"tipo":"Homicídio doloso","despachado":"2025-02-28T02:38:52.000","dia_da_semana":"Sexta","hora_exata":2},{"bairro":"Itararé","latitude":-7.250942,"longitude":-35.883004,"tipo":"Homicídio doloso","despachado":"2025-03-07T04:23:37.000","dia_da_semana":"Sexta","hora_exata":4},{"bairro":"Nova Brasília","latitude":-7.2158328,"longitude":-35.8593486,"tipo":"Homicídio doloso","despachado":"2025-03-13T20:23:29.000","dia_da_semana":"Quinta","hora_exata":20},{"bairro":"Serrotão","latitude":-7.2693857,"longitude":-35.791719,"tipo":"Latrocínio","despachado":"2025-03-14T03:45:07.000","dia_da_semana":"Sexta","hora_exata":3},{"bairro":"Serrotão","latitude":-7.2693857,"longitude":-35.791719,"tipo":"Latrocínio","despachado":"2025-03-14T06:19:39.000","dia_da_semana":"Sexta","hora_exata":6},{"bairro":"Universitário","latitude":-7.20944,"longitude":-35.91667,"tipo":"Homicídio doloso","despachado":"2025-04-03T20:26:30.000","dia_da_semana":"Quinta","hora_exata":20},{"bairro":"Universitário","latitude":-7.20944,"longitude":-35.91667,"tipo":"Homicídio doloso","despachado":"2025-04-04T02:31:15.000","dia_da_semana":"Sexta","hora_exata":2},{"bairro":"Catolé","latitude":-7.22406,"longitude":-35.87919,"tipo":"Latrocínio","despachado":"2025-04-07T19:51:49.000","dia_da_semana":"Segunda","hora_exata":19},{"bairro":"Catolé","latitude":-7.22406,"longitude":-35.87919,"tipo":"Latrocínio","despachado":"2025-04-07T23:53:34.000","dia_da_semana":"Segunda","hora_exata":23},{"bairro":"Pedregal","latitude":-7.22184,"longitude":-35.90705,"tipo":"Homicídio doloso","despachado":"2025-04-12T08:27:48.000","dia_da_semana":"Sábado","hora_exata":8},{"bairro":"Bela Vista","latitude":-7.21588,"longitude":-35.89564,"tipo":"Homicídio doloso","despachado":"2025-04-12T19:04:23.000","dia_da_semana":"Sábado","hora_exata":19},{"bairro":"Bela Vista","latitude":-7.21588,"longitude":-35.89564,"tipo":"Homicídio doloso","despachado":"2025-04-12T22:29:21.000","dia_da_semana":"Sábado","hora_exata":22}]
+[
+    {
+        "bairro": "Santa Rosa",
+        "latitude": -7.23524,
+        "longitude": -35.9074677,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-05-20T00:28:06.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Liberdade",
+        "latitude": -7.2334289,
+        "longitude": -35.8922382,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-06-06T10:41:54.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 10
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.2220339,
+        "longitude": -35.8757027,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-06-06T22:14:19.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Monte Santo",
+        "latitude": -7.211171,
+        "longitude": -35.900968,
+        "tipo": "Feminicídio",
+        "despachado": "2023-07-05T23:06:59.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Santa Cruz",
+        "latitude": -7.2459472,
+        "longitude": -35.9087503,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-07-16T20:04:01.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "José Pinheiro",
+        "latitude": -7.2236971,
+        "longitude": -35.8704549,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-07-17T21:31:29.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Santa Cruz",
+        "latitude": -7.2440587,
+        "longitude": -35.9084572,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-07-18T21:04:45.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Cidades",
+        "latitude": -7.2737584,
+        "longitude": -35.9318387,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-07-22T13:29:40.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 13
+    },
+    {
+        "bairro": "Serrotão",
+        "latitude": -7.2295347,
+        "longitude": -35.9492599,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-07-24T01:00:35.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 1
+    },
+    {
+        "bairro": "Pedregal",
+        "latitude": -7.2236021,
+        "longitude": -35.9115286,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-07-25T18:47:33.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 18
+    },
+    {
+        "bairro": "Presidente Médici",
+        "latitude": -7.2547594,
+        "longitude": -35.9099617,
+        "tipo": "Morte decorrente de Confronto Policial",
+        "despachado": "2023-08-04T19:31:50.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2399105,
+        "longitude": -35.9313963,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-08-11T12:44:17.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "Alto Branco",
+        "latitude": -7.2077089,
+        "longitude": -35.8802096,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-08-12T21:18:25.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.2180695,
+        "longitude": -35.887722,
+        "tipo": "Latrocínio",
+        "despachado": "2023-08-21T16:05:13.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "Jardim Quarenta",
+        "latitude": -7.2367958,
+        "longitude": -35.897573,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-08-22T12:13:16.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "José Pinheiro",
+        "latitude": -7.2261811,
+        "longitude": -35.8746809,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-08-22T22:31:59.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Presidente Médici",
+        "latitude": -7.2496543,
+        "longitude": -35.911931,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-08-24T16:30:19.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "Nova Brasília",
+        "latitude": -7.218463,
+        "longitude": -35.8593008,
+        "tipo": "Feminicídio",
+        "despachado": "2023-08-25T02:20:33.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 2
+    },
+    {
+        "bairro": "Ligeiro",
+        "latitude": -7.2763988,
+        "longitude": -35.8889249,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-08-29T12:18:59.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "José Pinheiro",
+        "latitude": -7.2243659,
+        "longitude": -35.8687019,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-08-29T16:49:55.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.2193398,
+        "longitude": -35.8816382,
+        "tipo": "Latrocínio",
+        "despachado": "2023-09-01T21:23:31.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Pedregal",
+        "latitude": -7.2217383,
+        "longitude": -35.906168,
+        "tipo": "Morte decorrente de Confronto Policial",
+        "despachado": "2023-09-17T00:50:14.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Liberdade",
+        "latitude": -7.2314565,
+        "longitude": -35.8932472,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-09-19T20:57:43.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Prata",
+        "latitude": -7.2173285,
+        "longitude": -35.8933188,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-09-29T03:36:51.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 3
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2399105,
+        "longitude": -35.9313963,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-10-06T04:08:33.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 4
+    },
+    {
+        "bairro": "Novo Bodocongó",
+        "latitude": -7.1999283,
+        "longitude": -35.9233786,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-10-06T20:07:28.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Prata",
+        "latitude": -7.2173285,
+        "longitude": -35.8933188,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-10-29T20:29:57.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Mirante",
+        "latitude": -7.233373,
+        "longitude": -35.8648,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-11-03T23:31:01.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Alto Branco",
+        "latitude": -7.2114993,
+        "longitude": -35.878977,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-11-19T09:03:32.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 9
+    },
+    {
+        "bairro": "Aluízio Campos",
+        "latitude": -7.2950438,
+        "longitude": -35.8821483,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-12-16T00:45:41.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Universitário",
+        "latitude": -7.2107823,
+        "longitude": -35.9188396,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-12-19T21:34:41.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.2553747,
+        "longitude": -35.9253999,
+        "tipo": "Homicídio doloso",
+        "despachado": "2023-12-29T05:29:03.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 5
+    },
+    {
+        "bairro": "Cruzeiro",
+        "latitude": -7.2457174,
+        "longitude": -35.8990943,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-01-07T19:26:39.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.2600104,
+        "longitude": -35.9315489,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-01-11T16:36:13.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "José Pinheiro",
+        "latitude": -7.2254439,
+        "longitude": -35.8682139,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-01-16T20:35:52.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Liberdade",
+        "latitude": -7.2338455,
+        "longitude": -35.8895653,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-01-22T17:58:53.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 17
+    },
+    {
+        "bairro": "Pedregal",
+        "latitude": -7.2232999,
+        "longitude": -35.9077165,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-01-25T15:22:01.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 15
+    },
+    {
+        "bairro": "Ramadinha",
+        "latitude": -7.2229975,
+        "longitude": -35.9241903,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-02-14T20:43:15.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2399105,
+        "longitude": -35.9313963,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-03-08T22:07:28.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.2219406,
+        "longitude": -35.8775776,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-03-14T17:29:31.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 17
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.2235770901,
+        "longitude": -35.8873075247,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-03-14T20:34:52.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Monte Santo",
+        "latitude": -7.2155111,
+        "longitude": -35.9009887,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-03-23T15:32:49.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 15
+    },
+    {
+        "bairro": "Palmeira",
+        "latitude": -7.2081063,
+        "longitude": -35.8967054,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-03-30T20:16:55.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Sandra Cavalcante",
+        "latitude": -7.2405954,
+        "longitude": -35.8768333,
+        "tipo": "Latrocínio",
+        "despachado": "2024-03-31T15:52:14.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 15
+    },
+    {
+        "bairro": "Aluízio Campos",
+        "latitude": -7.2960669,
+        "longitude": -35.8795872,
+        "tipo": "Feminicídio",
+        "despachado": "2024-04-04T13:19:08.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 13
+    },
+    {
+        "bairro": "Monte Santo",
+        "latitude": -7.2148976,
+        "longitude": -35.9020446,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-04-06T13:38:18.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 13
+    },
+    {
+        "bairro": "Serrotão",
+        "latitude": -7.2260417,
+        "longitude": -35.9366942,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-04-07T00:36:21.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Bela Vista",
+        "latitude": -7.2153483,
+        "longitude": -35.8987445,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-04-12T23:11:53.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.24482,
+        "longitude": -35.9216107,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-04-16T19:51:08.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Vila Cabral",
+        "latitude": -7.2206167,
+        "longitude": -35.8888328,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-04-19T01:48:07.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 1
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.215121,
+        "longitude": -35.8873523,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-05-01T23:40:38.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.2644352,
+        "longitude": -35.9358304,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-05-07T22:00:36.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2257842,
+        "longitude": -35.9232682,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-05-26T05:52:26.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 5
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2412245,
+        "longitude": -35.9332142,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-06-10T07:28:06.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 7
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2399105,
+        "longitude": -35.9313963,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-06-29T20:17:40.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Alto Branco",
+        "latitude": -7.2072372,
+        "longitude": -35.8753835,
+        "tipo": "Latrocínio",
+        "despachado": "2024-07-01T18:47:34.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 18
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.2199041,
+        "longitude": -35.8770149,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-07-19T12:42:19.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.2206167,
+        "longitude": -35.8888328,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-07-26T09:01:56.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 9
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.215121,
+        "longitude": -35.8873523,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-07-26T20:24:12.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Nações",
+        "latitude": -7.1925806,
+        "longitude": -35.8792307,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-07-30T18:45:24.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 18
+    },
+    {
+        "bairro": "Jardim Tavares",
+        "latitude": -7.2072372,
+        "longitude": -35.8753835,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-08-04T06:30:37.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 6
+    },
+    {
+        "bairro": "Estação Velha",
+        "latitude": -7.2314038,
+        "longitude": -35.8866017,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-08-19T03:16:14.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 3
+    },
+    {
+        "bairro": "Nações",
+        "latitude": -7.1889144,
+        "longitude": -35.8797618,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-08-19T16:46:54.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "Tambor",
+        "latitude": -7.2557719,
+        "longitude": -35.8903805,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-08-23T20:36:40.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.2177357,
+        "longitude": -35.8768231,
+        "tipo": "Latrocínio",
+        "despachado": "2024-08-30T16:44:44.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.240466,
+        "longitude": -35.931123,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-09-06T22:09:26.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Alto Branco",
+        "latitude": -7.2009924,
+        "longitude": -35.8852046,
+        "tipo": "Feminicídio",
+        "despachado": "2024-09-12T19:57:33.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Aluízio Campos",
+        "latitude": -7.2921535,
+        "longitude": -35.8828568,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-09-15T20:28:21.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Centenário",
+        "latitude": -7.2274001,
+        "longitude": -35.9012848,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-09-18T12:29:42.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "Velame",
+        "latitude": -7.2934480052,
+        "longitude": -35.9103798866,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-09-21T19:12:53.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Prata",
+        "latitude": -7.2201948,
+        "longitude": -35.8955671,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-09-22T10:01:23.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 10
+    },
+    {
+        "bairro": "Monte Castelo",
+        "latitude": -7.2218569,
+        "longitude": -35.866219,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-09-26T01:28:39.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 1
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.214402,
+        "longitude": -35.8882096,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-09-29T04:15:38.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 4
+    },
+    {
+        "bairro": "Serrotão",
+        "latitude": -7.2465234,
+        "longitude": -35.9124523,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-10-11T11:27:48.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Alto Branco",
+        "latitude": -7.209084,
+        "longitude": -35.8817736,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-10-12T16:57:24.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "Centenário",
+        "latitude": -7.2278101,
+        "longitude": -35.9016896,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-10-13T06:45:11.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 6
+    },
+    {
+        "bairro": "Centenário",
+        "latitude": -7.224824,
+        "longitude": -35.9067232,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-10-13T12:37:42.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "Centenário",
+        "latitude": -7.2278101,
+        "longitude": -35.9016896,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-10-14T06:12:49.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 6
+    },
+    {
+        "bairro": "Catolé",
+        "latitude": -7.2308728,
+        "longitude": -35.8783648,
+        "tipo": "Feminicídio",
+        "despachado": "2024-10-26T16:37:30.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "Conceição",
+        "latitude": -7.2079854,
+        "longitude": -35.8877695,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-10-27T14:09:25.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 14
+    },
+    {
+        "bairro": "Ramadinha",
+        "latitude": -7.2188426,
+        "longitude": -35.9269262,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-10-28T11:01:49.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Liberdade",
+        "latitude": -7.2414408,
+        "longitude": -35.8905636,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-10-29T00:42:21.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Catolé",
+        "latitude": -7.2296782,
+        "longitude": -35.8766597,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-11-09T01:56:10.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 1
+    },
+    {
+        "bairro": "Centenário",
+        "latitude": -7.2398472,
+        "longitude": -35.9311054,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-11-16T17:19:33.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 17
+    },
+    {
+        "bairro": "Centenário",
+        "latitude": -7.2398472,
+        "longitude": -35.9311054,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-11-16T17:23:15.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 17
+    },
+    {
+        "bairro": "Ramadinha",
+        "latitude": -7.2189307,
+        "longitude": -35.9274191,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-11-17T13:17:42.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 13
+    },
+    {
+        "bairro": "Centro",
+        "latitude": -7.2210835,
+        "longitude": -35.878726,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-11-19T00:31:56.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Palmeira",
+        "latitude": -7.2100268,
+        "longitude": -35.8945235,
+        "tipo": "Feminicídio",
+        "despachado": "2024-11-19T21:15:29.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Monte Castelo",
+        "latitude": -7.2209329255,
+        "longitude": -35.8683764935,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-12-15T03:44:32.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 3
+    },
+    {
+        "bairro": "Estação Velha",
+        "latitude": -7.2305699,
+        "longitude": -35.8853842,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-12-21T05:54:34.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 5
+    },
+    {
+        "bairro": "Distrito de Galante",
+        "latitude": -7.3057286,
+        "longitude": -35.7801993,
+        "tipo": "Homicídio doloso",
+        "despachado": "2024-12-25T18:42:01.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 18
+    },
+    {
+        "bairro": "Bodocongó",
+        "latitude": -7.2145552,
+        "longitude": -35.9172503,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-01-03T21:01:00.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Bodocongó",
+        "latitude": -7.2222907,
+        "longitude": -35.9118873,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-01-06T07:26:20.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 7
+    },
+    {
+        "bairro": "Prata",
+        "latitude": -7.2213344,
+        "longitude": -35.8999936,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-01-26T04:13:27.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 4
+    },
+    {
+        "bairro": "Santa Rosa",
+        "latitude": -7.2332337,
+        "longitude": -35.9088675,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-01-28T23:18:41.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Prata",
+        "latitude": -7.2221972,
+        "longitude": -35.8960461,
+        "tipo": "Latrocínio",
+        "despachado": "2025-01-29T17:50:50.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 17
+    },
+    {
+        "bairro": "Liberdade",
+        "latitude": -7.2399718,
+        "longitude": -35.9001773,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-02-01T07:03:01.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 7
+    },
+    {
+        "bairro": "Distrito de Galante",
+        "latitude": -7.2948509,
+        "longitude": -35.8725615,
+        "tipo": "Feminicídio",
+        "despachado": "2025-02-07T11:26:15.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Pedregal",
+        "latitude": -7.2224846,
+        "longitude": -35.9047918,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-02-09T23:20:30.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Liberdade",
+        "latitude": -7.2359669,
+        "longitude": -35.8912575,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-02-10T23:05:56.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.2551124,
+        "longitude": -35.9254949,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-02-17T15:15:00.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 15
+    },
+    {
+        "bairro": "Zona Rural Leste (entre Galante e Zona Urbana)",
+        "latitude": -7.2206167,
+        "longitude": -35.8888328,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-02-28T02:38:52.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 2
+    },
+    {
+        "bairro": "Itararé",
+        "latitude": -7.250942,
+        "longitude": -35.883004,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-03-07T04:23:37.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 4
+    },
+    {
+        "bairro": "Nova Brasília",
+        "latitude": -7.2158328,
+        "longitude": -35.8593486,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-03-13T20:23:29.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Serrotão",
+        "latitude": -7.2693857,
+        "longitude": -35.791719,
+        "tipo": "Latrocínio",
+        "despachado": "2025-03-14T03:45:07.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 3
+    },
+    {
+        "bairro": "Serrotão",
+        "latitude": -7.2693857,
+        "longitude": -35.791719,
+        "tipo": "Latrocínio",
+        "despachado": "2025-03-14T06:19:39.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 6
+    },
+    {
+        "bairro": "Universitário",
+        "latitude": -7.20944,
+        "longitude": -35.91667,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-04-03T20:26:30.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Catolé",
+        "latitude": -7.22406,
+        "longitude": -35.87919,
+        "tipo": "Latrocínio",
+        "despachado": "2025-04-07T19:51:49.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Pedregal",
+        "latitude": -7.22184,
+        "longitude": -35.90705,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-04-12T08:27:48.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 8
+    },
+    {
+        "bairro": "Bela Vista",
+        "latitude": -7.21588,
+        "longitude": -35.89564,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-04-12T19:04:23.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Bela Vista",
+        "latitude": -7.21588,
+        "longitude": -35.89564,
+        "tipo": "Homicídio doloso",
+        "despachado": "2025-04-12T22:29:21.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 22
+    }
+]
