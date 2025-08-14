@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>CVP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+  <link rel="stylesheet" href="../css/style_index.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+    <div class="container">
+        <div class="row align-items-center">
+        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+            <img src="../img/header.png" alt="Logo" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-5 text-center text-md-start">
+            <h1 class="h1 mb-2">Visualizações Interativas de Dados</h1>
+            <h4 class="mb-0">Segurança Pública</h4>
+        </div>
+        <div class="col-12 col-md-3 text-center">
+            <div class="d-flex justify-content-center mb-2">
+            <img src="../img/cidade.png" alt="Bandeira 1" class="img-fluid me-1" style="max-height: 80px;">
+            <img src="../img/estado.png" alt="Bandeira 2" class="img-fluid" style="max-height: 80px;">
+            </div>
+            <div>
+            <p class="mb-0">Campina Grande - PB</p>
+            </div>
+        </div>
+        </div>
+    </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #5a5959;">
+    <div class="container justify-content-center">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item px-3"><a class="nav-link" href="../index.html">Início</a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="cvli.html">CVLI</a></li>
+            <li class="nav-item px-3"><a class="nav-link active" href="cvp.html">CVP</a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="siva.html">SIVA</a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="sivar.html">SIVAR</a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="sivar.html">Visualização geral</a></li>
+            <li class="nav-item px-3"><a class="nav-link" href="sobre.html">Sobre</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+
+    <div class="container py-1">
+        <div class="text-center mb-4">
+            <h2 class="section-title">CRIMES VIOLENTOS PATRIMONIAIS – CVP</h2>
+        </div>
+        <h5 class="ms-auto" style="text-align: right;">
+            Período dos dados: 18/05/2023 a 25/04/2025
+        </h5><br>
+        <div>
+        <h5 style="text-align: justify;"><strong>Descrição do Indicador:</strong>  Crimes Violentos Patrimoniais - CVP, se referem a crimes que envolvem 
+            violência ou grave ameaça à pessoa, com o objetivo de subtrair bens materiais.</h5>
+        </div>
+    </div>
+
+    <div class="container py-1">
+        <div class="row mb-4 align-items-start border shadow p-3">
+            <div class="col-md-4">
+        <label class="form-label">Tipos de CVP:</label>
+        <div class="form-check legend-item">
+          <input class="form-check-input crime-filter" type="checkbox" value="a Transeunte" checked>
+          <img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" class="legend-icon">
+          <label class="form-check-label">Roubo a Transeunte</label>
+        </div>
+        <div class="form-check legend-item">
+          <input class="form-check-input crime-filter" type="checkbox" value="em estabelecimento comercial" checked>
+          <img src="https://maps.google.com/mapfiles/ms/icons/blue-dot.png" class="legend-icon">
+          <label class="form-check-label">Roubo em estabelecimento comercial</label>
+        </div>
+        <div class="form-check legend-item">
+          <input class="form-check-input crime-filter" type="checkbox" value="em Residência" checked>
+          <img src="https://maps.google.com/mapfiles/ms/icons/pink-dot.png" class="legend-icon">
+          <label class="form-check-label">Roubo em Residência</label>
+        </div>
+        <div class="form-check legend-item">
+          <input class="form-check-input crime-filter" type="checkbox" value="em posto de combustível" checked>
+          <img src="https://maps.google.com/mapfiles/ms/icons/orange-dot.png" class="legend-icon">
+          <label class="form-check-label">Roubo em posto de combustível</label>
+        </div>
+        <div class="form-check legend-item">
+          <input class="form-check-input crime-filter" type="checkbox" value="em Transporte coletivo" checked>
+          <img src="https://maps.google.com/mapfiles/ms/icons/ltblue-dot.png" class="legend-icon">
+          <label class="form-check-label">Roubo em Transporte coletivo</label>
+        </div>
+        
+        </div>
+
+        <div class="col-md-4">
+            <label for="bairroSelect" class="form-label">Filtrar por Bairro</label>
+            <select id="bairroSelect" class="form-select">
+                <option value="todos" selected>Todos os Bairros</option>
+                <!-- Opções geradas dinamicamente via JS -->
+            </select>
+        </div>
+
+        <div class="col-md-4">
+            <label for="periodSelect" class="form-label">Filtrar por Data</label>
+            <select id="periodSelect" class="form-select">
+            <option value="0" selected>Todos</option>
+            <option value="7">Última semana</option>
+            <option value="30">Último mês</option>
+            <option value="182">Últimos 6 meses</option>
+            <option value="365">Último ano</option>
+            </select>
+
+            <label for="hourSelect" class="form-label">Filtrar por Hora</label>
+            <select id="hourSelect" class="form-select">
+            <option value="todos" selected>Todas as Horas</option>
+            <script>
+                const selectHora = document.getElementById('hourSelect');
+                for (let h = 0; h < 24; h++) {
+                    const opt = document.createElement('option');
+                    opt.value = h;
+                    opt.textContent = h; 
+                    selectHora.appendChild(opt);
+                }
+            </script>
+            </select>
+
+            <label for="daySelect" class="form-label">Filtrar por Dia da Semana</label>
+            <select id="daySelect" class="form-select">
+                <option value="todos" selected>Todos os Dias</option>
+                <option value="Segunda">Segunda</option>
+                <option value="Terça">Terça</option>
+                <option value="Quarta">Quarta</option>
+                <option value="Quinta">Quinta</option>
+                <option value="Sexta">Sexta</option>
+                <option value="Sábado">Sábado</option>
+                <option value="Domingo">Domingo</option>
+            </select>
+        </div>
+
+    </div>
+
+  <!-- Mapa de Marcadores -->
+  <div id="markerMap" class="bg-white rounded shadow"></div>
+ 
+
+  <!-- Dependências JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+  
+  <!-- Lógica para o Mapa -->
+  <script src="../js/indicador_cvli.js"></script>
+
+<br>
+<div class="bg-white rounded shadow p-3 mb-3">
+    <div class="iframe-container">
+        <iframe src="tipos.html" title="Página 1"></iframe>
+    </div>
+</div>
+<br>
+<div class="bg-white rounded shadow p-3 mb-3">
+    <div class="iframe-container">
+        <iframe src="bairros.html" title="Página 1"></iframe>
+    </div>
+</div>
+<br>
+<div class="bg-white rounded shadow p-3 mb-3">
+    <div class="iframe-container">
+        <iframe src="hora.html" title="Página 1"></iframe>
+    </div>
+</div>
+<br>
+<div class="bg-white rounded shadow p-3 mb-3">
+    <div class="iframe-container">
+        <iframe src="dia_semana.html" title="Página 1"></iframe>
+    </div>
+</div>
+<br>
+<div class="bg-white rounded shadow p-3 mb-3">
+    <div class="iframe-container">
+        <iframe src="hora_dia.html" title="Página 1"></iframe>
+    </div>
+</div>
+
+
+
+
+    <div class="d-flex justify-content-center my-4">
+    <a href="../index.html" class="btn btn-outline-secondary">
+        <i class="bi bi-box-arrow-in-left"></i>  Voltar</a>
+    </div>
+
+    <br>
+    <footer class="bg-dark text-light py-3 mt-5">
+    <div class="container">
+        <div class="d-flex flex-column flex-md-row align-items-center justify-content-between">
+        <a href="https://portal.ufcg.edu.br/" target="_blank" class="mb-3 mb-md-0">
+            <img src="../img/ufcg.png" alt="UFCG" class="footer-logo">
+        </a>
+        <div class="text-center mb-3 mb-md-0 flex-grow-1">
+            <a href="#sobre" class="text-decoration-none text-light d-block mb-1">Sobre a Página</a>
+            <small>&copy; 2025 - Todos os direitos reservados.</small>
+        </div>
+        <a href="https://www.computacao.ufcg.edu.br/" target="_blank" class="mb-3 mb-md-0">
+            <img src="../img/computacao.png" alt="Computação UFCG" class="footer-logo">
+        </a>
+        </div>
+    </div>
+    </footer>
+  
+</body>
+</html>
