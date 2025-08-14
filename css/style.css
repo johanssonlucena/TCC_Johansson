@@ -40,19 +40,16 @@ footer {
 border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+
 .iframe-container {
-    position: relative;
     width: 100%;
-    padding-bottom: 75%; 
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 20px;
+    height: 80vh;               /* altura padrão, ajustável */
+    border-radius: 8px;          /* cantos arredondados do iframe */
 }
 
 .iframe-container iframe {
-    position: absolute;
-    background-color: #fff;
     width: 100%;
-    height: 70%;
-    border-radius: 8px;
+    height: 100%;
+    border: none;
+    display: block;
 }
