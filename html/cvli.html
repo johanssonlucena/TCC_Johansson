@@ -139,16 +139,17 @@
             <label for="hourSelect" class="form-label">Filtrar por Hora</label>
             <select id="hourSelect" class="form-select">
             <option value="todos" selected>Todas as Horas</option>
-            <!-- Opções 0 a 23 -->
             <script>
-                for (let i = 0; i < 24; i++) {
-                document.write(`<option value="${i}">${i}:00</option>`);
+                const selectHora = document.getElementById('hourSelect');
+                for (let h = 0; h < 24; h++) {
+                    const opt = document.createElement('option');
+                    opt.value = h;
+                    opt.textContent = h; 
+                    selectHora.appendChild(opt);
                 }
             </script>
             </select>
         </div>
-
-        <!-- Seletor de Hora -->
 
 
 
