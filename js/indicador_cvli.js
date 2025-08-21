@@ -16,9 +16,13 @@ const icons = {
 function updateMap() {
     const daysAgo = parseInt(document.getElementById('periodSelect').value, 10);
     const selectedTypes = Array.from(document.querySelectorAll('.crime-filter:checked')).map(cb => cb.value);
-    const bairroSelecionado = document.getElementById('bairroSelect').value;
+    
+     const bairrosSelecionados = Array.from(document.getElementById('bairroSelect').selectedOptions).map(opt => opt.value);
+    //const bairroSelecionado = document.getElementById('bairroSelect').value;
     const hora = document.getElementById('hourSelect').value;
     const dia = document.getElementById('daySelect').value;
+
+
 
     let filtered;
 
@@ -29,8 +33,11 @@ function updateMap() {
         filtered = rawData.filter(d => new Date(d.despachado) >= cutoff);
     }
 
-    if (bairroSelecionado !== 'todos') {
-        filtered = filtered.filter(d => d.bairro === bairroSelecionado);
+    //if (bairroSelecionado !== 'todos') {
+     //   filtered = filtered.filter(d => d.bairro === bairroSelecionado);
+    //}
+    if (!bairrosSelecionados.includes('todos')) {
+        filtered = filtered.filter(d => bairrosSelecionados.includes(d.bairro));
     }
 
     if (hora !== 'todos') {
@@ -68,6 +75,21 @@ function preencherSelectBairros() {
     select.appendChild(option);
   });
 }
+
+const bairroSelect = document.getElementById('bairroSelect');
+const displayBairros = document.getElementById('bairrosSelecionados');
+function atualizarBairrosSelecionados() {
+    const selecionados = Array.from(bairroSelect.selectedOptions).map(opt => opt.value);
+
+    if (selecionados.includes('todos')) {
+        displayBairros.textContent = 'Todos os bairros selecionados.';
+    } else {
+        displayBairros.textContent = 'Bairros selecionados: ' + selecionados.join(', ');
+    }
+}
+bairroSelect.addEventListener('change', atualizarBairrosSelecionados);
+atualizarBairrosSelecionados();
+
 
 fetch('../json/cvli.json')
     .then(res => res.json())

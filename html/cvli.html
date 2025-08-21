@@ -92,14 +92,26 @@
                 <label class="form-check-label">Confronto Policial</label>
             </div>
         </div>
-
+<!--
         <div class="col-md-4">
             <label for="bairroSelect" class="form-label">Filtrar por Bairro</label>
             <select id="bairroSelect" class="form-select">
-                <option value="todos" selected>Todos os Bairros</option>
+                <option value="todos" selected>Todos os Bairros</option> -->
                 <!-- Opções geradas dinamicamente via JS -->
-            </select>
+<!--           </select>
         </div>
+--> 
+
+        <div class="col-md-4 mb-3">
+        <label for="bairroSelect" class="form-label fw-bold">Filtrar por Bairro</label>
+        <select id="bairroSelect" class="form-select w-100" multiple>
+        <option value="todos">Todos os Bairros</option>
+        <!-- Opções geradas dinamicamente -->
+        </select>
+
+        <div id="bairrosSelecionados" class="mt-2"></div>
+        </div>
+
 
         <div class="col-md-4">
             <label for="periodSelect" class="form-label">Filtrar por Data</label>
@@ -124,9 +136,8 @@
                 }
             </script>
             </select>
-
             <label for="daySelect" class="form-label">Filtrar por Dia da Semana</label>
-            <select id="daySelect" class="form-select">
+            <select id="daySelect" class="form-select w-100" multiple>
                 <option value="todos" selected>Todos os Dias</option>
                 <option value="Segunda">Segunda</option>
                 <option value="Terça">Terça</option>
