@@ -17,10 +17,12 @@ function updateMap() {
     const daysAgo = parseInt(document.getElementById('periodSelect').value, 10);
     const selectedTypes = Array.from(document.querySelectorAll('.crime-filter:checked')).map(cb => cb.value);
     
-     const bairrosSelecionados = Array.from(document.getElementById('bairroSelect').selectedOptions).map(opt => opt.value);
+    const bairrosSelecionados = Array.from(document.getElementById('bairroSelect').selectedOptions).map(opt => opt.value);
     //const bairroSelecionado = document.getElementById('bairroSelect').value;
-    const hora = document.getElementById('hourSelect').value;
-    const dia = document.getElementById('daySelect').value;
+    //const hora = document.getElementById('hourSelect').value;
+    const hora = Array.from(document.getElementById('hourSelect').selectedOptions).map(opt => opt.value);
+    //const dia = document.getElementById('daySelect').value;
+    const dia = Array.from(document.getElementById('daySelect').selectedOptions).map(opt => opt.value);
 
 
 
@@ -40,15 +42,26 @@ function updateMap() {
         filtered = filtered.filter(d => bairrosSelecionados.includes(d.bairro));
     }
 
-    if (hora !== 'todos') {
+    if (!hora.includes('todos')) {
         const horaSelecionada = selectHora.value;
         const horaNum = Number(horaSelecionada);
-        filtered = filtered.filter(d => d.hora_exata === horaNum);
+        filtered = filtered.filter(d => dia.includes(d.hora_exata));
     }
 
-    if (dia !== 'todos') {
-        filtered = filtered.filter(d => d.dia_da_semana === dia);
+    //if (hora !== 'todos') {
+     //   const horaSelecionada = selectHora.value;
+     //   const horaNum = Number(horaSelecionada);
+     //   filtered = filtered.filter(d => d.hora_exata === horaNum);
+    //}
+
+    //if (dia !== 'todos') {
+    //    filtered = filtered.filter(d => d.dia_da_semana === dia);
+    //}
+    if (!dia.includes('todos')) {
+        filtered = filtered.filter(d => dia.includes(d.dia_da_semana));
     }
+
+
 
     markerClusterGroup.clearLayers();
     filtered
