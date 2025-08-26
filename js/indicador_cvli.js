@@ -4,7 +4,7 @@ let bairrosUnicos = new Set();
 // Inicializa mapa de marcadores
 const markerMap = L.map('markerMap').setView([-7.23, -35.88], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(markerMap);
-let markerClusterGroup = L.markerClusterGroup({maxClusterRadius: 0}).addTo(markerMap);
+let markerClusterGroup = L.markerClusterGroup({maxClusterRadius: 10}).addTo(markerMap);
 
 const icons = {
     'Homicídio doloso': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png', iconSize:[30,30]}),
@@ -45,7 +45,7 @@ function updateMap() {
     if (!hora.includes('todos')) {
         const horaSelecionada = selectHora.value;
         const horaNum = Number(horaSelecionada);
-        filtered = filtered.filter(d => dia.includes(d.hora_exata));
+        filtered = filtered.filter(d => hora.includes(String(d.hora_exata)));
     }
 
     //if (hora !== 'todos') {
@@ -75,6 +75,22 @@ function updateMap() {
             );
         markerClusterGroup.addLayer(marker);
     });
+
+
+    filtered = filtered.filter(d => selectedTypes.includes(d.tipo));
+
+    const crimeStatsDiv = document.getElementById("crimeStats");
+    const total = filtered.length;
+
+    if (total === 0) {
+        crimeStatsDiv.innerHTML = "<em>Nenhum registro.</em>";
+        return;
+    }
+    
+    const percentual = ((total / rawData.length) * 100).toFixed(1);
+    
+    let valorFiltrado = `<strong>Total:</strong> ${total} (${percentual}%)<br>`;
+    crimeStatsDiv.innerHTML = valorFiltrado;
 }
 
 function preencherSelectBairros() {
@@ -91,17 +107,50 @@ function preencherSelectBairros() {
 
 const bairroSelect = document.getElementById('bairroSelect');
 const displayBairros = document.getElementById('bairrosSelecionados');
+
 function atualizarBairrosSelecionados() {
     const selecionados = Array.from(bairroSelect.selectedOptions).map(opt => opt.value);
 
     if (selecionados.includes('todos')) {
         displayBairros.textContent = 'Todos os bairros selecionados.';
     } else {
-        displayBairros.textContent = 'Bairros selecionados: ' + selecionados.join(', ');
+        displayBairros.textContent = 'Bairro(s) selecionados: ' + selecionados.join(', ');
     }
 }
 bairroSelect.addEventListener('change', atualizarBairrosSelecionados);
 atualizarBairrosSelecionados();
+
+
+const diaSelect = document.getElementById('daySelect');
+const displayDia = document.getElementById('diasSelecionados');
+
+function atualizarDiasSelecionados() {
+    const selecionados = Array.from(diaSelect.selectedOptions).map(opt => opt.value);
+
+    if (selecionados.includes('todos')) {
+        displayDia.textContent = 'Todos os dias selecionados.';
+    } else {
+        displayDia.textContent = 'Dia(s) selecionados: ' + selecionados.join(', ');
+    }
+}
+diaSelect.addEventListener('change', atualizarDiasSelecionados);
+atualizarDiasSelecionados();
+
+
+const horaSelect = document.getElementById('hourSelect');
+const displayHora = document.getElementById('horasSelecionados');
+
+function atualizarHorasSelecionados() {
+    const selecionados = Array.from(horaSelect.selectedOptions).map(opt => opt.value);
+
+    if (selecionados.includes('todos')) {
+        displayHora.textContent = 'Todas as horas selecionadas.';
+    } else {
+        displayHora.textContent = 'Hora(s) selecionadas: ' + selecionados.join(', ');
+    }
+}
+horaSelect.addEventListener('change', atualizarHorasSelecionados);
+atualizarHorasSelecionados();
 
 
 fetch('../json/cvli.json')
