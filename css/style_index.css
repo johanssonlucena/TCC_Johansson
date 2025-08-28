@@ -75,3 +75,37 @@ body {
   background-color: #f3d0a3;
 }
 
+.navbar-custom {
+  background: linear-gradient(90deg, #5a5959, #2c2c2c);
+  padding: 0.8rem 0;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #ffeb79; 
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  background: #ffeb79;
+}
+
+.img-painel {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
