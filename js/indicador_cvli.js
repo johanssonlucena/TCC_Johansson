@@ -4,8 +4,10 @@ let bairrosUnicos = new Set();
 // Inicializa mapa de marcadores
 const markerMap = L.map('markerMap').setView([-7.23, -35.88], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(markerMap);
+// Adiciona Cluster, para o CVLI maxClusterRadius 10
 let markerClusterGroup = L.markerClusterGroup({maxClusterRadius: 10}).addTo(markerMap);
 
+// Icones para os tipos de CVLI (é possivel aumentar e diminuir o tamanho, e modificar a cor)
 const icons = {
     'Homicídio doloso': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/red-dot.png', iconSize:[30,30]}),
     'Latrocínio': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png', iconSize:[30,30]}),
@@ -13,31 +15,27 @@ const icons = {
     'Morte decorrente de Confronto Policial': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/orange-dot.png', iconSize:[35,35]})
 };
 
+// Função para atualizar o mapa, caso utilize algum filtro.
 function updateMap() {
     const daysAgo = parseInt(document.getElementById('periodSelect').value, 10);
     const selectedTypes = Array.from(document.querySelectorAll('.crime-filter:checked')).map(cb => cb.value);
-    
     const bairrosSelecionados = Array.from(document.getElementById('bairroSelect').selectedOptions).map(opt => opt.value);
-    //const bairroSelecionado = document.getElementById('bairroSelect').value;
-    //const hora = document.getElementById('hourSelect').value;
     const hora = Array.from(document.getElementById('hourSelect').selectedOptions).map(opt => opt.value);
-    //const dia = document.getElementById('daySelect').value;
     const dia = Array.from(document.getElementById('daySelect').selectedOptions).map(opt => opt.value);
 
-
-
+    // Dados filtrados
     let filtered;
+
+    // Data Base - no conjunto de dados, a última data que teve registro foi no dia 25/04/2025, por isso ficou fixado nela
+    let baseDate = new Date("2025-04-25"); 
 
     if (daysAgo === 0) {
         filtered = rawData;
     } else {
-        const cutoff = new Date(1745550000000 - daysAgo * 86400000);
+        const cutoff = new Date(baseDate.getTime() - daysAgo * 86400000);
         filtered = rawData.filter(d => new Date(d.despachado) >= cutoff);
     }
 
-    //if (bairroSelecionado !== 'todos') {
-     //   filtered = filtered.filter(d => d.bairro === bairroSelecionado);
-    //}
     if (!bairrosSelecionados.includes('todos')) {
         filtered = filtered.filter(d => bairrosSelecionados.includes(d.bairro));
     }
@@ -79,18 +77,18 @@ function updateMap() {
 
     filtered = filtered.filter(d => selectedTypes.includes(d.tipo));
 
-    const crimeStatsDiv = document.getElementById("crimeStats");
+    const divTotalFiltros = document.getElementById("divTotal");
     const total = filtered.length;
 
     if (total === 0) {
-        crimeStatsDiv.innerHTML = "<em>Nenhum registro.</em>";
+        divTotalFiltros.innerHTML = "<em>Nenhum registro.</em>";
         return;
     }
     
     const percentual = ((total / rawData.length) * 100).toFixed(1);
     
-    let valorFiltrado = `<strong>Total:</strong> ${total} (${percentual}%)<br>`;
-    crimeStatsDiv.innerHTML = valorFiltrado;
+    let valorFiltrado = `<strong>Total de registros:</strong> ${total} (${percentual}%)<br>`;
+    divTotalFiltros.innerHTML = valorFiltrado;
 }
 
 function preencherSelectBairros() {

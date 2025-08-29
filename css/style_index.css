@@ -2,6 +2,8 @@ body {
   background-color: #e1e2e2;
 }
 
+/* Painel Indicadores */
+
 .indicador-box {
   background-color: #ffffff;
   border-left: 8px solid #adb5bd;
@@ -45,6 +47,12 @@ body {
   color: #495057;
 }
 
+.img-painel {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+
 .cvli {
   border-left-color: #f28b82;
   background-color: #fff6f6;
@@ -74,7 +82,9 @@ body {
   border-left-color: #faa508;
   background-color: #f3d0a3;
 }
+/* Painel Indicadores */
 
+/* Link Navegação */
 .navbar-custom {
   background: linear-gradient(90deg, #5a5959, #2c2c2c);
   padding: 0.8rem 0;
@@ -90,7 +100,7 @@ body {
   position: absolute;
   width: 0;
   height: 2px;
-  display: block;
+  display: block; 
   margin-top: 5px;
   right: 0;
   background: #ffeb79; 
@@ -103,9 +113,4 @@ body {
   left: 0;
   background: #ffeb79;
 }
-
-.img-painel {
-  width: 100%;
-  height: 80%;
-  object-fit: contain;
-}
+/* Link Navegação */

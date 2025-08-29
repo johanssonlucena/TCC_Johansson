@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>CVLI</title>
+  <title>Indicador CVLI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
@@ -15,33 +15,35 @@
 
 <body>
 
+    <!-- Header -->
     <header class="header">
-    <div class="container">
-        <div class="row align-items-center">
-        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
-            <img src="../img/header.png" alt="Logo" class="img-fluid">
-        </div>
-        <div class="col-12 col-md-5 text-center text-md-start">
-            <h1 class="h1 mb-2">Visualizações Interativas de Dados</h1>
-            <h4 class="mb-0">Segurança Pública</h4>
-        </div>
-        <div class="col-12 col-md-3 text-center">
-            <div class="d-flex justify-content-center mb-2">
-            <img src="../img/cidade.png" alt="Bandeira 1" class="img-fluid me-1" style="max-height: 80px;">
-            <img src="../img/estado.png" alt="Bandeira 2" class="img-fluid" style="max-height: 80px;">
+        <div class="container">
+            <div class="row align-items-center">
+            <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                <img src="../img/header.png" alt="Logo" class="img-fluid">
             </div>
-            <div>
-            <p class="mb-0">Campina Grande - PB</p>
+            <div class="col-12 col-md-5 text-center text-md-start">
+                <h1 class="h1 mb-2">Visualizações Interativas de Dados</h1>
+                <h4 class="mb-0">Segurança Pública</h4>
+            </div>
+            <div class="col-12 col-md-3 text-center">
+                <div class="d-flex justify-content-center mb-2">
+                <img src="../img/cidade.png" alt="Bandeira 1" class="img-fluid me-1" style="max-height: 80px;">
+                <img src="../img/estado.png" alt="Bandeira 2" class="img-fluid" style="max-height: 80px;">
+                </div>
+                <div>
+                <p class="mb-0">Campina Grande - PB</p>
+                </div>
+            </div>
             </div>
         </div>
-        </div>
-    </div>
     </header>
+    <!-- Header -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #5a5959;">
-    <div class="container justify-content-center">
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
+    <!-- Navegador links -->
+    <nav class="navbar navbar-dark navbar-custom">
+        <div class="container justify-content-center">
+        <ul class="navbar-nav d-flex flex-row flex-wrap justify-content-center">
             <li class="nav-item px-3"><a class="nav-link" href="../index.html">Início</a></li>
             <li class="nav-item px-3"><a class="nav-link active" href="cvli.html">CVLI</a></li>
             <li class="nav-item px-3"><a class="nav-link" href="cvp.html">CVP</a></li>
@@ -51,9 +53,10 @@
             <li class="nav-item px-3"><a class="nav-link" href="sobre.html">Sobre</a></li>
         </ul>
         </div>
-    </div>
     </nav>
+    <!-- Navegador links -->
 
+    <!-- Informações -->
     <div class="container py-1">
         <div class="text-center mb-4">
             <h2 class="section-title">CRIMES VIOLENTOS LETAIS E INTENCIONAIS – CVLI</h2>
@@ -66,98 +69,103 @@
           Latrocínios, Feminicídios e quaisquer outros crimes intencionais que resultem em morte.</h5>
         </div>
     </div>
-
+    <!-- Informações -->
+    
+    <!-- Painel de Filtros/Funcionalidades -->
     <div class="container py-1">
         <div class="row mb-4 align-items-start border shadow p-3">
             <div class="col-md-4">
+                <!-- Marcadores dos Tipos -->
                 <label class="form-label fw-bold">Tipos de CVLI:</label>
                 <div class="form-check legend-item">
-                <input class="form-check-input crime-filter" type="checkbox" value="Homicídio doloso" checked>
-                <img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" class="legend-icon">
-                <label class="form-check-label">Homicídio doloso</label>
-            </div>
+                    <input class="form-check-input crime-filter" type="checkbox" value="Homicídio doloso" checked>
+                    <img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" class="legend-icon">
+                    <label class="form-check-label">Homicídio doloso</label>
+                </div>
                 <div class="form-check legend-item">
-                <input class="form-check-input crime-filter" type="checkbox" value="Latrocínio" checked>
-                <img src="https://maps.google.com/mapfiles/ms/icons/blue-dot.png" class="legend-icon">
-                <label class="form-check-label">Latrocínio</label>
-            </div>
+                    <input class="form-check-input crime-filter" type="checkbox" value="Latrocínio" checked>
+                    <img src="https://maps.google.com/mapfiles/ms/icons/blue-dot.png" class="legend-icon">
+                    <label class="form-check-label">Latrocínio</label>
+                </div>
                 <div class="form-check legend-item">
-                <input class="form-check-input crime-filter" type="checkbox" value="Feminicídio" checked>
-                <img src="https://maps.google.com/mapfiles/ms/icons/pink-dot.png" class="legend-icon">
-                <label class="form-check-label">Feminicídio</label>
-            </div>
+                    <input class="form-check-input crime-filter" type="checkbox" value="Feminicídio" checked>
+                    <img src="https://maps.google.com/mapfiles/ms/icons/pink-dot.png" class="legend-icon">
+                    <label class="form-check-label">Feminicídio</label>
+                </div>
                 <div class="form-check legend-item">
-                <input class="form-check-input crime-filter" type="checkbox" value="Morte decorrente de Confronto Policial" checked>
-                <img src="https://maps.google.com/mapfiles/ms/icons/orange-dot.png" class="legend-icon">
-                <label class="form-check-label">Confronto Policial</label>
+                    <input class="form-check-input crime-filter" type="checkbox" value="Morte decorrente de Confronto Policial" checked>
+                    <img src="https://maps.google.com/mapfiles/ms/icons/orange-dot.png" class="legend-icon">
+                    <label class="form-check-label">Confronto Policial</label>
+                </div>
+                <br>
+                <!-- Marcadores dos Tipos -->
+                
+                <!-- Total dos registros -->
+                <div id="divTotal" class="mt-3 p-2 border rounded bg-light small" style="text-align: center;"></div>
+                <!-- Total dos registros -->
             </div>
-            <br>
-            <div id="crimeStats" class="mt-3 p-2 border rounded bg-light small"></div>
-        </div>
-<!--
-        <div class="col-md-4">
-            <label for="bairroSelect" class="form-label">Filtrar por Bairro</label>
-            <select id="bairroSelect" class="form-select">
-                <option value="todos" selected>Todos os Bairros</option> -->
-                <!-- Opções geradas dinamicamente via JS -->
-<!--           </select>
-        </div>
---> 
+            
+            <div class="col-md-4 mb-3">
+                <!-- Filtro por Bairros -->
+                <label for="bairroSelect" class="form-label fw-bold">Filtrar por Bairro</label>
+                <select id="bairroSelect" class="form-select w-100" multiple size="10">
+                <option value="todos" selected>Todos os Bairros</option>
+                <!-- Opções geradas dinamicamente -->
+                </select>
+                <!-- Mostra bairros selecionados -->
+                <div id="bairrosSelecionados" class="mt-2"></div>
+                <!-- Filtro por Bairros -->
+            </div>
+            
+            <div class="col-md-4">
+                <!-- Filtro por data -->
+                <label for="periodSelect" class="form-label fw-bold">Filtrar por Data</label>        
+                <select id="periodSelect" class="form-select">
+                <option value="0" selected>Todos</option>
+                <option value="7">Última semana</option>
+                <option value="14">Últimas 2 semanas</option>
+                <option value="30">Último mês</option>
+                <option value="60">Últimos 2 meses</option>
+                <option value="182">Últimos 6 meses</option>
+                <option value="365">Último ano</option>
+                </select>  <br>
+                <!-- Filtro por data -->
 
-        <div class="col-md-4 mb-3">
-        <label for="bairroSelect" class="form-label fw-bold">Filtrar por Bairro</label>
-        <select id="bairroSelect" class="form-select w-100" multiple>
-        <option value="todos" selected>Todos os Bairros</option>
-        <!-- Opções geradas dinamicamente -->
-        </select>
+                <!-- Filtro por hora --> 
+                <label for="hourSelect" class="form-label fw-bold">Filtrar por Hora</label>
+                <select id="hourSelect" class="form-select w-100" multiple>
+                <option value="todos" selected>Todas as Horas</option>
+                <script>
+                    const selectHora = document.getElementById('hourSelect');
+                    for (let h = 0; h < 24; h++) {
+                        const opt = document.createElement('option');
+                        opt.value = h;
+                        opt.textContent = h; 
+                        selectHora.appendChild(opt);
+                    }
+                </script>
+                </select>
+                <div id="horasSelecionados" class="mt-2"></div>
+                <!-- Filtro por hora --> 
 
-        <div id="bairrosSelecionados" class="mt-2"></div>
-        </div>
-
-
-        <div class="col-md-4">
-            <label for="periodSelect" class="form-label fw-bold">Filtrar por Data</label>
-            <select id="periodSelect" class="form-select">
-            <option value="0" selected>Todos</option>
-            <option value="7">Última semana</option>
-            <option value="14">Últimas 2 semanas</option>
-            <option value="30">Último mês</option>
-            <option value="60">Últimos 2 meses</option>
-            <option value="182">Últimos 6 meses</option>
-            <option value="365">Último ano</option>
-            </select>
-
-            <label for="hourSelect" class="form-label fw-bold">Filtrar por Hora</label>
-            <select id="hourSelect" class="form-select w-100" multiple>
-            <option value="todos" selected>Todas as Horas</option>
-            <script>
-                const selectHora = document.getElementById('hourSelect');
-                for (let h = 0; h < 24; h++) {
-                    const opt = document.createElement('option');
-                    opt.value = h;
-                    opt.textContent = h; 
-                    selectHora.appendChild(opt);
-                }
-            </script>
-            </select>
-            <div id="horasSelecionados" class="mt-2"></div>
-
-
-            <label for="daySelect" class="form-label fw-bold">Filtrar por Dia da Semana</label>
-            <select id="daySelect" class="form-select w-100" multiple>
-                <option value="todos" selected>Todos os Dias</option>
-                <option value="Segunda">Segunda</option>
-                <option value="Terça">Terça</option>
-                <option value="Quarta">Quarta</option>
-                <option value="Quinta">Quinta</option>
-                <option value="Sexta">Sexta</option>
-                <option value="Sábado">Sábado</option>
-                <option value="Domingo">Domingo</option>
-            </select>
-            <div id="diasSelecionados" class="mt-2"></div>
-        </div>
+                <!-- Filtro por dia da semana -->
+                <label for="daySelect" class="form-label fw-bold">Filtrar por Dia da Semana</label>
+                <select id="daySelect" class="form-select w-100" multiple>
+                    <option value="todos" selected>Todos os Dias</option>
+                    <option value="Segunda">Segunda</option>
+                    <option value="Terça">Terça</option>
+                    <option value="Quarta">Quarta</option>
+                    <option value="Quinta">Quinta</option>
+                    <option value="Sexta">Sexta</option>
+                    <option value="Sábado">Sábado</option>
+                    <option value="Domingo">Domingo</option>
+                </select>
+                <div id="diasSelecionados" class="mt-2"></div>
+                <!-- Filtro por dia da semana -->
+            </div>
 
     </div>
+    <!-- Painel de Filtros -->
 
   <!-- Mapa de Marcadores -->
   <div id="markerMap" class="bg-white rounded shadow"></div>
