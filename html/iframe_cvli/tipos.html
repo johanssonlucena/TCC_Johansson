@@ -22,7 +22,6 @@
     const dom = document.getElementById('container');
     const myChart = echarts.init(dom, null, { renderer: 'canvas', useDirtyRect: false });
 
-    // Função para atualizar o gráfico
     function atualizarGrafico(filteredData) {
       const contagem = {};
       filteredData.forEach(item => {
@@ -40,22 +39,26 @@
       const option = {
         title: {
           text: 'Distribuição dos tipos de CVLI',
+          subtext: 'Período: últimos registros',
           left: 'center',
           top: isMobile ? '5%' : 'top',
           textStyle: {
             fontSize: isMobile ? 14 : 24,
             fontWeight: 'bold',
             color: '#333'
-          }
+          },
+          subtextStyle: {
+          fontSize: isMobile ? 10 : 16,
+          color: '#000'
+    }
         },
         tooltip: { trigger: 'item' },
         legend: {
-          top: isMobile ? 'bottom' : '10%',
+          bottom: '1%', 
           left: 'center',
           textStyle: { fontSize: isMobile ? 10 : 14 }
         },
         series: [{
-          name: 'Tipo de CVLI',
           type: 'pie',
           radius: isMobile ? ['30%', '60%'] : ['40%', '70%'],
           avoidLabelOverlap: false,

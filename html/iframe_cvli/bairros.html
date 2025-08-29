@@ -100,7 +100,7 @@
       window.addEventListener('resize', () => myChart.resize());
     }
 
-    fetch('../json/cvli.json')
+    fetch('../../json/cvli.json')
       .then(response => {
         if (!response.ok) throw new Error('Erro ao carregar o arquivo JSON');
         return response.json();
@@ -108,7 +108,7 @@
       .then(processData)
       .catch(error => {
         console.error('Erro:', error);
-        chartDom.innerHTML = '<p style="color:red; text-align:center;">Erro ao carregar os dados.</p>';
+        chartDom.innerHTML = '<p>Erro ao carregar os dados.</p>';
       });
   </script>
 </body>
