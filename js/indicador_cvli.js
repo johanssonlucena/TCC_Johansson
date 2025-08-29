@@ -1,12 +1,6 @@
 let rawData = [];
 let bairrosUnicos = new Set();
 
-function enviarDadosParaGrafico(filtered) {
-    const iframe = document.getElementById('tiposFrame');
-    if (iframe && iframe.contentWindow) {
-        iframe.contentWindow.postMessage(filtered, '*'); // envia os dados filtrados para o iframe
-    }
-}
 
 
 // Inicializa mapa de marcadores
@@ -36,7 +30,7 @@ function updateMap() {
 
     // Data Base - no conjunto de dados, a última data que teve registro foi no dia 25/04/2025, por isso ficou fixado nela
     let baseDate = new Date("2025-04-25"); 
-
+    
     // Tratamento de todos os Filtros
     if (daysAgo === 0) {
         filtered = rawData;
@@ -59,7 +53,12 @@ function updateMap() {
         filtered = filtered.filter(d => dia.includes(d.dia_da_semana));
     }
     // Tratamento de todos os Filtros
+
+
+    // Envia para o gráfico os filtros para atualizar
     enviarDadosParaGrafico(filtered);
+
+
     // Preenchimento dos dados no mapa
     markerClusterGroup.clearLayers();
     filtered
@@ -125,6 +124,13 @@ bairroSelect.addEventListener('change', atualizarBairrosSelecionados);
 atualizarBairrosSelecionados();
 // Apresentação bairros selecionados
 
+function enviarDadosParaGrafico(filtered) {
+    const iframe = document.getElementById('tiposFrame');
+    if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage(filtered, '*');
+    }
+}
+
 fetch('../json/cvli.json')
     .then(res => res.json())
     .then(data => {
@@ -135,7 +141,6 @@ fetch('../json/cvli.json')
         bairrosUnicos.add(d.bairro);
       }
     });
-
     preencherSelectBairros();
     updateMap();
     });

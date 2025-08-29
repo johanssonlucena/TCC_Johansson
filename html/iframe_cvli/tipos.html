@@ -71,17 +71,20 @@
       myChart.setOption(option);
     }
 
-    // Escuta mensagens do pai (CVLI.html) com dados filtrados
     window.addEventListener('message', (event) => {
       const filteredData = event.data;
       atualizarGrafico(filteredData);
     });
 
-    // Ajusta o gráfico no resize
     window.addEventListener('resize', () => myChart.resize());
 
-    // Opcional: inicializar com dados vazios para mostrar algo antes do primeiro filtro
-    //atualizarGrafico([]);
+  fetch("../../json/cvli.json") 
+  .then(response => response.json())
+  .then(data => {
+    atualizarGrafico(data); 
+  })
+  .catch(err => console.error("Erro ao carregar JSON inicial:", err));
+    
   </script>
 </body>
 </html>
