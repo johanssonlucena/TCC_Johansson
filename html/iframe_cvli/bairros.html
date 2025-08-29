@@ -2,19 +2,41 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Top 15 Bairros por Ocorrência</title>
+  <title>Bairros com mais Ocorrências</title>
   <style>
     html, body {
       height: 100%;
       margin: 0;
     }
+    #filtro {
+      width: 100%;
+      position: absolute;
+      bottom: 10px;
+      text-align: center;
+    }
     #chart {
       width: 100%;
-      height: 100%;
+      height: 90vh;
+    }
+    #qtdSelect {
+      margin: 10px;
+      padding: 5px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
+    <div id="filtro">
+    <label for="qtdSelect">Selecione a opção:</label>
+    <select id="qtdSelect">
+      <option value="top15" selected>15 Bairros com mais ocorrências</option>
+      <option value="top10">10 Bairros com mais ocorrências</option>
+      <option value="top5">5 Bairros com mais ocorrências</option>
+      <option value="bottom10">Top 10 menos ocorrências</option>
+      <option value="bottom5">Top 5 menos ocorrências</option>
+    </select>
+  </div>
+
   <div id="chart"></div>
   
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
@@ -22,77 +44,51 @@
     const chartDom = document.getElementById('chart');
     const myChart = echarts.init(chartDom);
 
-    function processData(dataJson) {
+    function processData(dataJson, filterOption = 'top15') {
       const counts = {};
       dataJson.forEach(item => {
         counts[item.bairro] = (counts[item.bairro] || 0) + 1;
       });
 
-      let countsArray = Object.entries(counts)
-        .sort((a, b) => b[1] - a[1])
-        .slice(0, 15)
-        .reverse();
+      let countsArray = Object.entries(counts);
 
-      const sourceData = [['quantidade', 'bairro']];
+      // Ordenação conforme o filtro
+      switch(filterOption) {
+        case 'top15': countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,15); break;
+        case 'top10': countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,10); break;
+        case 'top5': countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,5); break;
+        case 'bottom10': countsArray = countsArray.sort((a,b)=>a[1]-b[1]).slice(0,10); break;
+        case 'bottom5': countsArray = countsArray.sort((a,b)=>a[1]-b[1]).slice(0,5); break;
+        default: countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,15);
+      }
+
+      // inverter para barras horizontais
+      countsArray = countsArray.reverse();
+
+      const sourceData = [['quantidade','bairro']];
       countsArray.forEach(([bairro, quantidade]) => sourceData.push([quantidade, bairro]));
-
-      const maxValue = Math.max(...countsArray.map(([_, q]) => q));
 
       const option = {
         title: {
-          text: 'Top 15 Bairros com mais registros',
+          text: 'Bairros por Ocorrência',
           left: 'center',
           top: 'top',
-          textStyle: {
-            fontSize: 22,
-            fontWeight: 'bold',
-            color: '#333'
-          }
+          textStyle: { fontSize: 22, fontWeight:'bold', color:'#333' }
         },
         tooltip: {
           trigger: 'axis',
           axisPointer: { type: 'shadow' },
-          formatter: function(params) {
-            const item = params[0];
-            return `${item.name}: <b>${item.value}</b> ocorrências`;
-          }
+          formatter: params => `${params[0].name}: <b>${params[0].value[0]}</b> ocorrências`
         },
         dataset: { source: sourceData },
-        grid: {
-          left: '10%',
-          right: '10%',
-          bottom: '10%',
-          containLabel: true
-        },
-        xAxis: {
-          name: 'Quantidade',
-          type: 'value',
-          axisLabel: { fontSize: 12 }
-        },
-        yAxis: {
-          name: 'Bairro',
-          type: 'category',
-          axisLabel: { fontSize: 12 }
-        },
-        visualMap: {
-          show: true,
-          orient: 'horizontal',
-          left: 'center',
-          min: 0,
-          max: maxValue,
-          text: ['Mais Ocorrências', 'Menos Ocorrências'],
-          dimension: 0,
-          inRange: {
-            color: ['#ADD8E6', '#0074D9', '#001F3F']
-          }
-        },
+        grid: { left:'10%', right:'10%', bottom:'10%', containLabel:true },
+        xAxis: { name:'Quantidade', type:'value', axisLabel:{ fontSize:12 } },
+        yAxis: { name:'Bairro', type:'category', axisLabel:{ fontSize:12 } },
         series: [{
-          type: 'bar',
-          encode: { x: 'quantidade', y: 'bairro' },
-          itemStyle: {
-            borderRadius: [0, 8, 8, 0]
-          },
-          barMaxWidth: 40
+          type:'bar',
+          encode: { x:'quantidade', y:'bairro' },
+          itemStyle: { color:'#4682B4', borderRadius:[0,8,8,0] },
+          barMaxWidth:40
         }]
       };
 
@@ -100,16 +96,19 @@
       window.addEventListener('resize', () => myChart.resize());
     }
 
+    // Carregar dados e inicializar gráfico
     fetch('../../json/cvli.json')
-      .then(response => {
-        if (!response.ok) throw new Error('Erro ao carregar o arquivo JSON');
-        return response.json();
-      })
-      .then(processData)
-      .catch(error => {
-        console.error('Erro:', error);
-        chartDom.innerHTML = '<p>Erro ao carregar os dados.</p>';
-      });
+      .then(res => res.json())
+      .then(data => processData(data))
+      .catch(err => console.error('Erro ao carregar JSON:', err));
+
+    // Atualizar gráfico quando selecionar opção
+    document.getElementById('qtdSelect').addEventListener('change', (e) => {
+      fetch('../../json/cvli.json')
+        .then(res => res.json())
+        .then(data => processData(data, e.target.value))
+        .catch(err => console.error('Erro ao carregar JSON:', err));
+    });
   </script>
 </body>
 </html>
