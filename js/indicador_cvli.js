@@ -1,6 +1,14 @@
 let rawData = [];
 let bairrosUnicos = new Set();
 
+function enviarDadosParaGrafico(filtered) {
+    const iframe = document.getElementById('tiposFrame');
+    if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage(filtered, '*'); // envia os dados filtrados para o iframe
+    }
+}
+
+
 // Inicializa mapa de marcadores
 const markerMap = L.map('markerMap').setView([-7.23, -35.88], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(markerMap);
@@ -51,7 +59,7 @@ function updateMap() {
         filtered = filtered.filter(d => dia.includes(d.dia_da_semana));
     }
     // Tratamento de todos os Filtros
-
+    enviarDadosParaGrafico(filtered);
     // Preenchimento dos dados no mapa
     markerClusterGroup.clearLayers();
     filtered
@@ -132,6 +140,8 @@ fetch('../json/cvli.json')
     updateMap();
     });
 
+
+    
 // Eventos para atualizar mapa
 document.getElementById('periodSelect').addEventListener('change', updateMap);
 document.querySelectorAll('.crime-filter').forEach(cb => cb.addEventListener('change', updateMap));

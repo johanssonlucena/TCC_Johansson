@@ -20,90 +20,68 @@
 
   <script>
     const dom = document.getElementById('container');
-    const myChart = echarts.init(dom, null, {
-      renderer: 'canvas',
-      useDirtyRect: false
+    const myChart = echarts.init(dom, null, { renderer: 'canvas', useDirtyRect: false });
+
+    // Função para atualizar o gráfico
+    function atualizarGrafico(filteredData) {
+      const contagem = {};
+      filteredData.forEach(item => {
+        const tipo = item.tipo;
+        contagem[tipo] = (contagem[tipo] || 0) + 1;
+      });
+
+      const dataPie = Object.entries(contagem).map(([tipo, count]) => ({
+        value: count,
+        name: tipo
+      }));
+
+      const isMobile = window.innerWidth < 500;
+
+      const option = {
+        title: {
+          text: 'Distribuição dos tipos de CVLI',
+          left: 'center',
+          top: isMobile ? '5%' : 'top',
+          textStyle: {
+            fontSize: isMobile ? 14 : 24,
+            fontWeight: 'bold',
+            color: '#333'
+          }
+        },
+        tooltip: { trigger: 'item' },
+        legend: {
+          top: isMobile ? 'bottom' : '10%',
+          left: 'center',
+          textStyle: { fontSize: isMobile ? 10 : 14 }
+        },
+        series: [{
+          name: 'Tipo de CVLI',
+          type: 'pie',
+          radius: isMobile ? ['30%', '60%'] : ['40%', '70%'],
+          avoidLabelOverlap: false,
+          padAngle: 5,
+          itemStyle: { borderRadius: 10 },
+          label: { show: false, formatter: '{b}: {d}%', position: 'center' },
+          emphasis: { label: { show: true, fontSize: isMobile ? 24 : 40, fontWeight: 'bold' } },
+          labelLine: { show: false },
+          data: dataPie
+        }]
+      };
+
+      myChart.setOption(option);
+    }
+
+    // Escuta mensagens do pai (CVLI.html) com dados filtrados
+    window.addEventListener('message', (event) => {
+      const filteredData = event.data;
+      atualizarGrafico(filteredData);
     });
 
-    fetch('../../json/cvli.json') 
-      .then(response => response.json())
-      .then(dados => {
-        const contagem = {};
-        dados.forEach(item => {
-          const tipo = item.tipo;
-          contagem[tipo] = (contagem[tipo] || 0) + 1;
-        });
+    // Ajusta o gráfico no resize
+    window.addEventListener('resize', () => myChart.resize());
 
-        const dataPie = Object.entries(contagem).map(([tipo, count]) => ({
-          value: count,
-          name: tipo
-        }));
-
-        function getOption() {
-          const isMobile = window.innerWidth < 500;
-
-          return {
-            title: {
-              text: 'Distribuição dos tipos de CVLI',
-              left: 'center',
-              top: isMobile ? '5%' : 'top',
-              textStyle: {
-                fontSize: isMobile ? 16 : 24,
-                fontWeight: 'bold',
-                color: '#333'
-              }
-            },
-            tooltip: {
-              trigger: 'item'
-            },
-            legend: {
-              top: isMobile ? 'bottom' : '10%',
-              left: 'center',
-              textStyle: {
-                fontSize: isMobile ? 10 : 14
-              }
-            },
-            series: [
-              {
-                name: 'Tipo de CVLI',
-                type: 'pie',
-                radius: isMobile ? ['30%', '60%'] : ['40%', '70%'],
-                avoidLabelOverlap: false,
-                padAngle: 5,
-                itemStyle: {
-                  borderRadius: 10
-                },
-                label: {
-                  show: false,
-                  formatter: '{b}: {d}%',
-                  position: 'center'
-                },
-                emphasis: {
-                  label: {
-                    show: true,
-                    fontSize: isMobile ? 24 : 40,
-                    fontWeight: 'bold'
-                  }
-                },
-                labelLine: {
-                  show: false
-                },
-                data: dataPie
-              }
-            ]
-          };
-        }
-
-        myChart.setOption(getOption());
-
-        window.addEventListener('resize', () => {
-          myChart.resize();
-          myChart.setOption(getOption());
-        });
-      })
-      .catch(error => {
-        console.error('Erro ao carregar o JSON:', error);
-      });
+    // Opcional: inicializar com dados vazios para mostrar algo antes do primeiro filtro
+    //atualizarGrafico([]);
   </script>
 </body>
 </html>
