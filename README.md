@@ -41,6 +41,9 @@ O objetivo é destacar a importância da Análise de Dados no setor Público, a 
 
 -  [Leaflet](https://leafletjs.com/)
 
+-  [Flaticon](https://www.flaticon.com/)
+
+-  [Echarts](https://echarts.apache.org/en/index.html)
 
   
 ## 👷‍♀️ Como rodar o código
@@ -63,4 +66,4 @@ $ git clone https://github.com/johanssonlucena/TCC_Johansson.git
 
 ## :man_teacher: Mentor
 
-Maxwel Guiamarães, é professor da Unidade Acadêmica de Sistemas e Computação desde 2019, Membro do Laboratório de Computação Inteligente Aplicada (LACINA), é pesquisador em Ciência de Dados, com interesse em Dados Geográficos, Modelos de Classificação, Recuperação da Informação, Processamento de Linguagem Natural, Mineração de Mídias Sociais e Cidades Inteligentes.
+Maxwell Guiamarães, é professor da Unidade Acadêmica de Sistemas e Computação desde 2019, Membro do Laboratório de Computação Inteligente Aplicada (LACINA), é pesquisador em Ciência de Dados, com interesse em Dados Geográficos, Modelos de Classificação, Recuperação da Informação, Processamento de Linguagem Natural, Mineração de Mídias Sociais e Cidades Inteligentes.
