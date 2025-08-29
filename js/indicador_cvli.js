@@ -29,6 +29,7 @@ function updateMap() {
     // Data Base - no conjunto de dados, a última data que teve registro foi no dia 25/04/2025, por isso ficou fixado nela
     let baseDate = new Date("2025-04-25"); 
 
+    // Tratamento de todos os Filtros
     if (daysAgo === 0) {
         filtered = rawData;
     } else {
@@ -46,26 +47,18 @@ function updateMap() {
         filtered = filtered.filter(d => hora.includes(String(d.hora_exata)));
     }
 
-    //if (hora !== 'todos') {
-     //   const horaSelecionada = selectHora.value;
-     //   const horaNum = Number(horaSelecionada);
-     //   filtered = filtered.filter(d => d.hora_exata === horaNum);
-    //}
-
-    //if (dia !== 'todos') {
-    //    filtered = filtered.filter(d => d.dia_da_semana === dia);
-    //}
     if (!dia.includes('todos')) {
         filtered = filtered.filter(d => dia.includes(d.dia_da_semana));
     }
+    // Tratamento de todos os Filtros
 
-
-
+    // Preenchimento dos dados no mapa
     markerClusterGroup.clearLayers();
     filtered
     .filter(d => selectedTypes.includes(d.tipo))
     .forEach(d => {
         const marker = L.marker([d.latitude, d.longitude], { icon: icons[d.tipo] })
+            // Pop-up dos marcadores
             .bindPopup(
                 `<strong>Tipo:</strong> ${d.tipo}<br>` +
                 `<strong>Bairro:</strong> ${d.bairro}<br>` +
@@ -73,8 +66,9 @@ function updateMap() {
             );
         markerClusterGroup.addLayer(marker);
     });
+    // Preenchimento dos dados no mapa
 
-
+    // Contagem do total dos registros, após filtros
     filtered = filtered.filter(d => selectedTypes.includes(d.tipo));
 
     const divTotalFiltros = document.getElementById("divTotal");
@@ -89,8 +83,11 @@ function updateMap() {
     
     let valorFiltrado = `<strong>Total de registros:</strong> ${total} (${percentual}%)<br>`;
     divTotalFiltros.innerHTML = valorFiltrado;
+    // Contagem do total dos registros, após filtros
 }
 
+
+// Preenchimento dos bairros automáticamente
 function preencherSelectBairros() {
   const select = document.getElementById('bairroSelect');
   const bairrosOrdenados = [...bairrosUnicos].sort();
@@ -102,13 +99,14 @@ function preencherSelectBairros() {
     select.appendChild(option);
   });
 }
+// Preenchimento dos bairros automáticamente
 
+// Apresentação bairros selecionados
 const bairroSelect = document.getElementById('bairroSelect');
 const displayBairros = document.getElementById('bairrosSelecionados');
 
 function atualizarBairrosSelecionados() {
     const selecionados = Array.from(bairroSelect.selectedOptions).map(opt => opt.value);
-
     if (selecionados.includes('todos')) {
         displayBairros.textContent = 'Todos os bairros selecionados.';
     } else {
@@ -117,39 +115,7 @@ function atualizarBairrosSelecionados() {
 }
 bairroSelect.addEventListener('change', atualizarBairrosSelecionados);
 atualizarBairrosSelecionados();
-
-
-const diaSelect = document.getElementById('daySelect');
-const displayDia = document.getElementById('diasSelecionados');
-
-function atualizarDiasSelecionados() {
-    const selecionados = Array.from(diaSelect.selectedOptions).map(opt => opt.value);
-
-    if (selecionados.includes('todos')) {
-        displayDia.textContent = 'Todos os dias selecionados.';
-    } else {
-        displayDia.textContent = 'Dia(s) selecionados: ' + selecionados.join(', ');
-    }
-}
-diaSelect.addEventListener('change', atualizarDiasSelecionados);
-atualizarDiasSelecionados();
-
-
-const horaSelect = document.getElementById('hourSelect');
-const displayHora = document.getElementById('horasSelecionados');
-
-function atualizarHorasSelecionados() {
-    const selecionados = Array.from(horaSelect.selectedOptions).map(opt => opt.value);
-
-    if (selecionados.includes('todos')) {
-        displayHora.textContent = 'Todas as horas selecionadas.';
-    } else {
-        displayHora.textContent = 'Hora(s) selecionadas: ' + selecionados.join(', ');
-    }
-}
-horaSelect.addEventListener('change', atualizarHorasSelecionados);
-atualizarHorasSelecionados();
-
+// Apresentação bairros selecionados
 
 fetch('../json/cvli.json')
     .then(res => res.json())
@@ -166,6 +132,7 @@ fetch('../json/cvli.json')
     updateMap();
     });
 
+// Eventos para atualizar mapa
 document.getElementById('periodSelect').addEventListener('change', updateMap);
 document.querySelectorAll('.crime-filter').forEach(cb => cb.addEventListener('change', updateMap));
 document.getElementById('bairroSelect').addEventListener('change', updateMap);

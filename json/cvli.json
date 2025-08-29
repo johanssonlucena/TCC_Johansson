@@ -442,8 +442,8 @@
     },
     {
         "bairro": "Vila Cabral",
-        "latitude": -7.2206167,
-        "longitude": -35.8888328,
+        "latitude": -7.241149,
+        "longitude": -35.8650886,
         "tipo": "Homicídio doloso",
         "despachado": "2024-04-19T01:48:07.000",
         "dia_da_semana": "Sexta",
@@ -658,8 +658,8 @@
     },
     {
         "bairro": "Serrotão",
-        "latitude": -7.2465234,
-        "longitude": -35.9124523,
+        "latitude": -7.2293493,
+        "longitude": -35.9486796,
         "tipo": "Homicídio doloso",
         "despachado": "2024-10-11T11:27:48.000",
         "dia_da_semana": "Sexta",
@@ -748,19 +748,10 @@
     },
     {
         "bairro": "Centenário",
-        "latitude": -7.2398472,
-        "longitude": -35.9311054,
+        "latitude": -7.2274001,
+        "longitude": -35.9012848,
         "tipo": "Homicídio doloso",
         "despachado": "2024-11-16T17:19:33.000",
-        "dia_da_semana": "Sábado",
-        "hora_exata": 17
-    },
-    {
-        "bairro": "Centenário",
-        "latitude": -7.2398472,
-        "longitude": -35.9311054,
-        "tipo": "Homicídio doloso",
-        "despachado": "2024-11-16T17:23:15.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 17
     },
@@ -874,8 +865,8 @@
     },
     {
         "bairro": "Distrito de Galante",
-        "latitude": -7.2948509,
-        "longitude": -35.8725615,
+        "latitude": -7.3057852,
+        "longitude": -35.7772981,
         "tipo": "Feminicídio",
         "despachado": "2025-02-07T11:26:15.000",
         "dia_da_semana": "Sexta",
@@ -910,8 +901,8 @@
     },
     {
         "bairro": "Zona Rural Leste (entre Galante e Zona Urbana)",
-        "latitude": -7.2206167,
-        "longitude": -35.8888328,
+        "latitude": -7.3031251,
+        "longitude": -35.8401137,
         "tipo": "Homicídio doloso",
         "despachado": "2025-02-28T02:38:52.000",
         "dia_da_semana": "Sexta",
@@ -937,21 +928,12 @@
     },
     {
         "bairro": "Serrotão",
-        "latitude": -7.2693857,
-        "longitude": -35.791719,
+        "latitude": -7.2287848,
+        "longitude": -35.938327,
         "tipo": "Latrocínio",
         "despachado": "2025-03-14T03:45:07.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 3
-    },
-    {
-        "bairro": "Serrotão",
-        "latitude": -7.2693857,
-        "longitude": -35.791719,
-        "tipo": "Latrocínio",
-        "despachado": "2025-03-14T06:19:39.000",
-        "dia_da_semana": "Sexta",
-        "hora_exata": 6
     },
     {
         "bairro": "Universitário",
@@ -979,15 +961,6 @@
         "despachado": "2025-04-12T08:27:48.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 8
-    },
-    {
-        "bairro": "Bela Vista",
-        "latitude": -7.21588,
-        "longitude": -35.89564,
-        "tipo": "Homicídio doloso",
-        "despachado": "2025-04-12T19:04:23.000",
-        "dia_da_semana": "Sábado",
-        "hora_exata": 19
     },
     {
         "bairro": "Bela Vista",

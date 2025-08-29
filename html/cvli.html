@@ -133,7 +133,7 @@
 
                 <!-- Filtro por hora --> 
                 <label for="hourSelect" class="form-label fw-bold">Filtrar por Hora</label>
-                <select id="hourSelect" class="form-select w-100" multiple>
+                <select id="hourSelect" class="form-select w-100" multiple multiple size="6">
                 <option value="todos" selected>Todas as Horas</option>
                 <script>
                     const selectHora = document.getElementById('hourSelect');
@@ -145,12 +145,11 @@
                     }
                 </script>
                 </select>
-                <div id="horasSelecionados" class="mt-2"></div>
                 <!-- Filtro por hora --> 
-
+                <br>
                 <!-- Filtro por dia da semana -->
                 <label for="daySelect" class="form-label fw-bold">Filtrar por Dia da Semana</label>
-                <select id="daySelect" class="form-select w-100" multiple>
+                <select id="daySelect" class="form-select w-100" multiple multiple size="6">
                     <option value="todos" selected>Todos os Dias</option>
                     <option value="Segunda">Segunda</option>
                     <option value="Terça">Terça</option>
@@ -169,7 +168,6 @@
 
   <!-- Mapa de Marcadores -->
   <div id="markerMap" class="bg-white rounded shadow"></div>
- 
 
   <!-- Dependências JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -180,44 +178,46 @@
   <script src="../js/indicador_cvli.js"></script>
 
 <br>
-<div class="bg-white rounded shadow p-3 mb-3">
-    <div class="iframe-container">
-        <iframe src="tipos.html" title="Página 1"></iframe>
+    <!-- Iframes da Visualizações -->
+    <div class="bg-white rounded shadow p-3 mb-3">
+        <div class="iframe-container">
+            <iframe src="tipos.html" title="Página 1"></iframe>
+        </div>
     </div>
-</div>
-<br>
-<div class="bg-white rounded shadow p-3 mb-3">
-    <div class="iframe-container">
-        <iframe src="bairros.html" title="Página 1"></iframe>
+    <br>
+    <div class="bg-white rounded shadow p-3 mb-3">
+        <div class="iframe-container">
+            <iframe src="bairros.html" title="Página 1"></iframe>
+        </div>
     </div>
-</div>
-<br>
-<div class="bg-white rounded shadow p-3 mb-3">
-    <div class="iframe-container">
-        <iframe src="hora.html" title="Página 1"></iframe>
+    <br>
+    <div class="bg-white rounded shadow p-3 mb-3">
+        <div class="iframe-container">
+            <iframe src="hora.html" title="Página 1"></iframe>
+        </div>
     </div>
-</div>
-<br>
-<div class="bg-white rounded shadow p-3 mb-3">
-    <div class="iframe-container">
-        <iframe src="dia_semana.html" title="Página 1"></iframe>
+    <br>
+    <div class="bg-white rounded shadow p-3 mb-3">
+        <div class="iframe-container">
+            <iframe src="dia_semana.html" title="Página 1"></iframe>
+        </div>
     </div>
-</div>
-<br>
-<div class="bg-white rounded shadow p-3 mb-3">
-    <div class="iframe-container">
-        <iframe src="hora_dia.html" title="Página 1"></iframe>
+    <br>
+    <div class="bg-white rounded shadow p-3 mb-3">
+        <div class="iframe-container">
+            <iframe src="hora_dia.html" title="Página 1"></iframe>
+        </div>
     </div>
-</div>
+    <!-- Iframes da Visualizações -->
 
-
-
-
+    <!-- Botão Voltar -->
     <div class="d-flex justify-content-center my-4">
     <a href="../index.html" class="btn btn-outline-secondary">
         <i class="bi bi-box-arrow-in-left"></i>  Voltar</a>
     </div>
+    <!-- Botão Voltar -->
 
+    <!-- Footer -->
     <br>
     <footer class="bg-dark text-light py-3 mt-5">
     <div class="container">
@@ -235,6 +235,7 @@
         </div>
     </div>
     </footer>
-  
+    <!-- Footer -->  
 </body>
+
 </html>
