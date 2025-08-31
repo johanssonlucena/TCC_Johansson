@@ -116,7 +116,10 @@
     window.addEventListener('resize', () => myChart.resize());
   }
 
-  
+  window.addEventListener('message', (event) => {
+    renderChart(event.data);
+  });
+
   fetch('../../json/cvli.json')
     .then(response => response.json())
     .then(dados => renderChart(dados))

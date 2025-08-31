@@ -28,6 +28,7 @@ function updateMap() {
     // Dados filtrados
     let filtered;
     let filterBairro;
+    let filterHora;
 
     // Data Base - no conjunto de dados, a última data que teve registro foi no dia 25/04/2025, por isso ficou fixado nela
     let baseDate = new Date("2025-04-25"); 
@@ -36,14 +37,17 @@ function updateMap() {
     if (daysAgo === 0) {
         filtered = rawData;
         filterBairro = rawData;
+        filterHora = rawData;
     } else {
         const cutoff = new Date(baseDate.getTime() - daysAgo * 86400000);
         filtered = rawData.filter(d => new Date(d.despachado) >= cutoff);
         filterBairro = rawData.filter(d => new Date(d.despachado) >= cutoff);
+        filterHora = rawData.filter(d => new Date(d.despachado) >= cutoff);
     }
 
     if (!bairrosSelecionados.includes('todos')) {
         filtered = filtered.filter(d => bairrosSelecionados.includes(d.bairro));
+        filterHora = filterHora.filter(d => bairrosSelecionados.includes(d.bairro));
     }
 
     if (!hora.includes('todos')) {
@@ -56,6 +60,7 @@ function updateMap() {
     if (!dia.includes('todos')) {
         filtered = filtered.filter(d => dia.includes(d.dia_da_semana));
         filterBairro = filterBairro.filter(d => dia.includes(d.dia_da_semana));
+        filterHora = filterHora.filter(d => dia.includes(d.dia_da_semana));
     }
     // Tratamento de todos os Filtros
 
@@ -86,6 +91,10 @@ function updateMap() {
     // Envia para gráfico de bairros, após filtro dos tipos 
     filterBairro = filterBairro.filter(d => selectedTypes.includes(d.tipo));
     enviarDadosParaGraficoBairro(filterBairro);
+
+    // Envia para gráfico de horas
+    filterHora = filterHora.filter(d => selectedTypes.includes(d.tipo));
+    enviarDadosParaGraficoHoras(filterHora);
 
     const divTotalFiltros = document.getElementById("divTotal");
     const total = filtered.length;
@@ -146,6 +155,14 @@ function enviarDadosParaGraficoBairro(filtered) {
         iframe.contentWindow.postMessage(filtered, '*');
     }
 }
+
+function enviarDadosParaGraficoHoras(filtered) {
+    const iframe = document.getElementById('horaFrame');
+    if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage(filtered, '*');
+    }
+}
+
 
 fetch('../json/cvli.json')
     .then(res => res.json())
