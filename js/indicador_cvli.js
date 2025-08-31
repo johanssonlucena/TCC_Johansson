@@ -28,6 +28,7 @@ function updateMap() {
     let filterBairro;
     let filterHora;
     let filterDia;
+    let filterDiaHora;
 
     // Data Base - no conjunto de dados, a última data que teve registro foi no dia 25/04/2025, por isso ficou fixado nela
     let baseDate = new Date("2025-04-25"); 
@@ -38,18 +39,21 @@ function updateMap() {
         filterBairro = rawData;
         filterHora = rawData;
         filterDia = rawData;
+        filterDiaHora = rawData;
     } else {
         const cutoff = new Date(baseDate.getTime() - daysAgo * 86400000);
         filtered = rawData.filter(d => new Date(d.despachado) >= cutoff);
         filterBairro = rawData.filter(d => new Date(d.despachado) >= cutoff);
         filterHora = rawData.filter(d => new Date(d.despachado) >= cutoff);
         filterDia = rawData.filter(d => new Date(d.despachado) >= cutoff);
+        filterDiaHora = rawData.filter(d => new Date(d.despachado) >= cutoff);
     }
 
     if (!bairrosSelecionados.includes('todos')) {
         filtered = filtered.filter(d => bairrosSelecionados.includes(d.bairro));
         filterHora = filterHora.filter(d => bairrosSelecionados.includes(d.bairro));
         filterDia = filterDia.filter(d => bairrosSelecionados.includes(d.bairro));
+        filterDiaHora = filterDiaHora.filter(d => bairrosSelecionados.includes(d.bairro));
     }
 
     if (!hora.includes('todos')) {
@@ -102,6 +106,10 @@ function updateMap() {
     // Envia para gráfico de dia da semana
     filterDia = filterDia.filter(d => selectedTypes.includes(d.tipo));
     enviarDadosParaGraficoDia(filterDia);
+
+    // Envia para gráfico dia e Hora
+    filterDiaHora = filterDiaHora.filter(d => selectedTypes.includes(d.tipo));
+    enviarDadosParaGraficoDiaHora(filterDiaHora);
 
     const divTotalFiltros = document.getElementById("divTotal");
     const total = filtered.length;
@@ -172,6 +180,13 @@ function enviarDadosParaGraficoHoras(filtered) {
 
 function enviarDadosParaGraficoDia(filtered) {
     const iframe = document.getElementById('diaFrame');
+    if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage(filtered, '*');
+    }
+}
+
+function enviarDadosParaGraficoDiaHora(filtered) {
+    const iframe = document.getElementById('diaHoraFrame');
     if (iframe && iframe.contentWindow) {
         iframe.contentWindow.postMessage(filtered, '*');
     }
