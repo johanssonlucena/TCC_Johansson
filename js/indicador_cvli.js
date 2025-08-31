@@ -1,8 +1,6 @@
 let rawData = [];
 let bairrosUnicos = new Set();
 
-
-
 // Inicializa mapa de marcadores
 const markerMap = L.map('markerMap').setView([-7.23, -35.88], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(markerMap);
@@ -29,6 +27,7 @@ function updateMap() {
     let filtered;
     let filterBairro;
     let filterHora;
+    let filterDia;
 
     // Data Base - no conjunto de dados, a última data que teve registro foi no dia 25/04/2025, por isso ficou fixado nela
     let baseDate = new Date("2025-04-25"); 
@@ -38,16 +37,19 @@ function updateMap() {
         filtered = rawData;
         filterBairro = rawData;
         filterHora = rawData;
+        filterDia = rawData;
     } else {
         const cutoff = new Date(baseDate.getTime() - daysAgo * 86400000);
         filtered = rawData.filter(d => new Date(d.despachado) >= cutoff);
         filterBairro = rawData.filter(d => new Date(d.despachado) >= cutoff);
         filterHora = rawData.filter(d => new Date(d.despachado) >= cutoff);
+        filterDia = rawData.filter(d => new Date(d.despachado) >= cutoff);
     }
 
     if (!bairrosSelecionados.includes('todos')) {
         filtered = filtered.filter(d => bairrosSelecionados.includes(d.bairro));
         filterHora = filterHora.filter(d => bairrosSelecionados.includes(d.bairro));
+        filterDia = filterDia.filter(d => bairrosSelecionados.includes(d.bairro));
     }
 
     if (!hora.includes('todos')) {
@@ -55,6 +57,7 @@ function updateMap() {
         const horaNum = Number(horaSelecionada);
         filtered = filtered.filter(d => hora.includes(String(d.hora_exata)));
         filterBairro = filterBairro.filter(d => hora.includes(String(d.hora_exata)));
+        filterDia = filterDia.filter(d => hora.includes(String(d.hora_exata)));
     }
 
     if (!dia.includes('todos')) {
@@ -95,6 +98,10 @@ function updateMap() {
     // Envia para gráfico de horas
     filterHora = filterHora.filter(d => selectedTypes.includes(d.tipo));
     enviarDadosParaGraficoHoras(filterHora);
+
+    // Envia para gráfico de dia da semana
+    filterDia = filterDia.filter(d => selectedTypes.includes(d.tipo));
+    enviarDadosParaGraficoDia(filterDia);
 
     const divTotalFiltros = document.getElementById("divTotal");
     const total = filtered.length;
@@ -163,6 +170,12 @@ function enviarDadosParaGraficoHoras(filtered) {
     }
 }
 
+function enviarDadosParaGraficoDia(filtered) {
+    const iframe = document.getElementById('diaFrame');
+    if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage(filtered, '*');
+    }
+}
 
 fetch('../json/cvli.json')
     .then(res => res.json())
@@ -178,9 +191,6 @@ fetch('../json/cvli.json')
     updateMap();
     });
 
-
-    
-// Eventos para atualizar mapa
 document.getElementById('periodSelect').addEventListener('change', updateMap);
 document.querySelectorAll('.crime-filter').forEach(cb => cb.addEventListener('change', updateMap));
 document.getElementById('bairroSelect').addEventListener('change', updateMap);
