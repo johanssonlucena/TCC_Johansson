@@ -1,7 +1,7 @@
 let rawData = [];
 let bairrosUnicos = new Set();
 
-// Inicializa mapa de marcadores
+// Inicializa mapa de marcadores 
 const markerMap = L.map('markerMap').setView([-7.23, -35.88], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(markerMap);
 // Adiciona Cluster, para o CVLI maxClusterRadius 10
