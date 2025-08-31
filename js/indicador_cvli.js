@@ -27,6 +27,7 @@ function updateMap() {
 
     // Dados filtrados
     let filtered;
+    let filterBairro;
 
     // Data Base - no conjunto de dados, a última data que teve registro foi no dia 25/04/2025, por isso ficou fixado nela
     let baseDate = new Date("2025-04-25"); 
@@ -34,9 +35,11 @@ function updateMap() {
     // Tratamento de todos os Filtros
     if (daysAgo === 0) {
         filtered = rawData;
+        filterBairro = rawData;
     } else {
         const cutoff = new Date(baseDate.getTime() - daysAgo * 86400000);
         filtered = rawData.filter(d => new Date(d.despachado) >= cutoff);
+        filterBairro = rawData.filter(d => new Date(d.despachado) >= cutoff);
     }
 
     if (!bairrosSelecionados.includes('todos')) {
@@ -47,10 +50,12 @@ function updateMap() {
         const horaSelecionada = selectHora.value;
         const horaNum = Number(horaSelecionada);
         filtered = filtered.filter(d => hora.includes(String(d.hora_exata)));
+        filterBairro = filterBairro.filter(d => hora.includes(String(d.hora_exata)));
     }
 
     if (!dia.includes('todos')) {
         filtered = filtered.filter(d => dia.includes(d.dia_da_semana));
+        filterBairro = filterBairro.filter(d => dia.includes(d.dia_da_semana));
     }
     // Tratamento de todos os Filtros
 
@@ -77,6 +82,10 @@ function updateMap() {
 
     // Contagem do total dos registros, após filtros
     filtered = filtered.filter(d => selectedTypes.includes(d.tipo));
+
+    // Envia para gráfico de bairros, após filtro dos tipos 
+    filterBairro = filterBairro.filter(d => selectedTypes.includes(d.tipo));
+    enviarDadosParaGraficoBairro(filterBairro);
 
     const divTotalFiltros = document.getElementById("divTotal");
     const total = filtered.length;
@@ -126,6 +135,13 @@ atualizarBairrosSelecionados();
 
 function enviarDadosParaGrafico(filtered) {
     const iframe = document.getElementById('tiposFrame');
+    if (iframe && iframe.contentWindow) {
+        iframe.contentWindow.postMessage(filtered, '*');
+    }
+}
+
+function enviarDadosParaGraficoBairro(filtered) {
+    const iframe = document.getElementById('bairrosFrame');
     if (iframe && iframe.contentWindow) {
         iframe.contentWindow.postMessage(filtered, '*');
     }

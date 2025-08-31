@@ -2,113 +2,131 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Bairros com mais Ocorrências</title>
+  <title>Bairros com mais Ocorrências de CVLI</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <style>
     html, body {
       height: 100%;
       margin: 0;
     }
-    #filtro {
-      width: 100%;
-      position: absolute;
-      bottom: 10px;
-      text-align: center;
-    }
+
     #chart {
       width: 100%;
-      height: 90vh;
+      height: 85vh;
     }
-    #qtdSelect {
-      margin: 10px;
-      padding: 5px;
-      font-size: 14px;
+
+    #filtro {
+      position: fixed;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      max-width: 400px;
+      z-index: 10;
     }
   </style>
 </head>
 <body>
-    <div id="filtro">
-    <label for="qtdSelect">Selecione a opção:</label>
-    <select id="qtdSelect">
-      <option value="top15" selected>15 Bairros com mais ocorrências</option>
-      <option value="top10">10 Bairros com mais ocorrências</option>
-      <option value="top5">5 Bairros com mais ocorrências</option>
-      <option value="bottom10">Top 10 menos ocorrências</option>
-      <option value="bottom5">Top 5 menos ocorrências</option>
-    </select>
-  </div>
 
   <div id="chart"></div>
-  
+
+  <div id="filtro" class="text-center">     
+      <select id="qtdSelect" class="form-select">
+        <option value="top20">20 Bairros com mais CVLI's</option>
+        <option value="top15">15 Bairros com mais CVLI's</option>
+        <option value="top10" selected>10 Bairros com mais CVLI's</option>
+        <option value="top5">5 Bairros com mais CVLI's</option>
+      </select>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
-  <script>
-    const chartDom = document.getElementById('chart');
-    const myChart = echarts.init(chartDom);
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    function processData(dataJson, filterOption = 'top15') {
-      const counts = {};
-      dataJson.forEach(item => {
-        counts[item.bairro] = (counts[item.bairro] || 0) + 1;
-      });
+<script>
+  const chartDom = document.getElementById('chart');
+  const myChart = echarts.init(chartDom);
+  let globalData = [];
 
-      let countsArray = Object.entries(counts);
+  function processData(dataJson, filterOption) {
+    filtro = filterOption
+    globalData = dataJson;
 
-      // Ordenação conforme o filtro
-      switch(filterOption) {
-        case 'top15': countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,15); break;
-        case 'top10': countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,10); break;
-        case 'top5': countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,5); break;
-        case 'bottom10': countsArray = countsArray.sort((a,b)=>a[1]-b[1]).slice(0,10); break;
-        case 'bottom5': countsArray = countsArray.sort((a,b)=>a[1]-b[1]).slice(0,5); break;
-        default: countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,15);
-      }
+    const counts = {};
+    dataJson.forEach(item => {
+      counts[item.bairro] = (counts[item.bairro] || 0) + 1;
+    });
 
-      // inverter para barras horizontais
-      countsArray = countsArray.reverse();
+    let countsArray = Object.entries(counts);
 
-      const sourceData = [['quantidade','bairro']];
-      countsArray.forEach(([bairro, quantidade]) => sourceData.push([quantidade, bairro]));
-
-      const option = {
-        title: {
-          text: 'Bairros por Ocorrência',
-          left: 'center',
-          top: 'top',
-          textStyle: { fontSize: 22, fontWeight:'bold', color:'#333' }
-        },
-        tooltip: {
-          trigger: 'axis',
-          axisPointer: { type: 'shadow' },
-          formatter: params => `${params[0].name}: <b>${params[0].value[0]}</b> ocorrências`
-        },
-        dataset: { source: sourceData },
-        grid: { left:'10%', right:'10%', bottom:'10%', containLabel:true },
-        xAxis: { name:'Quantidade', type:'value', axisLabel:{ fontSize:12 } },
-        yAxis: { name:'Bairro', type:'category', axisLabel:{ fontSize:12 } },
-        series: [{
-          type:'bar',
-          encode: { x:'quantidade', y:'bairro' },
-          itemStyle: { color:'#4682B4', borderRadius:[0,8,8,0] },
-          barMaxWidth:40
-        }]
-      };
-
-      myChart.setOption(option);
-      window.addEventListener('resize', () => myChart.resize());
+    switch(filtro) {
+      case 'top20': countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,20); break;
+      case 'top15': countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,15); break;
+      case 'top10': countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,10); break;
+      case 'top5': countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,5); break;
+      default: countsArray = countsArray.sort((a,b)=>b[1]-a[1]).slice(0,10);
     }
 
-    // Carregar dados e inicializar gráfico
-    fetch('../../json/cvli.json')
-      .then(res => res.json())
-      .then(data => processData(data))
-      .catch(err => console.error('Erro ao carregar JSON:', err));
+    countsArray = countsArray.reverse();
 
-    // Atualizar gráfico quando selecionar opção
-    document.getElementById('qtdSelect').addEventListener('change', (e) => {
-      fetch('../../json/cvli.json')
-        .then(res => res.json())
-        .then(data => processData(data, e.target.value))
-        .catch(err => console.error('Erro ao carregar JSON:', err));
-    });
-  </script>
+    const sourceData = [['quantidade','bairro']];
+    countsArray.forEach(([bairro, quantidade]) => sourceData.push([quantidade, bairro]));
+
+    const option = {
+      title: {
+        text: 'Bairros com maiores quantidade de registros CVLI',
+        subtext: '(É possível alterar a quantidade de bairros visualizado)',
+        left: 'center',
+        top: 'top',
+        textStyle: { fontSize: 22, fontWeight:'bold', color:'#333' },
+        subtextStyle: { fontSize: 14, color: '#000' }
+      },
+      tooltip: {
+        trigger: 'axis',
+        axisPointer: { type: 'shadow' },
+        formatter: params => `${params[0].name}: <b>${params[0].value[0]}</b> ocorrências`
+      },
+      dataset: { source: sourceData },
+      grid: { left:'10%', right:'10%', bottom:'10%', containLabel:true },
+      xAxis: { 
+        name:'Quantidade', type:'value',  
+        nameLocation: 'center', nameGap: 40, 
+        nameTextStyle: {color: '#000', fontSize: 13}, 
+        axisLabel:{ fontSize:13, color: '#000' } 
+      },
+      yAxis: { 
+        name:'Bairro', type:'category', 
+        nameTextStyle: {color: '#000', fontSize: 13}, 
+        axisLabel:{ fontSize:13, color: '#000' } 
+      },
+      series: [{
+        type:'bar',
+        encode: { x:'quantidade', y:'bairro' },
+        itemStyle: { color:'#4682B4', borderRadius:[0,8,8,0] },
+        barMaxWidth:40
+      }]
+    };
+
+    myChart.setOption(option);
+    window.addEventListener('resize', () => myChart.resize());
+  }
+
+  window.addEventListener('message', (event) => {
+    processData(event.data, document.getElementById('qtdSelect').value);
+
+  });
+
+  fetch('../../json/cvli.json')
+    .then(res => res.json())
+    .then(data => processData(data))
+    .catch(err => console.error('Erro ao carregar JSON:', err));
+
+  document.getElementById('qtdSelect').addEventListener('change', (e) => {
+    if(globalData.length > 0){
+      processData(globalData, e.target.value);
+    }
+  });
+</script>
 </body>
 </html>
