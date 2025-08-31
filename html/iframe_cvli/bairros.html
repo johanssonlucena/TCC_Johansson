@@ -76,11 +76,13 @@
     const option = {
       title: {
         text: 'Bairros com maiores quantidade de registros CVLI',
-        subtext: '(É possível alterar a quantidade de bairros visualizado)',
+        subtext: '(É possível alterar a quantidade de bairros visualizados)',
         left: 'center',
         top: 'top',
-        textStyle: { fontSize: 22, fontWeight:'bold', color:'#333' },
-        subtextStyle: { fontSize: 14, color: '#000' }
+        textStyle: { fontSize: window.innerWidth < 768 ? 16 : 24, 
+                      fontWeight:'bold', 
+                      color:'#333' }, 
+        subtextStyle: { fontSize: window.innerWidth < 768 ? 12 : 16, color: '#000' }
       },
       tooltip: {
         trigger: 'axis',
@@ -88,17 +90,17 @@
         formatter: params => `${params[0].name}: <b>${params[0].value[0]}</b> ocorrências`
       },
       dataset: { source: sourceData },
-      grid: { left:'10%', right:'10%', bottom:'10%', containLabel:true },
+      grid: { top: 100, left:'10%', right:'10%', bottom:'10%', containLabel:true },
       xAxis: { 
         name:'Quantidade', type:'value',  
         nameLocation: 'center', nameGap: 40, 
         nameTextStyle: {color: '#000', fontSize: 13}, 
-        axisLabel:{ fontSize:13, color: '#000' } 
+        axisLabel:{ fontSize: window.innerWidth < 768 ? 9 : 13, color: '#000' } 
       },
       yAxis: { 
         name:'Bairro', type:'category', 
         nameTextStyle: {color: '#000', fontSize: 13}, 
-        axisLabel:{ fontSize:13, color: '#000' } 
+        axisLabel:{ fontSize: window.innerWidth < 768 ? 9 : 13, color: '#000' } 
       },
       series: [{
         type:'bar',
