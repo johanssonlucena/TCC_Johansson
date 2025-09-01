@@ -66,9 +66,8 @@
             Período dos dados: 18/05/2023 a 25/04/2025
         </h5><br>
         <div>
-        <h5 style="text-align: justify;"><strong>Descrição do Indicador:</strong>  Visualização Geral dos maiores tipos criminais,
-        para isso foi necessário adequar o conjnunto de dados para permanecer os tipos mais importantes e retirar os que não impacta
-        no contexto criminal.</h5>
+        <h5 style="text-align: justify;"><strong>Descrição do Indicador:</strong>  Visualização Geral dos maiores tipos registrados,
+        para isso foi necessário adequar o conjnunto de dados para permanecer os tipos mais importantes.</h5>
         </div>
     </div>
     <!-- Informações -->
@@ -80,34 +79,44 @@
         <!-- Marcadores dos Tipos -->
         <label class="form-label">Tipos Gerais:</label>
         <div class="form-check legend-item">
-          <input class="form-check-input crime-filter" type="checkbox" value="Roubo de Automóvel" checked>
+          <input class="form-check-input crime-filter" type="checkbox" value="Perturbação do trabalho ou sossego alheios" checked>
           <img src="https://maps.google.com/mapfiles/ms/icons/blue-dot.png" class="legend-icon">
-          <label class="form-check-label">Roubo de Automóvel</label>
+          <label class="form-check-label">Perturbação do trabalho ou sossego alheios</label>
         </div>
         <div class="form-check legend-item">
-          <input class="form-check-input crime-filter" type="checkbox" value="Furto de Automóvel" checked>
+          <input class="form-check-input crime-filter" type="checkbox" value="Averiguação de Atitude Suspeita" checked>
           <img src="https://maps.google.com/mapfiles/ms/icons/ltblue-dot.png" class="legend-icon">
-          <label class="form-check-label">Furto de Automóvel</label>
+          <label class="form-check-label">Averiguação de Atitude Suspeita</label>
         </div>
         <div class="form-check legend-item">
-          <input class="form-check-input crime-filter" type="checkbox" value="Roubo de Motocicleta" checked>
+          <input class="form-check-input crime-filter" type="checkbox" value="Violência Doméstica" checked>
           <img src="https://maps.google.com/mapfiles/ms/icons/red-dot.png" class="legend-icon">
-          <label class="form-check-label">Roubo de Motocicleta</label>
+          <label class="form-check-label">Violência Doméstica</label>
         </div>
         <div class="form-check legend-item">
-          <input class="form-check-input crime-filter" type="checkbox" value="Furto de Motocicleta" checked>
+          <input class="form-check-input crime-filter" type="checkbox" value="Outros" checked>
           <img src="https://maps.google.com/mapfiles/ms/icons/orange-dot.png" class="legend-icon">
-          <label class="form-check-label">Furto de Motocicleta</label>
+          <label class="form-check-label">Outros</label>
         </div>
         <div class="form-check legend-item">
-          <input class="form-check-input crime-filter" type="checkbox" value="Roubo de Caminhão" checked>
+          <input class="form-check-input crime-filter" type="checkbox" value="Vias de Fato" checked>
           <img src="https://maps.google.com/mapfiles/ms/icons/pink-dot.png" class="legend-icon">
-          <label class="form-check-label">Roubo de Caminhão</label>
+          <label class="form-check-label">Vias de Fato</label>
         </div>
         <div class="form-check legend-item">
-          <input class="form-check-input crime-filter" type="checkbox" value="Furto de Caminhão" checked>
+          <input class="form-check-input crime-filter" type="checkbox" value="Ameaça" checked>
           <img src="https://maps.google.com/mapfiles/ms/icons/purple-dot.png" class="legend-icon">
-          <label class="form-check-label">Furto de Caminhão</label>
+          <label class="form-check-label">Ameaça</label>
+        </div>
+        <div class="form-check legend-item">
+          <input class="form-check-input crime-filter" type="checkbox" value="Furto" checked>
+          <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-grey.png" class="legend-icon">
+          <label class="form-check-label">Furto</label>
+        </div>
+        <div class="form-check legend-item">
+          <input class="form-check-input crime-filter" type="checkbox" value="Roubo" checked>
+          <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-black.png" class="legend-icon">
+          <label class="form-check-label">Roubo</label>
         </div>
         <!-- Marcadores dos Tipos -->
 
@@ -188,7 +197,7 @@
   <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
   
   <!-- Lógica para o Mapa -->
-  <script src="../js/indicador_siva.js"></script>
+  <script src="../js/vis_geral.js"></script>
 
     <!-- Iframes da Visualizações -->
     <br>
