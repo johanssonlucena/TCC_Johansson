@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%">
+<html lang="pt-br" style="height: 100%">
 <head>
   <meta charset="utf-8">
   <style>
@@ -45,31 +45,44 @@
       const option = {
         title: {
           text: 'Mapa de calor: Ocorrências por Hora e Dia da Semana',
+          subtext: '(É possível filtrar quantidade mínima e máxima dos valores)',
+          textStyle: { fontSize: window.innerWidth < 768 ? 14 : 24, 
+                      fontWeight:'bold', 
+                      color:'#333' },
+          subtextStyle: { fontSize: window.innerWidth < 768 ? 10 : 14, color: '#000' },
           left: 'center'
         },
         tooltip: { position: 'top', formatter: params => `${hours[params.value[0]]}h - ${days[params.value[1]]}: ${params.value[2]} ocorrências` },
-        grid: { height: '50%', top: '10%' },
+        grid: { top: 100, height: '50%', top: '10%' },
         xAxis: {
           type: 'category',
+          name: 'Horas',
+          nameLocation: 'center',
+          nameGap: 40,
+          nameTextStyle: {color: '#000', fontSize: 12},
+          axisLabel:{ fontSize: window.innerWidth < 768 ? 8 : 14, color: '#000' },
           data: hours,
           splitArea: { show: true }
         },
         yAxis: {
           type: 'category',
+          name: 'Dia',
+          nameTextStyle: {color: '#000', fontSize: 12},
+          axisLabel:{ fontSize: window.innerWidth < 768 ? 8 : 14, color: '#000' },
           data: days,
           splitArea: { show: true }
         },
         visualMap: {
-          min: 0,
-          max: Math.max(...dataMap.map(d => d[2])),
-          calculable: true,
-          orient: 'horizontal',
-          left: 'center',
-          bottom: '20%',
-          inRange: {
-            color: ['#ffffcc', '#c2e699', '#78c679', '#31a354', '#006837']
-          }
-        },
+  min: 0,
+  max: Math.max(...dataMap.map(d => d[2])),
+  calculable: true,
+  orient: window.innerWidth < 768 ? 'vertical' : 'horizontal',
+  left: 'center',
+  bottom: window.innerWidth < 768 ? '5%' : '20%',
+  inRange: {
+    color: ['#ffffcc', '#c2e699', '#78c679', '#31a354', '#006837']
+  }
+},
         series: [{
           name: 'Ocorrências',
           type: 'heatmap',
@@ -87,6 +100,10 @@
       myChart.setOption(option);
       window.addEventListener('resize', myChart.resize);
     }
+
+  window.addEventListener('message', (event) => {
+    processData(event.data);
+  });
 
     fetch('../../json/cvp.json')
       .then(res => res.json())
