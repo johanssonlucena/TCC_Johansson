@@ -73,16 +73,16 @@
           splitArea: { show: true }
         },
         visualMap: {
-  min: 0,
-  max: Math.max(...dataMap.map(d => d[2])),
-  calculable: true,
-  orient: window.innerWidth < 768 ? 'vertical' : 'horizontal',
-  left: 'center',
-  bottom: window.innerWidth < 768 ? '5%' : '20%',
-  inRange: {
-    color: ['#ffffcc', '#c2e699', '#78c679', '#31a354', '#006837']
-  }
-},
+          min: 0,
+          max: Math.max(...dataMap.map(d => d[2])),
+          calculable: true,
+          orient: window.innerWidth < 768 ? 'vertical' : 'horizontal',
+          left: 'center',
+          bottom: window.innerWidth < 768 ? '5%' : '20%',
+          inRange: {
+            color: ['#ffffcc', '#c2e699', '#78c679', '#31a354', '#006837']
+          }
+        },
         series: [{
           name: 'Ocorrências',
           type: 'heatmap',
