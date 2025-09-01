@@ -32,7 +32,7 @@
       const dataPie = Object.entries(contagem).map(([tipo, count]) => ({
         value: count,
         name: tipo
-      }));
+      })).sort((a, b) => b.value - a.value);
 
       const isMobile = window.innerWidth < 500;
 

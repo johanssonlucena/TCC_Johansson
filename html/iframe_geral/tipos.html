@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>Tipos CVLI</title>
+  <title>Tipos Gerais</title>
   <style>
     html, body {
       height: 100%;
@@ -32,13 +32,13 @@
       const dataPie = Object.entries(contagem).map(([tipo, count]) => ({
         value: count,
         name: tipo
-      }));
+      })).sort((a, b) => b.value - a.value);
 
       const isMobile = window.innerWidth < 500;
 
       const option = {
         title: {
-          text: 'Distribuição dos tipos de CVLI',
+          text: 'Distribuição dos tipos Gerais',
           subtext: '(Passe o mouse nas opções para mais detalhes)',
           left: 'center',
           top: isMobile ? '5%' : 'top',
@@ -81,7 +81,7 @@
 
     window.addEventListener('resize', () => myChart.resize());
 
-  fetch("../../json/cvli.json") 
+  fetch("../../json/vis_geral.json") 
   .then(response => response.json())
   .then(data => {
     atualizarGrafico(data); 
