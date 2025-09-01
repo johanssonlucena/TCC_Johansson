@@ -14,7 +14,6 @@
       height: 100%;
     }
   </style>
-
 </head>
 
 <body>
@@ -22,61 +21,57 @@
 
   <script>
     const diasFixos = ['Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado', 'Domingo'];
+    let dadosGlobais = [];
 
-    fetch('../../json/sivar.json')
-      .then(response => response.json())
-      .then(data => {
-        const contagem = {};
-        data.forEach(item => {
-          const dia = item.dia_da_semana;
-          contagem[dia] = (contagem[dia] || 0) + 1;
-        });
-
-        const valores = diasFixos.map(dia => contagem[dia] || 0);
-        const maxValor = Math.max(...valores);
-
-        const seriesData = diasFixos.map(dia => {
-          const valor = contagem[dia] || 0;
-          if (valor === maxValor && maxValor > 0) {
-            return {
-              value: valor,
-              itemStyle: {
-                color: '#505372'
-              }
-            };
-          }
-          return valor;
-        });
-
-        const option = {
-          title: {
-            text: 'Ocorrências por Dia da Semana',
-            left: 'center'
-          },
-          tooltip: {
-            trigger: 'axis'
-          },
-          xAxis: {
-            type: 'category',
-            data: diasFixos
-          },
-          yAxis: {
-            type: 'value'
-          },
-          series: [
-            {
-              type: 'bar',
-              data: seriesData
-            }
-          ]
-        };
-
-        const chart = echarts.init(document.getElementById('container'));
-        chart.setOption(option);
-      })
-      .catch(error => {
-        console.error('Erro ao carregar o JSON:', error);
+    function renderChart(data) {
+      const contagem = {};
+      data.forEach(item => {
+        const dia = item.dia_da_semana;
+        contagem[dia] = (contagem[dia] || 0) + 1;
       });
+
+      const valores = diasFixos.map(dia => contagem[dia] || 0);
+      const maxValor = Math.max(...valores);
+
+      const seriesData = diasFixos.map(dia => {
+        const valor = contagem[dia] || 0;
+        if (valor === maxValor && maxValor > 0) {
+          return {
+            value: valor,
+            itemStyle: { color: '#505372' }
+          };
+        }
+        return valor;
+      });
+
+      const option = {
+        title: { text: 'Distribuição de ocorrências SIVA-R por dia da Semana', 
+                left: 'center',
+                textStyle: { fontSize: window.innerWidth < 768 ? 14 : 24, fontWeight:'bold', color:'#333' }  }, 
+        tooltip: { trigger: 'axis' },
+        grid: { top: 100},  
+        nameLocation: 'center',
+        xAxis: { name: 'Dia da semana', nameLocation: 'center', nameGap: 40, nameTextStyle: {color: '#000', fontSize: 12}, type: 'category', data: diasFixos, axisLabel:{ fontSize: window.innerWidth < 768 ? 8 : 14, color: '#000' }  },
+        yAxis: { name:'Quantidade', type: 'value', nameTextStyle: {color: '#000', fontSize: 12}, axisLabel:{ fontSize: window.innerWidth < 768 ? 8 : 14, color: '#000' } },
+        series: [{ type: 'bar', data: seriesData }]
+      };
+
+      const chart = echarts.init(document.getElementById('container'));
+      chart.setOption(option);
+      window.addEventListener('resize', () => chart.resize());
+    }
+
+  window.addEventListener('message', (event) => {
+    renderChart(event.data);
+  });
+
+  fetch('../../json/sivar.json')
+    .then(response => response.json())
+    .then(data => {
+      dadosGlobais = data;     
+      renderChart(dadosGlobais); 
+    })
+    .catch(error => console.error('Erro ao carregar o JSON:', error));
   </script>
 </body>
 </html>
