@@ -45,7 +45,7 @@
       });
 
       const option = {
-        title: { text: 'Distribuição de ocorrências CVLI por dia da Semana', 
+        title: { text: 'Distribuição de ocorrências por dia da Semana', 
                 left: 'center',
                 textStyle: { fontSize: window.innerWidth < 768 ? 14 : 24, fontWeight:'bold', color:'#333' }  }, 
         tooltip: { trigger: 'axis' },
@@ -65,7 +65,7 @@
     renderChart(event.data);
   });
 
-  fetch('../../json/cvli.json')
+  fetch('../../json/vis_geral.json')
     .then(response => response.json())
     .then(data => {
       dadosGlobais = data;     
