@@ -72,6 +72,17 @@
           data: days,
           splitArea: { show: true }
         },
+        visualMap: {
+          min: 0,
+          max: Math.max(...dataMap.map(d => d[2])),
+          calculable: true,
+          orient: 'horizontal',
+          left: 'center',
+          bottom: '20%',
+          inRange: {
+            color: ['#ffffcc', '#c2e699', '#78c679', '#31a354', '#006837']
+          }
+        },
         series: [{
           name: 'Ocorrências',
           type: 'heatmap',
