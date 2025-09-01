@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>Tipos CVLI</title>
+  <title>Tipos AAF</title>
   <style>
     html, body {
       height: 100%;
@@ -38,7 +38,7 @@
 
       const option = {
         title: {
-          text: 'Distribuição dos tipos de CVLI',
+          text: 'Distribuição dos tipos Apreensão de armas de fogo',
           subtext: '(Passe o mouse nas opções para mais detalhes)',
           left: 'center',
           top: isMobile ? '5%' : 'top',
@@ -81,7 +81,7 @@
 
     window.addEventListener('resize', () => myChart.resize());
 
-  fetch("../../json/cvli.json") 
+  fetch("../../json/aaf.json") 
   .then(response => response.json())
   .then(data => {
     atualizarGrafico(data); 
