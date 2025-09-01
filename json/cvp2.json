@@ -174,7 +174,7 @@
         "latitude": -7.2445951,
         "longitude": -35.9262148,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-05-26T09:04:03.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 9
@@ -204,7 +204,7 @@
         "latitude": -7.2436208,
         "longitude": -35.8964129,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-05-31T21:11:44.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 21
@@ -274,7 +274,7 @@
         "latitude": -7.2197999,
         "longitude": -35.8521242,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-06-03T18:30:22.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 18
@@ -324,7 +324,7 @@
         "latitude": -7.3111807,
         "longitude": -36.0261383,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-06-08T10:18:59.000",
         "dia_da_semana": "Quinta",
         "hora_exata": 10
@@ -444,7 +444,7 @@
         "latitude": -7.3552334,
         "longitude": -35.9013175,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-06-21T22:34:58.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 22
@@ -514,7 +514,7 @@
         "latitude": -7.2459472,
         "longitude": -35.9087503,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-06-26T18:27:04.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 18
@@ -754,7 +754,7 @@
         "latitude": -7.2219648,
         "longitude": -35.8905443,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-07-14T00:03:59.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 0
@@ -1064,7 +1064,7 @@
         "latitude": -7.2159282,
         "longitude": -35.9327389,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-08-05T18:58:42.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 18
@@ -1244,7 +1244,7 @@
         "latitude": -7.242044,
         "longitude": -35.8731257,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-08-16T15:03:53.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 15
@@ -1294,7 +1294,7 @@
         "latitude": -7.2538927,
         "longitude": -35.9053435,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "com privação de liberdade",
         "despachado": "2023-08-18T15:41:23.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 15
@@ -1404,7 +1404,7 @@
         "latitude": -7.2854538,
         "longitude": -35.8898338,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-08-22T12:36:50.000",
         "dia_da_semana": "Terça",
         "hora_exata": 12
@@ -1604,7 +1604,7 @@
         "latitude": -7.2296048,
         "longitude": -35.9079465,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-08-28T23:57:29.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 23
@@ -1804,7 +1804,7 @@
         "latitude": -7.2287737,
         "longitude": -35.9026528,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-09-10T19:32:22.000",
         "dia_da_semana": "Domingo",
         "hora_exata": 19
@@ -1834,7 +1834,7 @@
         "latitude": -7.2222837,
         "longitude": -35.8935306,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-09-12T05:14:47.000",
         "dia_da_semana": "Terça",
         "hora_exata": 5
@@ -1874,7 +1874,7 @@
         "latitude": -7.2306849,
         "longitude": -35.8822802,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-09-13T18:47:08.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 18
@@ -1944,7 +1944,7 @@
         "latitude": -7.2330787,
         "longitude": -35.9054081,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-09-18T20:30:46.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 20
@@ -1964,7 +1964,7 @@
         "latitude": -7.2206167,
         "longitude": -35.8888328,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "de Carga (apenas a carga)",
         "despachado": "2023-09-19T00:08:24.000",
         "dia_da_semana": "Terça",
         "hora_exata": 0
@@ -2014,7 +2014,7 @@
         "latitude": -7.2210003,
         "longitude": -35.8836236,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-09-20T18:53:38.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 18
@@ -2044,7 +2044,7 @@
         "latitude": -7.2455784,
         "longitude": -35.8637441,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-09-21T18:53:01.000",
         "dia_da_semana": "Quinta",
         "hora_exata": 18
@@ -2064,7 +2064,7 @@
         "latitude": -7.2275052,
         "longitude": -35.8733177,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-09-24T19:52:31.000",
         "dia_da_semana": "Domingo",
         "hora_exata": 19
@@ -2294,7 +2294,7 @@
         "latitude": -7.2357179,
         "longitude": -35.8965645,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em estabelecimento público",
         "despachado": "2023-10-11T14:40:12.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 14
@@ -2354,7 +2354,7 @@
         "latitude": -7.2419931,
         "longitude": -35.8965974,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-10-16T19:30:21.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 19
@@ -2391,8 +2391,8 @@
     },
     {
         "bairro": "Distrito de Catolé de Boa Vista",
-        "latitude": -7.2822998,
-        "longitude": -36.0957744,
+        "latitude": -7.2109336,
+        "longitude": -36.8262497,
         "tipo": "Roubo",
         "subtipo": "a Transeunte",
         "despachado": "2023-10-19T23:34:38.000",
@@ -2494,7 +2494,7 @@
         "latitude": -7.2328188,
         "longitude": -35.8999632,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-10-25T19:17:49.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 19
@@ -2794,7 +2794,7 @@
         "latitude": -7.3111807,
         "longitude": -36.0261383,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-11-20T04:06:16.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 4
@@ -2844,7 +2844,7 @@
         "latitude": -7.222431,
         "longitude": -35.9179906,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-11-24T21:20:33.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 21
@@ -2864,7 +2864,7 @@
         "latitude": -7.3552334,
         "longitude": -35.9013175,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-11-26T04:47:58.000",
         "dia_da_semana": "Domingo",
         "hora_exata": 4
@@ -2874,7 +2874,7 @@
         "latitude": -7.3552334,
         "longitude": -35.9013175,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-11-26T05:16:32.000",
         "dia_da_semana": "Domingo",
         "hora_exata": 5
@@ -2964,7 +2964,7 @@
         "latitude": -7.2261188,
         "longitude": -35.870251,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-12-08T15:05:33.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 15
@@ -3004,7 +3004,7 @@
         "latitude": -7.1972381,
         "longitude": -35.8812844,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "de Carga (apenas a carga)",
         "despachado": "2023-12-11T04:14:01.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 4
@@ -3074,7 +3074,7 @@
         "latitude": -7.2196544,
         "longitude": -35.8844244,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2023-12-21T15:45:09.000",
         "dia_da_semana": "Quinta",
         "hora_exata": 15
@@ -3174,7 +3174,7 @@
         "latitude": -7.2459472,
         "longitude": -35.9087503,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-01-01T13:25:20.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 13
@@ -3224,7 +3224,7 @@
         "latitude": -7.2278101,
         "longitude": -35.9016896,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-01-06T21:32:53.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 21
@@ -3484,7 +3484,7 @@
         "latitude": -7.2515929,
         "longitude": -35.9039328,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-01-30T18:07:32.000",
         "dia_da_semana": "Terça",
         "hora_exata": 18
@@ -3584,7 +3584,7 @@
         "latitude": -7.2546354,
         "longitude": -35.9277804,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-02-11T22:48:51.000",
         "dia_da_semana": "Domingo",
         "hora_exata": 22
@@ -3634,7 +3634,7 @@
         "latitude": -7.2231064,
         "longitude": -35.8860031,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-02-14T01:35:20.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 1
@@ -3664,7 +3664,7 @@
         "latitude": -7.233373,
         "longitude": -35.8648,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-02-16T00:20:48.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 0
@@ -3684,7 +3684,7 @@
         "latitude": -7.253459,
         "longitude": -35.9404619,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-02-19T23:22:29.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 23
@@ -3694,7 +3694,7 @@
         "latitude": -7.262029,
         "longitude": -35.9361757,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-02-20T01:37:48.000",
         "dia_da_semana": "Terça",
         "hora_exata": 1
@@ -3764,7 +3764,7 @@
         "latitude": -7.209774,
         "longitude": -35.8827864,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-03-02T12:54:14.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 12
@@ -3784,7 +3784,7 @@
         "latitude": -7.219083,
         "longitude": -35.886167,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-03-05T06:55:14.000",
         "dia_da_semana": "Terça",
         "hora_exata": 6
@@ -3934,7 +3934,7 @@
         "latitude": -7.2100698,
         "longitude": -35.9031444,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-03-23T18:02:29.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 18
@@ -3944,7 +3944,7 @@
         "latitude": -7.2134131,
         "longitude": -35.8871734,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-03-25T10:27:55.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 10
@@ -3964,7 +3964,7 @@
         "latitude": -7.2041509,
         "longitude": -35.880757,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-03-26T12:04:16.000",
         "dia_da_semana": "Terça",
         "hora_exata": 12
@@ -4044,7 +4044,7 @@
         "latitude": -7.2445046,
         "longitude": -35.8694809,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-04-03T15:50:18.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 15
@@ -4134,7 +4134,7 @@
         "latitude": -7.2149224,
         "longitude": -35.883869,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-04-19T07:48:46.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 7
@@ -4254,7 +4254,7 @@
         "latitude": -7.2442496,
         "longitude": -35.8712303,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-05-03T07:41:27.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 7
@@ -4324,7 +4324,7 @@
         "latitude": -7.2665254,
         "longitude": -35.9348438,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-05-08T00:48:48.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 0
@@ -4334,7 +4334,7 @@
         "latitude": -7.2278101,
         "longitude": -35.9016896,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em estabelecimento público",
         "despachado": "2024-05-08T21:09:49.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 21
@@ -4344,7 +4344,7 @@
         "latitude": -7.2274605,
         "longitude": -35.8702306,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em estabelecimento público",
         "despachado": "2024-05-08T23:43:07.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 23
@@ -4414,7 +4414,7 @@
         "latitude": -7.2238711,
         "longitude": -35.8931111,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em estabelecimento público",
         "despachado": "2024-05-15T03:34:15.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 3
@@ -4464,7 +4464,7 @@
         "latitude": -7.243561,
         "longitude": -35.874617,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-05-20T22:27:27.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 22
@@ -4524,7 +4524,7 @@
         "latitude": -7.2208412,
         "longitude": -35.8980883,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em estabelecimento público",
         "despachado": "2024-05-25T19:09:22.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 19
@@ -4564,7 +4564,7 @@
         "latitude": -7.2462447,
         "longitude": -35.916028,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-05-29T19:55:36.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 19
@@ -4584,7 +4584,7 @@
         "latitude": -7.2218777,
         "longitude": -35.8797893,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em casa lotérica",
         "despachado": "2024-05-31T07:17:19.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 7
@@ -4644,7 +4644,7 @@
         "latitude": -7.2536085,
         "longitude": -35.9456013,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-06-06T00:40:27.000",
         "dia_da_semana": "Quinta",
         "hora_exata": 0
@@ -4774,7 +4774,7 @@
         "latitude": -7.2108755,
         "longitude": -35.8850769,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-06-16T21:03:55.000",
         "dia_da_semana": "Domingo",
         "hora_exata": 21
@@ -4794,7 +4794,7 @@
         "latitude": -7.2627941,
         "longitude": -35.9355697,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-06-17T22:58:05.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 22
@@ -4824,7 +4824,7 @@
         "latitude": -7.1965858,
         "longitude": -35.9562765,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-06-27T04:17:51.000",
         "dia_da_semana": "Quinta",
         "hora_exata": 4
@@ -4844,7 +4844,7 @@
         "latitude": -7.2332816,
         "longitude": -35.8921164,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em casa lotérica",
         "despachado": "2024-06-28T08:15:25.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 8
@@ -4934,7 +4934,7 @@
         "latitude": -7.2224846,
         "longitude": -35.9047918,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-07-08T05:22:26.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 5
@@ -5094,7 +5094,7 @@
         "latitude": -7.2519152,
         "longitude": -35.8675894,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "com privação de liberdade",
         "despachado": "2024-08-03T01:39:57.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 1
@@ -5224,7 +5224,7 @@
         "latitude": -7.2587013,
         "longitude": -35.9133101,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-08-18T00:23:49.000",
         "dia_da_semana": "Domingo",
         "hora_exata": 0
@@ -5284,7 +5284,7 @@
         "latitude": -7.2171368,
         "longitude": -35.9097543,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em estabelecimento público",
         "despachado": "2024-08-26T00:45:58.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 0
@@ -5364,7 +5364,7 @@
         "latitude": -7.2139835,
         "longitude": -35.9252896,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-09-02T20:47:42.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 20
@@ -5424,7 +5424,7 @@
         "latitude": -7.2170877,
         "longitude": -35.8828528,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-09-10T13:50:06.000",
         "dia_da_semana": "Terça",
         "hora_exata": 13
@@ -5594,7 +5594,7 @@
         "latitude": -7.2274605,
         "longitude": -35.8702306,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-09-26T12:17:46.000",
         "dia_da_semana": "Quinta",
         "hora_exata": 12
@@ -5684,7 +5684,7 @@
         "latitude": -7.1998842,
         "longitude": -35.8822376,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-10-09T14:31:54.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 14
@@ -5854,7 +5854,7 @@
         "latitude": -7.206175,
         "longitude": -35.876784,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-11-05T20:06:46.000",
         "dia_da_semana": "Terça",
         "hora_exata": 20
@@ -5974,7 +5974,7 @@
         "latitude": -7.21637,
         "longitude": -35.8823884,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-11-20T07:52:32.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 7
@@ -6124,7 +6124,7 @@
         "latitude": -7.2521660146,
         "longitude": -35.9328997135,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-12-12T21:34:49.000",
         "dia_da_semana": "Quinta",
         "hora_exata": 21
@@ -6204,7 +6204,7 @@
         "latitude": -7.1905833,
         "longitude": -35.9023087,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2024-12-28T19:45:31.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 19
@@ -6384,7 +6384,7 @@
         "latitude": -7.2354524,
         "longitude": -35.9081581,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em estabelecimento público",
         "despachado": "2025-01-13T21:56:33.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 21
@@ -6414,7 +6414,7 @@
         "latitude": -7.3111807,
         "longitude": -36.0261383,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2025-01-14T12:53:36.000",
         "dia_da_semana": "Terça",
         "hora_exata": 12
@@ -6674,7 +6674,7 @@
         "latitude": -7.219526,
         "longitude": -35.8981806,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2025-01-27T20:14:49.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 20
@@ -6784,7 +6784,7 @@
         "latitude": -7.234845,
         "longitude": -35.9180431,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em correspondente bancário",
         "despachado": "2025-02-06T08:07:24.000",
         "dia_da_semana": "Quinta",
         "hora_exata": 8
@@ -6894,7 +6894,7 @@
         "latitude": -7.2201948,
         "longitude": -35.8955671,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em estabelecimento público",
         "despachado": "2025-02-17T19:40:16.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 19
@@ -6904,7 +6904,7 @@
         "latitude": -7.2854538,
         "longitude": -35.8898338,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2025-02-18T14:45:21.000",
         "dia_da_semana": "Terça",
         "hora_exata": 14
@@ -6924,7 +6924,7 @@
         "latitude": -7.2427034,
         "longitude": -35.9142807,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2025-02-19T19:11:55.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 19
@@ -6994,7 +6994,7 @@
         "latitude": -7.2671814,
         "longitude": -35.9278192,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em estabelecimento público",
         "despachado": "2025-02-24T18:41:58.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 18
@@ -7124,7 +7124,7 @@
         "latitude": -7.2208568,
         "longitude": -35.8871229,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2025-03-08T02:18:52.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 2
@@ -7154,7 +7154,7 @@
         "latitude": -7.2195322,
         "longitude": -35.8851604,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2025-03-17T23:05:53.000",
         "dia_da_semana": "Segunda",
         "hora_exata": 23
@@ -7244,7 +7244,7 @@
         "latitude": -7.21319,
         "longitude": -35.89282,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2025-03-28T08:11:06.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 8
@@ -7374,7 +7374,7 @@
         "latitude": -7.21686,
         "longitude": -35.88517,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2025-04-04T04:00:13.000",
         "dia_da_semana": "Sexta",
         "hora_exata": 4
@@ -7394,7 +7394,7 @@
         "latitude": -7.23404,
         "longitude": -35.93647,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "Outros roubos",
         "despachado": "2025-04-05T12:17:32.000",
         "dia_da_semana": "Sábado",
         "hora_exata": 12
@@ -7434,7 +7434,7 @@
         "latitude": -7.24035,
         "longitude": -35.91236,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "em estabelecimento público",
         "despachado": "2025-04-09T20:41:07.000",
         "dia_da_semana": "Quarta",
         "hora_exata": 20
@@ -7454,7 +7454,7 @@
         "latitude": -7.23802,
         "longitude": -35.92421,
         "tipo": "Roubo",
-        "subtipo": "Outros",
+        "subtipo": "com privação de liberdade",
         "despachado": "2025-04-10T22:46:48.000",
         "dia_da_semana": "Quinta",
         "hora_exata": 22

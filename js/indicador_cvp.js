@@ -11,8 +11,9 @@ const icons = {
     'em estabelecimento comercial': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png', iconSize:[25,25]}),
     'em Residência': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/pink-dot.png', iconSize:[25,25]}),
     'em posto de combustível': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/orange-dot.png', iconSize:[30,30]}),
-    'em Transporte coletivo': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/ltblue-dot.png', iconSize:[30,30]})
-};
+    'em Transporte coletivo': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/ltblue-dot.png', iconSize:[30,30]}),
+    'Outros': L.icon({ iconUrl: 'https://maps.google.com/mapfiles/ms/icons/purple-dot.png', iconSize:[25,25]})
+};  
 
 // Função para atualizar o mapa, caso utilize algum filtro.
 function updateMap() {
@@ -89,22 +90,22 @@ function updateMap() {
     // Preenchimento dos dados no mapa
 
     // Contagem do total dos registros, após filtros
-    filtered = filtered.filter(d => selectedTypes.includes(d.tipo));
+    filtered = filtered.filter(d => selectedTypes.includes(d.subtipo));
 
     // Envia para gráfico de bairros, após filtro dos tipos 
-    filterBairro = filterBairro.filter(d => selectedTypes.includes(d.tipo));
+    filterBairro = filterBairro.filter(d => selectedTypes.includes(d.subtipo));
     enviarDadosParaGraficoBairro(filterBairro);
 
     // Envia para gráfico de horas
-    filterHora = filterHora.filter(d => selectedTypes.includes(d.tipo));
+    filterHora = filterHora.filter(d => selectedTypes.includes(d.subtipo));
     enviarDadosParaGraficoHoras(filterHora);
 
     // Envia para gráfico de dia da semana
-    filterDia = filterDia.filter(d => selectedTypes.includes(d.tipo));
+    filterDia = filterDia.filter(d => selectedTypes.includes(d.subtipo));
     enviarDadosParaGraficoDia(filterDia);
 
     // Envia para gráfico dia e Hora
-    filterDiaHora = filterDiaHora.filter(d => selectedTypes.includes(d.tipo));
+    filterDiaHora = filterDiaHora.filter(d => selectedTypes.includes(d.subtipo));
     enviarDadosParaGraficoDiaHora(filterDiaHora);
 
     const divTotalFiltros = document.getElementById("divTotal");
