@@ -1,1 +1,884 @@
-[{"bairro":"Bodocongó","latitude":-7.2214096,"longitude":-35.9293602,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-05-20T23:46:43.000","dia_da_semana":"Sábado","hora_exata":23},{"bairro":"Santa Rosa","latitude":-7.2372986,"longitude":-35.9092133,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-06-10T12:18:31.000","dia_da_semana":"Sábado","hora_exata":12},{"bairro":"Prata","latitude":-7.2174916,"longitude":-35.8976846,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-06-11T11:34:19.000","dia_da_semana":"Domingo","hora_exata":11},{"bairro":"Malvinas","latitude":-7.2304728,"longitude":-35.9342721,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-06-30T17:59:19.000","dia_da_semana":"Sexta","hora_exata":17},{"bairro":"Acácio Figueiredo","latitude":-7.2662912,"longitude":-35.9278932,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-07-04T18:10:34.000","dia_da_semana":"Terça","hora_exata":18},{"bairro":"Malvinas","latitude":-7.2414065,"longitude":-35.9240506,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-07-12T19:00:58.000","dia_da_semana":"Quarta","hora_exata":19},{"bairro":"Malvinas","latitude":-7.23907,"longitude":-35.9231164,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-07-12T21:32:32.000","dia_da_semana":"Quarta","hora_exata":21},{"bairro":"Santa Rosa","latitude":-7.2349617,"longitude":-35.9059607,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-07-20T23:26:57.000","dia_da_semana":"Quinta","hora_exata":23},{"bairro":"Monte Castelo","latitude":-7.2194024,"longitude":-35.8666614,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-08-02T20:56:10.000","dia_da_semana":"Quarta","hora_exata":20},{"bairro":"Catolé","latitude":-7.240558,"longitude":-35.8792145,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-08-02T22:07:55.000","dia_da_semana":"Quarta","hora_exata":22},{"bairro":"Três Irmãs","latitude":-7.2575164,"longitude":-35.9284831,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-08-04T20:07:43.000","dia_da_semana":"Sexta","hora_exata":20},{"bairro":"Araxá","latitude":-7.2038174,"longitude":-35.9099565,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-08-07T19:24:40.000","dia_da_semana":"Segunda","hora_exata":19},{"bairro":"Malvinas","latitude":-7.23191,"longitude":-35.9345323,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-08-07T20:57:52.000","dia_da_semana":"Segunda","hora_exata":20},{"bairro":"São José","latitude":-7.2287159,"longitude":-35.8910705,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-08-10T10:42:51.000","dia_da_semana":"Quinta","hora_exata":10},{"bairro":"Bodocongó","latitude":-7.2219251,"longitude":-35.9216703,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-08-21T16:43:38.000","dia_da_semana":"Segunda","hora_exata":16},{"bairro":"José Pinheiro","latitude":-7.2164804,"longitude":-35.8686708,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-09-17T23:19:50.000","dia_da_semana":"Domingo","hora_exata":23},{"bairro":"Bodocongó","latitude":-7.2219251,"longitude":-35.9216703,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-09-18T23:23:47.000","dia_da_semana":"Segunda","hora_exata":23},{"bairro":"Palmeira","latitude":-7.2104327,"longitude":-35.8911881,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-09-25T21:18:30.000","dia_da_semana":"Segunda","hora_exata":21},{"bairro":"Três Irmãs","latitude":-7.2206167,"longitude":-35.8888328,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-10-01T21:05:25.000","dia_da_semana":"Domingo","hora_exata":21},{"bairro":"Ramadinha","latitude":-7.2158153,"longitude":-35.9264774,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-10-04T22:41:22.000","dia_da_semana":"Quarta","hora_exata":22},{"bairro":"Sandra Cavalcante","latitude":-7.24491,"longitude":-35.874339,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-10-14T00:34:28.000","dia_da_semana":"Sábado","hora_exata":0},{"bairro":"Centenário","latitude":-7.2278101,"longitude":-35.9016896,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-10-20T00:16:56.000","dia_da_semana":"Sexta","hora_exata":0},{"bairro":"Malvinas","latitude":-7.2304728,"longitude":-35.9342721,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-10-25T00:36:13.000","dia_da_semana":"Quarta","hora_exata":0},{"bairro":"Jardim Tavares","latitude":-7.2060168,"longitude":-35.8736136,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-11-08T15:58:22.000","dia_da_semana":"Quarta","hora_exata":15},{"bairro":"Malvinas","latitude":-7.2233923,"longitude":-35.9264823,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-11-15T15:18:36.000","dia_da_semana":"Quarta","hora_exata":15},{"bairro":"Quarenta","latitude":-7.2311194,"longitude":-35.8983983,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-11-16T23:45:10.000","dia_da_semana":"Quinta","hora_exata":23},{"bairro":"Cidades","latitude":-7.2749515,"longitude":-35.9328977,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-12-01T14:15:22.000","dia_da_semana":"Sexta","hora_exata":14},{"bairro":"Serrotão","latitude":-7.2139698,"longitude":-35.9424413,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2023-12-02T12:02:50.000","dia_da_semana":"Sábado","hora_exata":12},{"bairro":"Três Irmãs","latitude":-7.2488598,"longitude":-35.9185134,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-01-06T20:23:10.000","dia_da_semana":"Sábado","hora_exata":20},{"bairro":"Araxá","latitude":-7.202026,"longitude":-35.9072811,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-01-18T22:51:09.000","dia_da_semana":"Quinta","hora_exata":22},{"bairro":"Dinamérica","latitude":-7.2357006,"longitude":-35.9138455,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-01-21T17:42:43.000","dia_da_semana":"Domingo","hora_exata":17},{"bairro":"Nações","latitude":-7.1919177,"longitude":-35.8809204,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-01-23T18:26:01.000","dia_da_semana":"Terça","hora_exata":18},{"bairro":"São José","latitude":-7.2242679,"longitude":-35.8933126,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-01-25T01:56:26.000","dia_da_semana":"Quinta","hora_exata":1},{"bairro":"Sandra Cavalcante","latitude":-7.2438594,"longitude":-35.8775754,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-02-16T13:34:29.000","dia_da_semana":"Sexta","hora_exata":13},{"bairro":"Sandra Cavalcante","latitude":-7.2438594,"longitude":-35.8775754,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-02-19T10:47:00.000","dia_da_semana":"Segunda","hora_exata":10},{"bairro":"Alto Branco","latitude":-7.203853,"longitude":-35.8797893,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-02-24T09:32:32.000","dia_da_semana":"Sábado","hora_exata":9},{"bairro":"Três Irmãs","latitude":-7.2529058,"longitude":-35.9254425,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-03-14T08:46:52.000","dia_da_semana":"Quinta","hora_exata":8},{"bairro":"Estação Velha","latitude":-7.2353331,"longitude":-35.8857792,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-03-22T23:17:19.000","dia_da_semana":"Sexta","hora_exata":23},{"bairro":"Estação Velha","latitude":-7.2353331,"longitude":-35.8857792,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-03-25T00:31:41.000","dia_da_semana":"Segunda","hora_exata":0},{"bairro":"Nova Brasília","latitude":-7.2236545,"longitude":-35.8631829,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-03-25T22:37:43.000","dia_da_semana":"Segunda","hora_exata":22},{"bairro":"Distrito de São José da Mata","latitude":-7.1827683,"longitude":-35.9764703,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-03-27T16:06:34.000","dia_da_semana":"Quarta","hora_exata":16},{"bairro":"Catolé","latitude":-7.2296744,"longitude":-35.8828253,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-04-09T02:57:32.000","dia_da_semana":"Terça","hora_exata":2},{"bairro":"José Pinheiro","latitude":-7.2262806,"longitude":-35.8723029,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-04-11T04:30:47.000","dia_da_semana":"Quinta","hora_exata":4},{"bairro":"Aluízio Campos","latitude":-7.2905963,"longitude":-35.8811628,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-04-11T12:22:16.000","dia_da_semana":"Quinta","hora_exata":12},{"bairro":"Bodocongó","latitude":-7.2184353,"longitude":-35.9179312,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-04-18T20:35:16.000","dia_da_semana":"Quinta","hora_exata":20},{"bairro":"Catolé","latitude":-7.2283577,"longitude":-35.8788375,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-04-29T18:47:46.000","dia_da_semana":"Segunda","hora_exata":18},{"bairro":"Sandra Cavalcante","latitude":-7.2357378507,"longitude":-35.879471451,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-05-06T19:38:44.000","dia_da_semana":"Segunda","hora_exata":19},{"bairro":"Bodocongó","latitude":-7.2282115,"longitude":-35.9189282,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-05-09T23:23:56.000","dia_da_semana":"Quinta","hora_exata":23},{"bairro":"Nova Brasília","latitude":-7.2227933,"longitude":-35.86414,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-05-14T22:04:00.000","dia_da_semana":"Terça","hora_exata":22},{"bairro":"Distrito Industrial","latitude":-7.265831,"longitude":-35.888006,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-05-18T11:39:19.000","dia_da_semana":"Sábado","hora_exata":11},{"bairro":"Serrotão","latitude":-7.207207,"longitude":-35.9341785,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-05-20T23:30:20.000","dia_da_semana":"Segunda","hora_exata":23},{"bairro":"Distrito de São José da Mata","latitude":-7.1827683,"longitude":-35.9764703,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-06-01T19:35:41.000","dia_da_semana":"Sábado","hora_exata":19},{"bairro":"Cruzeiro","latitude":-7.2489025,"longitude":-35.8997974,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-06-08T19:00:09.000","dia_da_semana":"Sábado","hora_exata":19},{"bairro":"Velame","latitude":-7.2573698,"longitude":-35.9078867,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-06-24T14:50:03.000","dia_da_semana":"Segunda","hora_exata":14},{"bairro":"Cruzeiro","latitude":-7.2459472,"longitude":-35.9087503,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-06-26T20:40:33.000","dia_da_semana":"Quarta","hora_exata":20},{"bairro":"Malvinas","latitude":-7.2304728,"longitude":-35.9342721,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-07-10T11:14:50.000","dia_da_semana":"Quarta","hora_exata":11},{"bairro":"Malvinas","latitude":-7.2233923,"longitude":-35.9264823,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-07-19T11:53:02.000","dia_da_semana":"Sexta","hora_exata":11},{"bairro":"Bela Vista","latitude":-7.2176194,"longitude":-35.9005749,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-08-05T12:16:54.000","dia_da_semana":"Segunda","hora_exata":12},{"bairro":"Malvinas","latitude":-7.2405365,"longitude":-35.9256606,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-08-13T14:00:46.000","dia_da_semana":"Terça","hora_exata":14},{"bairro":"Cruzeiro","latitude":-7.2489071,"longitude":-35.9007953,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-08-16T11:37:11.000","dia_da_semana":"Sexta","hora_exata":11},{"bairro":"Zona Rural Noroeste (ao norte dos Bairros de Serrotão e Novo Bondocongó)","latitude":-7.2284894,"longitude":-35.9477737,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-08-18T23:59:35.000","dia_da_semana":"Domingo","hora_exata":23},{"bairro":"Cidades","latitude":-7.2728651,"longitude":-35.9276496,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-08-20T04:41:15.000","dia_da_semana":"Terça","hora_exata":4},{"bairro":"Nações","latitude":-7.2206167,"longitude":-35.8888328,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-08-23T11:48:05.000","dia_da_semana":"Sexta","hora_exata":11},{"bairro":"Distrito de Catolé de Boa Vista","latitude":-7.2822998,"longitude":-36.0957744,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-08-25T19:27:28.000","dia_da_semana":"Domingo","hora_exata":19},{"bairro":"Sandra Cavalcante","latitude":-7.2475612,"longitude":-35.8771992,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-09-13T09:08:28.000","dia_da_semana":"Sexta","hora_exata":9},{"bairro":"Catolé","latitude":-7.2270857,"longitude":-35.878343,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-09-29T13:44:12.000","dia_da_semana":"Domingo","hora_exata":13},{"bairro":"Pedregal","latitude":-7.2243779,"longitude":-35.9101898,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-10-07T23:04:03.000","dia_da_semana":"Segunda","hora_exata":23},{"bairro":"Jeremias","latitude":-7.2014552,"longitude":-35.8999834,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-10-12T18:27:20.000","dia_da_semana":"Sábado","hora_exata":18},{"bairro":"Pedregal","latitude":-7.2228512,"longitude":-35.9104566,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-10-13T16:35:14.000","dia_da_semana":"Domingo","hora_exata":16},{"bairro":"Augusto Braga (Mutirão)","latitude":-7.2284894,"longitude":-35.9477737,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-10-21T14:39:25.000","dia_da_semana":"Segunda","hora_exata":14},{"bairro":"Distrito de Galante","latitude":-7.3057286,"longitude":-35.7801993,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-10-22T05:51:10.000","dia_da_semana":"Terça","hora_exata":5},{"bairro":"Alto da Bela Vista","latitude":-7.2203469,"longitude":-35.8999298,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-10-22T19:31:04.000","dia_da_semana":"Terça","hora_exata":19},{"bairro":"Bodocongó","latitude":-7.229793,"longitude":-35.9139638,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-10-23T11:40:31.000","dia_da_semana":"Quarta","hora_exata":11},{"bairro":"Pedregal","latitude":-7.2217383,"longitude":-35.906168,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-10-29T22:59:50.000","dia_da_semana":"Terça","hora_exata":22},{"bairro":"Santa Cruz","latitude":-7.2413619,"longitude":-35.9108964,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-11-06T23:03:02.000","dia_da_semana":"Quarta","hora_exata":23},{"bairro":"Zona Rural Leste (entre Galante e Zona Urbana)","latitude":-7.2206167,"longitude":-35.8888328,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-11-09T21:21:51.000","dia_da_semana":"Sábado","hora_exata":21},{"bairro":"Aluízio Campos","latitude":-7.2206167,"longitude":-35.8888328,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-11-11T12:40:58.000","dia_da_semana":"Segunda","hora_exata":12},{"bairro":"Catolé","latitude":-7.2374282,"longitude":-35.8825582,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-11-21T10:46:29.000","dia_da_semana":"Quinta","hora_exata":10},{"bairro":"Pedregal","latitude":-7.2249155,"longitude":-35.9117384,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-12-08T15:42:54.000","dia_da_semana":"Domingo","hora_exata":15},{"bairro":"Malvinas","latitude":-7.2383675,"longitude":-35.9257982,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-12-13T20:09:09.000","dia_da_semana":"Sexta","hora_exata":20},{"bairro":"Cuités","latitude":-7.2206167,"longitude":-35.8888328,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-12-17T23:46:02.000","dia_da_semana":"Terça","hora_exata":23},{"bairro":"Três Irmãs","latitude":-7.2546162,"longitude":-35.9208983,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2024-12-31T16:18:39.000","dia_da_semana":"Terça","hora_exata":16},{"bairro":"Aluízio Campos","latitude":-7.3057286,"longitude":-35.7801993,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-01-14T20:41:01.000","dia_da_semana":"Terça","hora_exata":20},{"bairro":"Distrito de São José da Mata","latitude":-7.2272116,"longitude":-35.890327,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-01-15T03:31:10.000","dia_da_semana":"Quarta","hora_exata":3},{"bairro":"Distrito de São José da Mata","latitude":-7.2272116,"longitude":-35.890327,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-01-15T10:00:38.000","dia_da_semana":"Quarta","hora_exata":10},{"bairro":"Três Irmãs","latitude":-7.2730146,"longitude":-35.9124835,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-01-25T18:26:13.000","dia_da_semana":"Sábado","hora_exata":18},{"bairro":"Bodocongó","latitude":-7.2239851,"longitude":-35.918934,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-02-02T18:07:00.000","dia_da_semana":"Domingo","hora_exata":18},{"bairro":"Prata","latitude":-7.2206167,"longitude":-35.8888328,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-02-03T20:45:47.000","dia_da_semana":"Segunda","hora_exata":20},{"bairro":"Distrito de São José da Mata","latitude":-7.2256082,"longitude":-35.8921083,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-02-05T00:04:24.000","dia_da_semana":"Quarta","hora_exata":0},{"bairro":"Ligeiro","latitude":-7.2961235,"longitude":-35.8873362,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-02-08T19:24:23.000","dia_da_semana":"Sábado","hora_exata":19},{"bairro":"Jardim Tavares","latitude":-7.1966784,"longitude":-35.868526,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-02-10T09:50:43.000","dia_da_semana":"Segunda","hora_exata":9},{"bairro":"Novo Bodocongó","latitude":-7.2050968,"longitude":-35.9171823,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-02-14T11:49:22.000","dia_da_semana":"Sexta","hora_exata":11},{"bairro":"Distrito de Catolé de Boa Vista","latitude":-7.2206167,"longitude":-35.8888328,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-02-18T10:19:52.000","dia_da_semana":"Terça","hora_exata":10},{"bairro":"Malvinas","latitude":-7.2491646,"longitude":-35.9237033,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-03-19T22:28:05.000","dia_da_semana":"Quarta","hora_exata":22},{"bairro":"Sandra Cavalcante","latitude":-7.23894,"longitude":-35.87276,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-03-25T20:34:20.000","dia_da_semana":"Terça","hora_exata":20},{"bairro":"Serrotão","latitude":-7.22618,"longitude":-35.95071,"tipo":"Posse Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-04-06T23:09:35.000","dia_da_semana":"Domingo","hora_exata":23},{"bairro":"Três Irmãs","latitude":-7.25778,"longitude":-35.91701,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-04-13T17:02:08.000","dia_da_semana":"Domingo","hora_exata":17},{"bairro":"Zona Rural Noroeste (ao norte dos Bairros de Serrotão e Novo Bondocongó)","latitude":-7.22405,"longitude":-35.89099,"tipo":"Porte Ilegal de Arma de Fogo e\/ou munição","despachado":"2025-04-13T22:53:05.000","dia_da_semana":"Domingo","hora_exata":22}]
+[
+    {
+        "bairro": "Bodocongó",
+        "latitude": -7.2214096,
+        "longitude": -35.9293602,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-05-20T23:46:43.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Santa Rosa",
+        "latitude": -7.2372986,
+        "longitude": -35.9092133,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-06-10T12:18:31.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "Prata",
+        "latitude": -7.2174916,
+        "longitude": -35.8976846,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-06-11T11:34:19.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2304728,
+        "longitude": -35.9342721,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-06-30T17:59:19.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 17
+    },
+    {
+        "bairro": "Acácio Figueiredo",
+        "latitude": -7.2662912,
+        "longitude": -35.9278932,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-07-04T18:10:34.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 18
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2414065,
+        "longitude": -35.9240506,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-07-12T19:00:58.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.23907,
+        "longitude": -35.9231164,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-07-12T21:32:32.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Santa Rosa",
+        "latitude": -7.2349617,
+        "longitude": -35.9059607,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-07-20T23:26:57.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Monte Castelo",
+        "latitude": -7.2194024,
+        "longitude": -35.8666614,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-08-02T20:56:10.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Catolé",
+        "latitude": -7.240558,
+        "longitude": -35.8792145,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-08-02T22:07:55.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.2575164,
+        "longitude": -35.9284831,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-08-04T20:07:43.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Araxá",
+        "latitude": -7.2038174,
+        "longitude": -35.9099565,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-08-07T19:24:40.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.23191,
+        "longitude": -35.9345323,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-08-07T20:57:52.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "São José",
+        "latitude": -7.2287159,
+        "longitude": -35.8910705,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-08-10T10:42:51.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 10
+    },
+    {
+        "bairro": "Bodocongó",
+        "latitude": -7.2219251,
+        "longitude": -35.9216703,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-08-21T16:43:38.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "José Pinheiro",
+        "latitude": -7.2164804,
+        "longitude": -35.8686708,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-09-17T23:19:50.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Bodocongó",
+        "latitude": -7.2219251,
+        "longitude": -35.9216703,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-09-18T23:23:47.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Palmeira",
+        "latitude": -7.2104327,
+        "longitude": -35.8911881,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-09-25T21:18:30.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.2206167,
+        "longitude": -35.8888328,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-10-01T21:05:25.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Ramadinha",
+        "latitude": -7.2158153,
+        "longitude": -35.9264774,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-10-04T22:41:22.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Sandra Cavalcante",
+        "latitude": -7.24491,
+        "longitude": -35.874339,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-10-14T00:34:28.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Centenário",
+        "latitude": -7.2278101,
+        "longitude": -35.9016896,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-10-20T00:16:56.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2304728,
+        "longitude": -35.9342721,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-10-25T00:36:13.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Jardim Tavares",
+        "latitude": -7.2060168,
+        "longitude": -35.8736136,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-11-08T15:58:22.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 15
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2233923,
+        "longitude": -35.9264823,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-11-15T15:18:36.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 15
+    },
+    {
+        "bairro": "Quarenta",
+        "latitude": -7.2311194,
+        "longitude": -35.8983983,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-11-16T23:45:10.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Cidades",
+        "latitude": -7.2749515,
+        "longitude": -35.9328977,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-12-01T14:15:22.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 14
+    },
+    {
+        "bairro": "Serrotão",
+        "latitude": -7.2139698,
+        "longitude": -35.9424413,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2023-12-02T12:02:50.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.2488598,
+        "longitude": -35.9185134,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-01-06T20:23:10.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Araxá",
+        "latitude": -7.202026,
+        "longitude": -35.9072811,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-01-18T22:51:09.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Dinamérica",
+        "latitude": -7.2357006,
+        "longitude": -35.9138455,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-01-21T17:42:43.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 17
+    },
+    {
+        "bairro": "Nações",
+        "latitude": -7.1919177,
+        "longitude": -35.8809204,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-01-23T18:26:01.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 18
+    },
+    {
+        "bairro": "São José",
+        "latitude": -7.2242679,
+        "longitude": -35.8933126,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-01-25T01:56:26.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 1
+    },
+    {
+        "bairro": "Sandra Cavalcante",
+        "latitude": -7.2438594,
+        "longitude": -35.8775754,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-02-16T13:34:29.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 13
+    },
+    {
+        "bairro": "Sandra Cavalcante",
+        "latitude": -7.2438594,
+        "longitude": -35.8775754,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-02-19T10:47:00.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 10
+    },
+    {
+        "bairro": "Alto Branco",
+        "latitude": -7.203853,
+        "longitude": -35.8797893,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-02-24T09:32:32.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 9
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.2529058,
+        "longitude": -35.9254425,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-03-14T08:46:52.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 8
+    },
+    {
+        "bairro": "Estação Velha",
+        "latitude": -7.2353331,
+        "longitude": -35.8857792,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-03-22T23:17:19.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Estação Velha",
+        "latitude": -7.2353331,
+        "longitude": -35.8857792,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-03-25T00:31:41.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Nova Brasília",
+        "latitude": -7.2236545,
+        "longitude": -35.8631829,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-03-25T22:37:43.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Distrito de São José da Mata",
+        "latitude": -7.1827683,
+        "longitude": -35.9764703,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-03-27T16:06:34.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "Catolé",
+        "latitude": -7.2296744,
+        "longitude": -35.8828253,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-04-09T02:57:32.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 2
+    },
+    {
+        "bairro": "José Pinheiro",
+        "latitude": -7.2262806,
+        "longitude": -35.8723029,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-04-11T04:30:47.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 4
+    },
+    {
+        "bairro": "Aluízio Campos",
+        "latitude": -7.2905963,
+        "longitude": -35.8811628,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-04-11T12:22:16.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "Bodocongó",
+        "latitude": -7.2184353,
+        "longitude": -35.9179312,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-04-18T20:35:16.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Catolé",
+        "latitude": -7.2283577,
+        "longitude": -35.8788375,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-04-29T18:47:46.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 18
+    },
+    {
+        "bairro": "Sandra Cavalcante",
+        "latitude": -7.2357378507,
+        "longitude": -35.879471451,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-05-06T19:38:44.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Bodocongó",
+        "latitude": -7.2282115,
+        "longitude": -35.9189282,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-05-09T23:23:56.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Nova Brasília",
+        "latitude": -7.2227933,
+        "longitude": -35.86414,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-05-14T22:04:00.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Distrito Industrial",
+        "latitude": -7.265831,
+        "longitude": -35.888006,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-05-18T11:39:19.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Serrotão",
+        "latitude": -7.207207,
+        "longitude": -35.9341785,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-05-20T23:30:20.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Distrito de São José da Mata",
+        "latitude": -7.1827683,
+        "longitude": -35.9764703,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-06-01T19:35:41.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Cruzeiro",
+        "latitude": -7.2489025,
+        "longitude": -35.8997974,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-06-08T19:00:09.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Velame",
+        "latitude": -7.2573698,
+        "longitude": -35.9078867,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-06-24T14:50:03.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 14
+    },
+    {
+        "bairro": "Cruzeiro",
+        "latitude": -7.2459472,
+        "longitude": -35.9087503,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-06-26T20:40:33.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2304728,
+        "longitude": -35.9342721,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-07-10T11:14:50.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2233923,
+        "longitude": -35.9264823,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-07-19T11:53:02.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Bela Vista",
+        "latitude": -7.2176194,
+        "longitude": -35.9005749,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-08-05T12:16:54.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2405365,
+        "longitude": -35.9256606,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-08-13T14:00:46.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 14
+    },
+    {
+        "bairro": "Cruzeiro",
+        "latitude": -7.2489071,
+        "longitude": -35.9007953,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-08-16T11:37:11.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Zona Rural Noroeste (ao norte dos Bairros de Serrotão e Novo Bondocongó)",
+        "latitude": -7.2284894,
+        "longitude": -35.9477737,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-08-18T23:59:35.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Cidades",
+        "latitude": -7.2728651,
+        "longitude": -35.9276496,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-08-20T04:41:15.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 4
+    },
+    {
+        "bairro": "Nações",
+        "latitude": -7.2206167,
+        "longitude": -35.8888328,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-08-23T11:48:05.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Distrito de Catolé de Boa Vista",
+        "latitude": -7.2822998,
+        "longitude": -36.0957744,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-08-25T19:27:28.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Sandra Cavalcante",
+        "latitude": -7.2475612,
+        "longitude": -35.8771992,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-09-13T09:08:28.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 9
+    },
+    {
+        "bairro": "Catolé",
+        "latitude": -7.2270857,
+        "longitude": -35.878343,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-09-29T13:44:12.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 13
+    },
+    {
+        "bairro": "Pedregal",
+        "latitude": -7.2243779,
+        "longitude": -35.9101898,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-10-07T23:04:03.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Jeremias",
+        "latitude": -7.2014552,
+        "longitude": -35.8999834,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-10-12T18:27:20.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 18
+    },
+    {
+        "bairro": "Pedregal",
+        "latitude": -7.2228512,
+        "longitude": -35.9104566,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-10-13T16:35:14.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "Augusto Braga (Mutirão)",
+        "latitude": -7.2284894,
+        "longitude": -35.9477737,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-10-21T14:39:25.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 14
+    },
+    {
+        "bairro": "Distrito de Galante",
+        "latitude": -7.3057286,
+        "longitude": -35.7801993,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-10-22T05:51:10.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 5
+    },
+    {
+        "bairro": "Alto da Bela Vista",
+        "latitude": -7.2203469,
+        "longitude": -35.8999298,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-10-22T19:31:04.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Bodocongó",
+        "latitude": -7.229793,
+        "longitude": -35.9139638,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-10-23T11:40:31.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Pedregal",
+        "latitude": -7.2217383,
+        "longitude": -35.906168,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-10-29T22:59:50.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Santa Cruz",
+        "latitude": -7.2413619,
+        "longitude": -35.9108964,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-11-06T23:03:02.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Zona Rural Leste (entre Galante e Zona Urbana)",
+        "latitude": -7.2206167,
+        "longitude": -35.8888328,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-11-09T21:21:51.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 21
+    },
+    {
+        "bairro": "Aluízio Campos",
+        "latitude": -7.2206167,
+        "longitude": -35.8888328,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-11-11T12:40:58.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 12
+    },
+    {
+        "bairro": "Catolé",
+        "latitude": -7.2374282,
+        "longitude": -35.8825582,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-11-21T10:46:29.000",
+        "dia_da_semana": "Quinta",
+        "hora_exata": 10
+    },
+    {
+        "bairro": "Pedregal",
+        "latitude": -7.2249155,
+        "longitude": -35.9117384,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-12-08T15:42:54.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 15
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2383675,
+        "longitude": -35.9257982,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-12-13T20:09:09.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Cuités",
+        "latitude": -7.2206167,
+        "longitude": -35.8888328,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-12-17T23:46:02.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.2546162,
+        "longitude": -35.9208983,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2024-12-31T16:18:39.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 16
+    },
+    {
+        "bairro": "Aluízio Campos",
+        "latitude": -7.3057286,
+        "longitude": -35.7801993,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-01-14T20:41:01.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Distrito de São José da Mata",
+        "latitude": -7.2272116,
+        "longitude": -35.890327,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-01-15T03:31:10.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 3
+    },
+    {
+        "bairro": "Distrito de São José da Mata",
+        "latitude": -7.2272116,
+        "longitude": -35.890327,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-01-15T10:00:38.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 10
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.2730146,
+        "longitude": -35.9124835,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-01-25T18:26:13.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 18
+    },
+    {
+        "bairro": "Bodocongó",
+        "latitude": -7.2239851,
+        "longitude": -35.918934,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-02-02T18:07:00.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 18
+    },
+    {
+        "bairro": "Prata",
+        "latitude": -7.2206167,
+        "longitude": -35.8888328,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-02-03T20:45:47.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Distrito de São José da Mata",
+        "latitude": -7.2256082,
+        "longitude": -35.8921083,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-02-05T00:04:24.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 0
+    },
+    {
+        "bairro": "Ligeiro",
+        "latitude": -7.2961235,
+        "longitude": -35.8873362,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-02-08T19:24:23.000",
+        "dia_da_semana": "Sábado",
+        "hora_exata": 19
+    },
+    {
+        "bairro": "Jardim Tavares",
+        "latitude": -7.1966784,
+        "longitude": -35.868526,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-02-10T09:50:43.000",
+        "dia_da_semana": "Segunda",
+        "hora_exata": 9
+    },
+    {
+        "bairro": "Novo Bodocongó",
+        "latitude": -7.2050968,
+        "longitude": -35.9171823,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-02-14T11:49:22.000",
+        "dia_da_semana": "Sexta",
+        "hora_exata": 11
+    },
+    {
+        "bairro": "Distrito de Catolé de Boa Vista",
+        "latitude": -7.2206167,
+        "longitude": -35.8888328,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-02-18T10:19:52.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 10
+    },
+    {
+        "bairro": "Malvinas",
+        "latitude": -7.2491646,
+        "longitude": -35.9237033,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-03-19T22:28:05.000",
+        "dia_da_semana": "Quarta",
+        "hora_exata": 22
+    },
+    {
+        "bairro": "Sandra Cavalcante",
+        "latitude": -7.23894,
+        "longitude": -35.87276,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-03-25T20:34:20.000",
+        "dia_da_semana": "Terça",
+        "hora_exata": 20
+    },
+    {
+        "bairro": "Serrotão",
+        "latitude": -7.22618,
+        "longitude": -35.95071,
+        "tipo": "Posse Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-04-06T23:09:35.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 23
+    },
+    {
+        "bairro": "Três Irmãs",
+        "latitude": -7.25778,
+        "longitude": -35.91701,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-04-13T17:02:08.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 17
+    },
+    {
+        "bairro": "Zona Rural Noroeste (ao norte dos Bairros de Serrotão e Novo Bondocongó)",
+        "latitude": -7.22405,
+        "longitude": -35.89099,
+        "tipo": "Porte Ilegal de Arma de Fogo e\/ou munição",
+        "despachado": "2025-04-13T22:53:05.000",
+        "dia_da_semana": "Domingo",
+        "hora_exata": 22
+    }
+]

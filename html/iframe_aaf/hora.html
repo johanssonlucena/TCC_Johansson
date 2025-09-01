@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Distribuição das Ocorrências por Hora</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #container {
+      width: 100%;
+      height: 100vh; 
+    }
+    @media (max-width: 768px) {
+      #container {
+        height: 90vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+
+  <script src="https://fastly.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+
+  <script>
+  const dom = document.getElementById('container');
+  const myChart = echarts.init(dom);
+
+  const horas = [
+    '0h','1h','2h','3h','4h','5h',
+    '6h','7h','8h','9h','10h','11h',
+    '12h','13h','14h','15h','16h','17h',
+    '18h','19h','20h','21h','22h','23h'  
+  ];
+
+  function renderChart(dados) {
+    const contagemHoras = new Array(24).fill(0);
+    dados.forEach(item => {
+      const hora = item.hora_exata;
+      if (hora >= 0 && hora <= 23) {
+        contagemHoras[hora]++;
+      }
+  });
+
+  const maior = Math.max(...contagemHoras);
+
+  function corPorValor(valor) {
+    if (valor >= maior * 0.75) return '#c50505'; 
+    if (valor >= maior * 0.50) return '#f03232';  
+    if (valor >= maior * 0.25) return '#ee940e';  
+    return '#e9ec0e';                  
+  }
+
+    const cores = contagemHoras.map(valor => corPorValor(valor));
+
+    const isMobile = window.innerWidth < 500;
+
+    const option = {
+      title: {
+        text: 'Distribuição das ocorrências CVLI por hora',
+        subtext: '(00h ~ 23H)',
+        left: 'center',
+        top: 10,
+        textStyle: {
+          color: '#333',
+          fontSize: window.innerWidth < 768 ? 16 : 24,
+          fontWeight: 'bold'
+        }
+      },
+      grid: { top: 100},
+      angleAxis: {
+        type: 'category',
+        startAngle: 90,
+        data: horas,
+        axisLabel: {
+          color: '#000',
+          fontSize: window.innerWidth < 768 ? 9 : 12
+        }
+      },
+      radiusAxis: {
+        axisLabel: {
+          distance: 20,
+          color: '#000',
+          fontSize: window.innerWidth < 768 ? 8 : 12
+        },
+        splitLine: {
+          lineStyle: { color: '#aaa' }
+        }
+      },
+      polar: {
+        center: ['50%', '55%'],
+        radius: [20, '80%']
+      },
+      tooltip: {
+        trigger: 'item',
+        formatter: params => `${params.name}: <b>${params.value}</b> ocorrências`
+      },
+      legend: { show: false },
+      series: [
+        {
+          type: 'bar',
+          data: contagemHoras,
+          coordinateSystem: 'polar',
+          name: 'Ocorrências',
+          stack: 'a',
+          itemStyle: {
+            color: params => cores[params.dataIndex]
+          },
+          emphasis: { focus: 'series' }
+        }
+      ]
+    };
+
+    myChart.setOption(option);
+    window.addEventListener('resize', () => myChart.resize());
+  }
+
+  window.addEventListener('message', (event) => {
+    renderChart(event.data);
+  });
+
+  fetch('../../json/cvli.json')
+    .then(response => response.json())
+    .then(dados => renderChart(dados))
+    .catch(error => console.error('Erro ao carregar o JSON:', error));
+</script>
+
+</body>
+</html>
