@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Tipos CVLI</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    #container {
+      width: 100%;
+      height: 100vh;
+    }
+  </style>
+</head>
+<body>
+  <div id="container"></div>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+
+  <script>
+    const dom = document.getElementById('container');
+    const myChart = echarts.init(dom, null, { renderer: 'canvas', useDirtyRect: false });
+
+    function atualizarGrafico(filteredData) {
+      const contagem = {};
+      filteredData.forEach(item => {
+        const tipo = item.tipo;
+        contagem[tipo] = (contagem[tipo] || 0) + 1;
+      });
+
+      const dataPie = Object.entries(contagem).map(([tipo, count]) => ({
+        value: count,
+        name: tipo
+      }));
+
+      const isMobile = window.innerWidth < 500;
+
+      const option = {
+        title: {
+          text: 'Distribuição dos tipos de CVLI',
+          subtext: '(Passe o mouse nas opções para mais detalhes)',
+          left: 'center',
+          top: isMobile ? '5%' : 'top',
+          textStyle: {
+            fontSize: isMobile ? 14 : 24,
+            fontWeight: 'bold',
+            color: '#333'
+          },
+          subtextStyle: {
+          fontSize: isMobile ? 10 : 16,
+          color: '#000'
+    }
+        },
+        tooltip: { trigger: 'item' },
+        legend: {
+          bottom: '1%', 
+          left: 'center',
+          textStyle: { fontSize: isMobile ? 10 : 14, color: '#000' }
+        },
+        series: [{
+          type: 'pie',
+          radius: isMobile ? ['30%', '60%'] : ['40%', '70%'],
+          avoidLabelOverlap: false,
+          padAngle: 3,
+          itemStyle: { borderRadius: 15 },
+          label: { show: false, formatter: '{b}: {d}%', position: 'center' },
+          emphasis: { label: { show: true, fontSize: isMobile ? 24 : 40, fontWeight: 'bold' } },
+          labelLine: { show: false },
+          data: dataPie
+        }]
+      };
+
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('message', (event) => {
+      const filteredData = event.data;
+      atualizarGrafico(filteredData);
+    });
+
+    window.addEventListener('resize', () => myChart.resize());
+
+  fetch("../../json/cvli.json") 
+  .then(response => response.json())
+  .then(data => {
+    atualizarGrafico(data); 
+  })
+  .catch(err => console.error("Erro ao carregar JSON inicial:", err));
+    
+  </script>
+</body>
+</html>
